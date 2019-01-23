@@ -4,7 +4,7 @@ state_store_resource_group="contino-moj-tf-state"
 state_store_storage_acccount="continomojtfstate"
 bootstrap_state_storage_container="contino-moj-tfstate-container"
 productEnvironment="local"
-product="rhubarb" 
+product="plum" 
 
 
 
