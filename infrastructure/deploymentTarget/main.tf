@@ -1,13 +1,13 @@
 locals {
   local_env = "${(var.env == "preview" || var.env == "spreview") ? (var.env == "preview" ) ? "aat" : "saat" : var.env}"
   recipe_backend_url  = "http://${var.product}-recipe-backend-${local.local_env}${var.deployment_target}.service.${var.env}.platform.hmcts.net"
-  asp_rg = "${var.product}-shared-infrastructure-${var.env}"
+  shared_rg = "${var.product}-shared-infrastructure-${var.env}"
 }
 
 
 data "azurerm_key_vault" "key_vault" {
   name                = "${var.product}si-${var.env}"
-  resource_group_name = "${local.asp_rg}"
+  resource_group_name = "${local.shared_rg}"
 }
 
 data "azurerm_key_vault_secret" "appInsights-InstrumentationKey" {
@@ -33,7 +33,8 @@ module "frontend" {
   appinsights_instrumentation_key = "${data.azurerm_key_vault_secret.appInsights-InstrumentationKey.value}"
 
   asp_name     = "${var.product}-${var.env}${var.deployment_target}"
-  asp_rg       = "${local.asp_rg}"
+  asp_rg       = "${local.shared_rg}${var.deployment_target}"
+
 
   app_settings                         = {
     # REDIS_HOST                       = "${module.redis-cache.host_name}"
