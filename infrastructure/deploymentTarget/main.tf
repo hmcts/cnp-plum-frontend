@@ -17,7 +17,7 @@ data "azurerm_key_vault_secret" "appInsights-InstrumentationKey" {
 
 
 module "frontend" {
-  source               = "git@github.com:hmcts/cnp-module-webapp?ref=cnp-1094-dt"
+  source               = "git@github.com:hmcts/cnp-module-webapp?ref=master"
   product              = "${var.product}-frontend"
   location             = "${var.location}"
   env                  = "${var.env}"

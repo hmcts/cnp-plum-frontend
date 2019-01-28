@@ -14,7 +14,7 @@ locals {
 }
 
 module "frontend" {
-  source               = "git@github.com:hmcts/moj-module-webapp?ref=cnp-1094-dt"
+  source               = "git@github.com:hmcts/moj-module-webapp?ref=master"
   product              = "${var.product}-frontend"
   location             = "${var.location}"
   env                  = "${var.env}"
