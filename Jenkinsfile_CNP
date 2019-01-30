@@ -1,13 +1,14 @@
 #!groovy
 
-@Library("Infrastructure")
+//@Library("Infrastructure")
+@Library('Infrastructure@deployment-target-spike') 
 
 def product = "plum"
 def component = "frontend"
 
 withPipeline("nodejs", product, component) {
   enableDockerBuild()
-  installCharts()
+  //installCharts()
   after('checkout') {
     echo 'plum-frontend checked out'
   }
