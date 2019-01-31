@@ -26,7 +26,7 @@ properties([
     string(name: 'DEPLOYMENT_TARGET', defaultValue: '-v2', description: 'Deployment Target where code should be build and deployed'),
     choice(name: 'SUBSCRIPTION', choices: 'sandbox\nnonprod\nprod\nhmctsdemo', description: 'Azure subscriptions available to build in')
   ]),
-  [$class: 'GithubProjectProperty', projectUrlStr: 'github.com/contino/moj-plum-frontend '],
+  [$class: 'GithubProjectProperty', projectUrlStr: 'github.com/contino/cnp-plum-frontend '],
   pipelineTriggers([[$class: 'GitHubPushTrigger']])
 ])
 
