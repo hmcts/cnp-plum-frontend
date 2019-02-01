@@ -1,6 +1,6 @@
 variable "product" {
   type        = "string"
-  default     = "rhubarb"
+  default     = "plum"
   description = "The name of your application"
 }
 
