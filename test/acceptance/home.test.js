@@ -1,22 +1,15 @@
 require('should');
 require('should-http');
-var app, server, request;
+const request = require('supertest');
+const { server } = require('../../server');
 
 describe('GET /', () => {
-  beforeEach(done => {
-    request = require('supertest');
-    app = require('../../server').app;
-    server = require('../../server').server;
-    done();
-  });
-
-  afterEach(() => server.close());
-
   it('should have an index page', done => {
-    request(app)
+    request(server)
       .get('/')
       .end((err, res) => {
         res.should.have.status(500);
+        server.close();
         done();
       });
   });

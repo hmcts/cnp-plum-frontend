@@ -1,25 +1,19 @@
 require('should');
 require('should-http');
-var app, server, request;
+
+const request = require('supertest');
+const { server } = require('../../server');
 
 describe('GET /status', () => {
-  beforeEach(done => {
-    request = require('supertest');
-    app = require('../../server').app;
-    server = require('../../server').server;
-    done();
-  });
-
-  afterEach(() => server.close());
-
   it('respond with json', function (done) {
-    request(app)
+    request(server)
       .get('/health')
       .set('Accept', 'application/json')
       .expect('Content-Type', /json/)
       .end((err, res) => {
         res.should.have.status(200);
         res.body.should.have.property('api');
+        server.close();
         done();
       });
   });

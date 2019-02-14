@@ -9,7 +9,7 @@
     "start": "cross-env NODE_PATH=. node server.js",
     "setup": "cross-env NODE_PATH=. node --version",
     "lint": "cross-env NODE_PATH=. eslint --ignore-pattern coverage .",
-    "test": "yarn lint -- $@ && yarn test:unit -- $@ && yarn test:acceptance -- $@",
+    "test": "yarn lint && yarn test:unit && yarn test:acceptance",
     "test:unit": "cross-env NODE_ENV=test NODE_PATH=. mocha './test/unit/**/*.test.js' --reporter spec --recursive",
     "test:coverage": "cross-env NODE_ENV=test NODE_PATH=. istanbul cover _mocha './test/unit/*.test.js' './test/acceptance/**/*.test.js'",
     "test:acceptance": "cross-env NODE_ENV=test NODE_PATH=. mocha './test/acceptance/**/*.test.js' --reporter spec --recursive",
@@ -17,14 +17,13 @@
     "test:smoke": "cross-env NODE_ENV=test NODE_PATH=. mocha './test/functional/**/*.test.js' --grep @smoke --reporter spec --recursive",
     "test:functional": "cross-env NODE_ENV=test NODE_PATH=. mocha './test/functional/**/*.test.js' --reporter spec --recursive",
     "test:a11y": "cross-env NODE_PATH=.",
-    "sonar-scan": "cross-env NODE_PATH=. sonar-scanner -Dsonar.projectKey='moj-rhubarb-frontend' -Dsonar.sources=. -Dsonar.tests=test -Dsonar.exclusions=test/**,node_modules/**,coverage/** -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info"
+    "sonar-scan": "cross-env NODE_PATH=. sonar-scanner"
   },
   "dependencies": {
     "@hmcts/nodejs-logging": "^3.0.0",
     "cross-env": "^5.0.5",
     "express": "^4.14.0",
     "express-jade": "0.0.3",
-    "ioredis": "^4.6.2",
     "request": "2.88.0",
     "request-promise": "4.2.2"
   },

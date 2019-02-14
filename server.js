@@ -25,6 +25,6 @@ var server = app.listen(port, function () {
 });
 
 module.exports = {
-    app: app,
-    server: server
+    app,
+    server
 };
