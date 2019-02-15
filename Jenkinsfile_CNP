@@ -7,6 +7,7 @@ def component = "frontend"
 
 withPipeline("nodejs", product, component) {
   enableDockerBuild()
+  disableLegacyDeployment()
   //installCharts()
   after('checkout') {
     echo 'plum-frontend checked out'
