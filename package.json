@@ -17,6 +17,8 @@
     "test:smoke": "cross-env NODE_ENV=test NODE_PATH=. mocha './test/functional/**/*.test.js' --grep @smoke --reporter spec --recursive",
     "test:functional": "cross-env NODE_ENV=test NODE_PATH=. mocha './test/functional/**/*.test.js' --reporter spec --recursive",
     "test:a11y": "cross-env NODE_PATH=.",
+    "test:pact-verify": "echo test:pact-verify",
+    "test:pact": "echo test:pact",
     "sonar-scan": "cross-env NODE_PATH=. sonar-scanner"
   },
   "dependencies": {

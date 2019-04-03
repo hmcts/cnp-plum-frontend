@@ -1,6 +1,6 @@
 #!groovy
 
-@Library("Infrastructure")
+@Library("Infrastructure@RSE-17-pact-broker")
 
 def product = "plum"
 def component = "frontend"
@@ -28,4 +28,8 @@ withPipeline("nodejs", product, component) {
     echo 'plum-frontend checked out'
   }
   loadVaultSecrets(secrets)
+  enablePactAs([
+    AppPipelineDsl.PactRoles.CONSUMER,
+    AppPipelineDsl.PactRoles.PROVIDER
+  ])
 }
