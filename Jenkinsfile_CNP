@@ -1,6 +1,7 @@
 #!groovy
 
-@Library("Infrastructure")
+@Library("Infrastructure@RSE-17-pact-broker")
+import uk.gov.hmcts.contino.AppPipelineDsl.PactRoles
 
 def product = "plum"
 def component = "frontend"
@@ -28,4 +29,8 @@ withPipeline("nodejs", product, component) {
     echo 'plum-frontend checked out'
   }
   loadVaultSecrets(secrets)
+  enablePactAs([
+    PactRoles.CONSUMER,
+    PactRoles.PROVIDER
+  ])
 }
