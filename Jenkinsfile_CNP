@@ -29,4 +29,3 @@ withPipeline("nodejs", product, component) {
   }
   loadVaultSecrets(secrets)
 }
-
