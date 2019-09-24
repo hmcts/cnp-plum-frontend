@@ -1,7 +1,6 @@
 name: crumble-frontend
 home: https://github.com/hmcts/cnp-plum-frontend
-version: 0.0.2
+version: 0.0.3
 description: HMCTS crumble frontend application (test application)
 maintainers:
-  - name: HMCTS CNP Team
-    email: cnpteam@hmcts.net
+  - name: HMCTS Platform Engineering Team
