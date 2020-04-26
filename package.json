@@ -11,7 +11,7 @@
     "lint": "cross-env NODE_PATH=. eslint --ignore-pattern coverage .",
     "test": "yarn lint && yarn test:unit && yarn test:acceptance",
     "test:unit": "cross-env NODE_ENV=test NODE_PATH=. mocha './test/unit/**/*.test.js' --reporter spec --recursive",
-    "test:coverage": "cross-env NODE_ENV=test NODE_PATH=. nyc --reporter=lcov --reporter=text-lcov mocha './test/unit/*.test.js' './test/acceptance/**/*.test.js'",
+    "test:coverage": "cross-env NODE_ENV=test NODE_PATH=. nyc --cache false --reporter=lcov --reporter=text-lcov mocha './test/unit/*.test.js' './test/acceptance/**/*.test.js'",
     "test:acceptance": "cross-env NODE_ENV=test NODE_PATH=. mocha './test/acceptance/**/*.test.js' --reporter spec --recursive",
     "test:nsp": "cross-env NODE_PATH=. nsp check",
     "test:smoke": "cross-env NODE_ENV=test NODE_PATH=. mocha './test/functional/**/*.test.js' --grep @smoke --reporter spec --recursive",
