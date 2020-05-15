@@ -28,5 +28,5 @@ def app = "frontend"
 withPipeline(type, product, app) {
   // never skip stages when testing the pipeline
   env.NO_SKIP_IMG_BUILD = 'true'
-  // enableDeployToAKS()
+  disableLegacyDeployment()
 }
