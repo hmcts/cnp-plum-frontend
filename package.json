@@ -20,7 +20,7 @@
     "sonar-scan": "cross-env NODE_PATH=. sonar-scanner"
   },
   "dependencies": {
-    "@hmcts/nodejs-healthcheck": "^1.5.1",
+    "@hmcts/nodejs-healthcheck": "^1.7.0",
     "@hmcts/nodejs-logging": "^3.0.0",
     "applicationinsights": "1.4.0",
     "applicationinsights-native-metrics": "^0.0.5",
