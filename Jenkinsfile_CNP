@@ -1,6 +1,6 @@
 #!groovy
 
-@Library("Infrastructure")
+@Library("Infrastructure@add-cve-scanning-to-pipeline")
 
 def product = "plum"
 def component = "frontend"
