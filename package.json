@@ -35,7 +35,7 @@
     "chai-http": "^4.2.1",
     "eslint": "^5.13.0",
     "eslint-plugin-mocha": "^5.2.1",
-    "mocha": "^5.2.0",
+    "mocha": "^8.0.1",
     "nyc": "15.1.0",
     "pa11y": "^5.1.0",
     "should": "^13.2.3",
