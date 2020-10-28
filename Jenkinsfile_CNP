@@ -1,6 +1,6 @@
 #!groovy
 
-@Library("Infrastructure@trysetuptools")
+@Library("Infrastructure@trydefaultinstall")
 
 def product = "plum"
 def component = "frontend"
