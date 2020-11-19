@@ -2,4 +2,4 @@ nodejs:
   applicationPort: 1337
   image: 'hmctspublic.azurecr.io/plum/frontend:latest'
   environment:
-    RECIPE_BACKEND_URL: http://plum-recipe-backend-java
+    RECIPE_BACKEND_URL: http://plum-recipe-backend-pr-219.service.core-compute-preview.internal
