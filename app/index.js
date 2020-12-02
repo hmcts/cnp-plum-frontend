@@ -8,7 +8,7 @@ const get = async (req, res) => {
   logger.info('Yay, logging!');
 
   const options = {
-    uri: `${RECIPE_BACKEND_URL}/recipes`,
+    uri: `http://plum-recipe-backend-pr-249.service.core-compute-preview.internal/recipes`,
     json: true
   };
 
