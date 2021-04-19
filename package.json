@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@hmcts/nodejs-healthcheck": "^1.7.0",
-    "@hmcts/nodejs-logging": "^3.0.0",
+    "@hmcts/nodejs-logging": "^3.0.1",
     "applicationinsights": "1.8.8",
     "applicationinsights-native-metrics": "^0.0.5",
     "cross-env": "^7.0.0",
