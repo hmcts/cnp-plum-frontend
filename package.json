@@ -24,7 +24,7 @@
     "@hmcts/nodejs-logging": "^3.0.0",
     "applicationinsights": "1.8.8",
     "applicationinsights-native-metrics": "^0.0.5",
-    "cross-env": "^7.0.0",
+    "cross-env": "^7.0.2",
     "express": "^4.14.0",
     "pug": "^3.0.0",
     "request": "2.88.2",
