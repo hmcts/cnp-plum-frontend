@@ -24,7 +24,7 @@
     "@hmcts/nodejs-healthcheck": "^1.7.0",
     "@hmcts/nodejs-logging": "^3.0.0",
     "@hmcts/properties-volume": "^0.0.13",
-    "applicationinsights": "1.8.8",
+    "applicationinsights": "1.8.10",
     "config": "^3.3.6",
     "cross-env": "^7.0.0",
     "express": "^4.14.0",
