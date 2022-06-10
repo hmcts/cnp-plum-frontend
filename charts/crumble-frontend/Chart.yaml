@@ -1,11 +1,19 @@
 name: crumble-frontend
 apiVersion: v2
 home: https://github.com/hmcts/cnp-plum-frontend
+<<<<<<< renovate/helm-nodejs-2.x
 version: 0.1.5
+=======
+version: 0.1.6
+>>>>>>> master
 description: HMCTS crumble frontend application (test application)
 maintainers:
   - name: HMCTS Platform Engineering Team
 dependencies:
   - name: nodejs
+<<<<<<< renovate/helm-nodejs-2.x
     version: 2.3.6
+=======
+    version: 2.4.3
+>>>>>>> master
     repository: "https://hmctspublic.azurecr.io/helm/v1/repo/"
