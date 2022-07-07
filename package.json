@@ -28,6 +28,7 @@
     "config": "^3.3.7",
     "cross-env": "^7.0.3",
     "express": "^4.17.2",
+    "moment": "2.29.4",
     "pug": "^3.0.2",
     "request": "2.88.2",
     "request-promise": "4.2.6",
