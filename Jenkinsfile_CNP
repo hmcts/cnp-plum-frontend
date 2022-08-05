@@ -1,6 +1,6 @@
 #!groovy
 
-@Library("Infrastructure")
+@Library("Infrastructure@DTSPO-8699/flux-image-repo-reconcile")
 
 def product = "plum"
 def component = "frontend"
