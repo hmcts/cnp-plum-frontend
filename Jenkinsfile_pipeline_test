@@ -19,6 +19,12 @@ properties([
 
 library "Infrastructure@${params.LIB_VERSION}"
 
+def secrets = [ 'crumblesi-${env}':
+  [
+    secret('appInsights-InstrumentationKey', 'APPINSIGHTS_INSTRUMENTATIONKEY')
+  ]
+]
+
 def type = "nodejs"
 
 def product = "crumble"
