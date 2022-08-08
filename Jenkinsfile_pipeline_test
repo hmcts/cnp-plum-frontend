@@ -19,21 +19,6 @@ properties([
 
 library "Infrastructure@${params.LIB_VERSION}"
 
-def secrets = [ 'crumblesi-${env}':
-  [
-    secret('appInsights-InstrumentationKey', 'APPINSIGHTS_INSTRUMENTATIONKEY')
-  ]
-]
-
-static LinkedHashMap<String, Object> secret(String secretName, String envVar) {
-  [ $class: 'AzureKeyVaultSecret',
-    secretType: 'Secret',
-    name: secretName,
-    version: '',
-    envVariable: envVar
-  ]
-}
-
 def type = "nodejs"
 
 def product = "crumble"
