@@ -1,6 +1,6 @@
 const config = require('@hmcts/properties-volume').addTo(require('config'));
 
-const appInsightsKey = config.get('secrets.plumsi.appInsights-InstrumentationKey');
+const appInsightsKey = config.get('secrets.crumblesi.appInsights-InstrumentationKey');
 console.log(appInsightsKey);
 const appInsights = require('applicationinsights');
 const express = require('express');
