@@ -7,7 +7,7 @@ def component = "frontend"
 
 def secrets = [ 'plumsi-${env}':
   [
-    secret('appInsights-InstrumentationKey', 'APPINSIGHTS_INSTRUMENTATIONKEY')
+    secret('AppInsightsInstrumentationKey', 'APPINSIGHTS_INSTRUMENTATIONKEY')
   ]
 ]
 
