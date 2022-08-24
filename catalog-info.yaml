@@ -7,7 +7,7 @@ metadata:
     jenkins.io/job-full-name: cft:HMCTS_a_to_c/cnp-plum-frontend
     github.com/project-slug: hmcts/cnp-plum-frontend
   tags:
-    - java
+    - nodejs
   links:
     - url: https://hmcts-reform.slack.com/app_redirect?channel=platops-help
       title: "#platops-help on Slack"
