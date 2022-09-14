@@ -2662,7 +2662,6 @@ __metadata:
     should: ^13.2.3
     should-http: ^0.1.1
     sinon: ^14.0.0
-    sonar-scanner: ^3.1.0
     supertest: ^6.2.1
     winston: ^3.7.2
   languageName: unknown
@@ -4869,15 +4868,6 @@ __metadata:
     ip: ^2.0.0
     smart-buffer: ^4.2.0
   checksum: 0b5d94e2b3c11e7937b40fc5dac1e80d8b92a330e68c51f1d271ce6980c70adca42a3f8cd47c4a5769956bada074823b53374f2dc5f2ea5c2121b222dec6eadf
-  languageName: node
-  linkType: hard
-
-"sonar-scanner@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "sonar-scanner@npm:3.1.0"
-  bin:
-    sonar-scanner: index.js
-  checksum: f0275ba329a4b2cd59b177585eeddc484c2639ab0677ed320576bd06ea870ec73b6a7e88a10ce81cd46407d5d3103d279fca2aade2e7e0d2140711731ca0be6b
   languageName: node
   linkType: hard
 

@@ -54,7 +54,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["should", "npm:13.2.3"],\
             ["should-http", "virtual:e087534260550bdfc1620d15599a3351bea65c44bd1baaa39629fd745daa9e23cfefd407097044244788669d253f77d8075209ee5db456b4d92f42a72f2b41ff#npm:0.1.1"],\
             ["sinon", "npm:14.0.0"],\
-            ["sonar-scanner", "npm:3.1.0"],\
             ["supertest", "npm:6.2.2"],\
             ["winston", "npm:3.7.2"]\
           ],\
@@ -3183,7 +3182,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["should", "npm:13.2.3"],\
             ["should-http", "virtual:e087534260550bdfc1620d15599a3351bea65c44bd1baaa39629fd745daa9e23cfefd407097044244788669d253f77d8075209ee5db456b4d92f42a72f2b41ff#npm:0.1.1"],\
             ["sinon", "npm:14.0.0"],\
-            ["sonar-scanner", "npm:3.1.0"],\
             ["supertest", "npm:6.2.2"],\
             ["winston", "npm:3.7.2"]\
           ],\
@@ -5689,15 +5687,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["agent-base", "npm:6.0.2"],\
             ["debug", "virtual:8f8391ba799998e895213c2d00517da7b56c99bbf83e1d724176c8efeeea601a543231fe47aef9073f5fa7a91b95dd149b52e026f9524983aec98034ab0a6025#npm:4.3.4"],\
             ["socks", "npm:2.7.0"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["sonar-scanner", [\
-        ["npm:3.1.0", {\
-          "packageLocation": "./.yarn/unplugged/sonar-scanner-npm-3.1.0-d1bce2b254/node_modules/sonar-scanner/",\
-          "packageDependencies": [\
-            ["sonar-scanner", "npm:3.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
