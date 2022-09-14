@@ -1,9 +1,14 @@
+# ---- Base image ----
 ARG PLATFORM=""
 FROM hmctspublic.azurecr.io/base/node${PLATFORM}:16-alpine as base
 
-COPY package.json yarn.lock ./
-RUN yarn install --production --network-timeout 1000000
+USER root
+RUN corepack enable
+USER hmcts
 
+COPY --chown=hmcts:hmcts . .
+
+# ---- Runtime image ----
 FROM base as runtime
 COPY . .
 USER hmcts

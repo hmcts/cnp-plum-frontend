@@ -1,6 +1,6 @@
 {
   "labels": ["dependencies"],
-  "helm-requirements": 
+  "helm-requirements":
     {
       "enabled": true,
       "fileMatch": ["\\Chart.yaml|requirements.yaml$"],
