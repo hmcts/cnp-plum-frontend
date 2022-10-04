@@ -53,7 +53,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["request-promise", "virtual:e087534260550bdfc1620d15599a3351bea65c44bd1baaa39629fd745daa9e23cfefd407097044244788669d253f77d8075209ee5db456b4d92f42a72f2b41ff#npm:4.2.6"],\
             ["should", "npm:13.2.3"],\
             ["should-http", "virtual:e087534260550bdfc1620d15599a3351bea65c44bd1baaa39629fd745daa9e23cfefd407097044244788669d253f77d8075209ee5db456b4d92f42a72f2b41ff#npm:0.1.1"],\
-            ["sinon", "npm:14.0.0"],\
+            ["sinon", "npm:14.0.1"],\
             ["supertest", "npm:6.3.0"],\
             ["winston", "npm:3.8.2"]\
           ],\
@@ -3302,7 +3302,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["request-promise", "virtual:e087534260550bdfc1620d15599a3351bea65c44bd1baaa39629fd745daa9e23cfefd407097044244788669d253f77d8075209ee5db456b4d92f42a72f2b41ff#npm:4.2.6"],\
             ["should", "npm:13.2.3"],\
             ["should-http", "virtual:e087534260550bdfc1620d15599a3351bea65c44bd1baaa39629fd745daa9e23cfefd407097044244788669d253f77d8075209ee5db456b4d92f42a72f2b41ff#npm:0.1.1"],\
-            ["sinon", "npm:14.0.0"],\
+            ["sinon", "npm:14.0.1"],\
             ["supertest", "npm:6.3.0"],\
             ["winston", "npm:3.8.2"]\
           ],\
@@ -5817,10 +5817,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["sinon", [\
-        ["npm:14.0.0", {\
-          "packageLocation": "./.yarn/cache/sinon-npm-14.0.0-8c536094d3-b2aeeb0cdc.zip/node_modules/sinon/",\
+        ["npm:14.0.1", {\
+          "packageLocation": "./.yarn/cache/sinon-npm-14.0.1-1a3303a5d1-55dd8dc9f3.zip/node_modules/sinon/",\
           "packageDependencies": [\
-            ["sinon", "npm:14.0.0"],\
+            ["sinon", "npm:14.0.1"],\
             ["@sinonjs/commons", "npm:1.8.3"],\
             ["@sinonjs/fake-timers", "npm:9.1.2"],\
             ["@sinonjs/samsam", "npm:6.1.1"],\
