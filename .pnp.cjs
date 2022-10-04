@@ -54,7 +54,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["should", "npm:13.2.3"],\
             ["should-http", "virtual:e087534260550bdfc1620d15599a3351bea65c44bd1baaa39629fd745daa9e23cfefd407097044244788669d253f77d8075209ee5db456b4d92f42a72f2b41ff#npm:0.1.1"],\
             ["sinon", "npm:14.0.0"],\
-            ["supertest", "npm:6.2.4"],\
+            ["supertest", "npm:6.3.0"],\
             ["winston", "npm:3.8.2"]\
           ],\
           "linkType": "SOFT"\
@@ -3303,7 +3303,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["should", "npm:13.2.3"],\
             ["should-http", "virtual:e087534260550bdfc1620d15599a3351bea65c44bd1baaa39629fd745daa9e23cfefd407097044244788669d253f77d8075209ee5db456b4d92f42a72f2b41ff#npm:0.1.1"],\
             ["sinon", "npm:14.0.0"],\
-            ["supertest", "npm:6.2.4"],\
+            ["supertest", "npm:6.3.0"],\
             ["winston", "npm:3.8.2"]\
           ],\
           "linkType": "SOFT"\
@@ -6090,10 +6090,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["supertest", [\
-        ["npm:6.2.4", {\
-          "packageLocation": "./.yarn/cache/supertest-npm-6.2.4-6901daa695-f2ddc4f3ba.zip/node_modules/supertest/",\
+        ["npm:6.3.0", {\
+          "packageLocation": "./.yarn/cache/supertest-npm-6.3.0-0fe74c114e-95062161af.zip/node_modules/supertest/",\
           "packageDependencies": [\
-            ["supertest", "npm:6.2.4"],\
+            ["supertest", "npm:6.3.0"],\
             ["methods", "npm:1.1.2"],\
             ["superagent", "npm:8.0.0"]\
           ],\
