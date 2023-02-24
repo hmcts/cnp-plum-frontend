@@ -3,7 +3,7 @@ nodejs:
   image: 'hmctspublic.azurecr.io/crumble/frontend:latest'
   aadIdentityName: crumble
   environment:
-    RECIPE_BACKEND_URL: http://plum-recipe-backend-java
+    RECIPE_BACKEND_URL: http://plum-recipe-backend
   keyVaults:
     "crumblesi":
       secrets:

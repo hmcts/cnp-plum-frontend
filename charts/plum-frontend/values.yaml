@@ -3,7 +3,7 @@ nodejs:
   image: 'hmctspublic.azurecr.io/plum/frontend:latest'
   aadIdentityName: cnp
   environment:
-    RECIPE_BACKEND_URL: http://plum-recipe-backend-java
+    RECIPE_BACKEND_URL: http://plum-recipe-backend
   keyVaults:
     "plumsi":
       secrets:
