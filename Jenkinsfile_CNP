@@ -1,6 +1,6 @@
 #!groovy
 
-@Library("Infrastructure")
+@Library("Infrastructure@DTSPO-7637/slack-channel-fail")
 
 def product = "plum"
 def component = "frontend"
@@ -25,4 +25,5 @@ withPipeline("nodejs", product, component) {
   loadVaultSecrets(secrets)
   disableLegacyDeployment()
   expires(expiresAfter)
+  enableSlackNotifications('#test-ek-1')
 }
