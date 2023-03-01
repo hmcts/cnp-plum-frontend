@@ -1,6 +1,6 @@
 #!groovy
 
-@Library("Infrastructure@DTSPO-7637/slack-channel-fail")
+@Library("Infrastructure")
 
 def product = "plum"
 def component = "frontend"
