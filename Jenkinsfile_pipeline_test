@@ -14,7 +14,7 @@
 properties([
   parameters([
     string(name: 'LIB_VERSION', defaultValue: 'master', description: 'Branch name of pipeline library to use'),
-    string(name: 'SLACK_CHANNEL', defaultValue: '#test-ek-2', description: 'Slack channel to notify')
+    string(name: 'SLACK_CHANNEL', defaultValue: '#iamabotuser', description: 'Slack channel to notify')
   ])
 ])
 
