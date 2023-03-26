@@ -41,7 +41,7 @@
     "pa11y": "^6.2.3",
     "should": "^13.2.3",
     "should-http": "^0.1.1",
-    "sinon": "15.0.2",
+    "sinon": "15.0.3",
     "supertest": "6.3.3"
   },
   "packageManager": "yarn@3.5.0"
