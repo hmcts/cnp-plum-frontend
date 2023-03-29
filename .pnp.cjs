@@ -28,7 +28,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["@hmcts/nodejs-healthcheck", "npm:1.7.3"],\
+            ["@hmcts/nodejs-healthcheck", "npm:1.8.0"],\
             ["@hmcts/nodejs-logging", "npm:4.0.4"],\
             ["@hmcts/properties-volume", "npm:0.0.14"],\
             ["applicationinsights", "virtual:e087534260550bdfc1620d15599a3351bea65c44bd1baaa39629fd745daa9e23cfefd407097044244788669d253f77d8075209ee5db456b4d92f42a72f2b41ff#npm:2.5.0"],\
@@ -503,10 +503,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@hmcts/nodejs-healthcheck", [\
-        ["npm:1.7.3", {\
-          "packageLocation": "./.yarn/cache/@hmcts-nodejs-healthcheck-npm-1.7.3-9f0cf6e719-650d489f7f.zip/node_modules/@hmcts/nodejs-healthcheck/",\
+        ["npm:1.8.0", {\
+          "packageLocation": "./.yarn/cache/@hmcts-nodejs-healthcheck-npm-1.8.0-e21336666f-8412f6a36b.zip/node_modules/@hmcts/nodejs-healthcheck/",\
           "packageDependencies": [\
-            ["@hmcts/nodejs-healthcheck", "npm:1.7.3"],\
+            ["@hmcts/nodejs-healthcheck", "npm:1.8.0"],\
             ["@hmcts/nodejs-logging", "npm:4.0.4"],\
             ["js-yaml", "npm:3.14.1"],\
             ["superagent", "npm:7.1.6"]\
@@ -3105,7 +3105,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["hello_world_web_app", "workspace:."],\
-            ["@hmcts/nodejs-healthcheck", "npm:1.7.3"],\
+            ["@hmcts/nodejs-healthcheck", "npm:1.8.0"],\
             ["@hmcts/nodejs-logging", "npm:4.0.4"],\
             ["@hmcts/properties-volume", "npm:0.0.14"],\
             ["applicationinsights", "virtual:e087534260550bdfc1620d15599a3351bea65c44bd1baaa39629fd745daa9e23cfefd407097044244788669d253f77d8075209ee5db456b4d92f42a72f2b41ff#npm:2.5.0"],\
