@@ -46,7 +46,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pug", "npm:3.0.2"],\
             ["should", "npm:13.2.3"],\
             ["should-http", "virtual:e087534260550bdfc1620d15599a3351bea65c44bd1baaa39629fd745daa9e23cfefd407097044244788669d253f77d8075209ee5db456b4d92f42a72f2b41ff#npm:0.1.1"],\
-            ["sinon", "npm:15.0.2"],\
+            ["sinon", "npm:15.0.3"],\
             ["supertest", "npm:6.3.3"],\
             ["winston", "npm:3.8.2"]\
           ],\
@@ -801,10 +801,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@sinonjs/samsam", [\
-        ["npm:7.0.1", {\
-          "packageLocation": "./.yarn/cache/@sinonjs-samsam-npm-7.0.1-d14786a4c3-291efb158d.zip/node_modules/@sinonjs/samsam/",\
+        ["npm:8.0.0", {\
+          "packageLocation": "./.yarn/cache/@sinonjs-samsam-npm-8.0.0-fb46139e7a-95e40d0bb9.zip/node_modules/@sinonjs/samsam/",\
           "packageDependencies": [\
-            ["@sinonjs/samsam", "npm:7.0.1"],\
+            ["@sinonjs/samsam", "npm:8.0.0"],\
             ["@sinonjs/commons", "npm:2.0.0"],\
             ["lodash.get", "npm:4.4.2"],\
             ["type-detect", "npm:4.0.8"]\
@@ -3116,7 +3116,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pug", "npm:3.0.2"],\
             ["should", "npm:13.2.3"],\
             ["should-http", "virtual:e087534260550bdfc1620d15599a3351bea65c44bd1baaa39629fd745daa9e23cfefd407097044244788669d253f77d8075209ee5db456b4d92f42a72f2b41ff#npm:0.1.1"],\
-            ["sinon", "npm:15.0.2"],\
+            ["sinon", "npm:15.0.3"],\
             ["supertest", "npm:6.3.3"],\
             ["winston", "npm:3.8.2"]\
           ],\
@@ -5436,13 +5436,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["sinon", [\
-        ["npm:15.0.2", {\
-          "packageLocation": "./.yarn/cache/sinon-npm-15.0.2-aa49397231-98eb555442.zip/node_modules/sinon/",\
+        ["npm:15.0.3", {\
+          "packageLocation": "./.yarn/cache/sinon-npm-15.0.3-788bb3ce30-fb9401e442.zip/node_modules/sinon/",\
           "packageDependencies": [\
-            ["sinon", "npm:15.0.2"],\
+            ["sinon", "npm:15.0.3"],\
             ["@sinonjs/commons", "npm:3.0.0"],\
             ["@sinonjs/fake-timers", "npm:10.0.2"],\
-            ["@sinonjs/samsam", "npm:7.0.1"],\
+            ["@sinonjs/samsam", "npm:8.0.0"],\
             ["diff", "npm:5.1.0"],\
             ["nise", "npm:5.1.4"],\
             ["supports-color", "npm:7.2.0"]\
