@@ -46,7 +46,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pug", "npm:3.0.2"],\
             ["should", "npm:13.2.3"],\
             ["should-http", "virtual:e087534260550bdfc1620d15599a3351bea65c44bd1baaa39629fd745daa9e23cfefd407097044244788669d253f77d8075209ee5db456b4d92f42a72f2b41ff#npm:0.1.1"],\
-            ["sinon", "npm:15.0.3"],\
+            ["sinon", "npm:15.0.4"],\
             ["supertest", "npm:6.3.3"],\
             ["winston", "npm:3.8.2"]\
           ],\
@@ -3210,7 +3210,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pug", "npm:3.0.2"],\
             ["should", "npm:13.2.3"],\
             ["should-http", "virtual:e087534260550bdfc1620d15599a3351bea65c44bd1baaa39629fd745daa9e23cfefd407097044244788669d253f77d8075209ee5db456b4d92f42a72f2b41ff#npm:0.1.1"],\
-            ["sinon", "npm:15.0.3"],\
+            ["sinon", "npm:15.0.4"],\
             ["supertest", "npm:6.3.3"],\
             ["winston", "npm:3.8.2"]\
           ],\
@@ -5569,10 +5569,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["sinon", [\
-        ["npm:15.0.3", {\
-          "packageLocation": "./.yarn/cache/sinon-npm-15.0.3-788bb3ce30-fb9401e442.zip/node_modules/sinon/",\
+        ["npm:15.0.4", {\
+          "packageLocation": "./.yarn/cache/sinon-npm-15.0.4-2d44ad757d-a5e262c59a.zip/node_modules/sinon/",\
           "packageDependencies": [\
-            ["sinon", "npm:15.0.3"],\
+            ["sinon", "npm:15.0.4"],\
             ["@sinonjs/commons", "npm:3.0.0"],\
             ["@sinonjs/fake-timers", "npm:10.0.2"],\
             ["@sinonjs/samsam", "npm:8.0.0"],\
