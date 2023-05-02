@@ -1,6 +1,6 @@
 #!groovy
 
-@Library("Infrastructure")
+@Library("Infrastructure@DTSPO-12678-Update-nagger-workload-identity")
 
 def product = "plum"
 def component = "frontend"
