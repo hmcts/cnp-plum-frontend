@@ -1,4 +1,5 @@
 nodejs:
+  useWorkloadIdentity: true
   environment:
     RECIPE_BACKEND_URL: "http://plum-recipe-backend-aat.service.core-compute-aat.internal"
   image: ${IMAGE_NAME}
