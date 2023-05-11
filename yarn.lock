@@ -8341,8 +8341,8 @@ __metadata:
   linkType: hard
 
 "jest-html-reporter@npm:^3.7.0":
-  version: 3.7.1
-  resolution: "jest-html-reporter@npm:3.7.1"
+  version: 3.9.0
+  resolution: "jest-html-reporter@npm:3.9.0"
   dependencies:
     "@babel/core": ^7.9.0
     "@babel/preset-env": ^7.8.7
@@ -8358,7 +8358,7 @@ __metadata:
   peerDependencies:
     jest: 19.x - 29.x
     typescript: ^3.7.x || ^4.3.x || ^5.x
-  checksum: c12193bfec3ae3bacf7dd7ab20b57b999bd535c0c2c277cc3a918f4e9e6220ac0e7c2b546271a14203f3bb28e4629eabb2d3ef443c4d9e4a77b846c8b5b88e5b
+  checksum: 814d82ecc01787625285361a5fc939d79e8723e939ed530a8348d5679d4a8145e43897e0a6d4aed0f7f3ec4a2d9b9247aeb115b53765e68adde15953c664c33d
   languageName: node
   linkType: hard
 
