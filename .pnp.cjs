@@ -100,7 +100,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["serve-favicon", "npm:2.5.0"],\
             ["sinon", "npm:15.0.4"],\
             ["sinon-chai", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.7.0"],\
-            ["style-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.3.2"],\
+            ["style-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.3.3"],\
             ["stylelint", "npm:15.6.2"],\
             ["stylelint-config-standard", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:32.0.0"],\
             ["stylelint-config-standard-scss", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:7.0.1"],\
@@ -6997,7 +6997,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["serve-favicon", "npm:2.5.0"],\
             ["sinon", "npm:15.0.4"],\
             ["sinon-chai", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.7.0"],\
-            ["style-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.3.2"],\
+            ["style-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.3.3"],\
             ["stylelint", "npm:15.6.2"],\
             ["stylelint-config-standard", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:32.0.0"],\
             ["stylelint-config-standard-scss", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:7.0.1"],\
@@ -15078,17 +15078,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["style-loader", [\
-        ["npm:3.3.2", {\
-          "packageLocation": "./.yarn/cache/style-loader-npm-3.3.2-3df75edfc7-5ee5ce2dc8.zip/node_modules/style-loader/",\
+        ["npm:3.3.3", {\
+          "packageLocation": "./.yarn/cache/style-loader-npm-3.3.3-2e8bbeeac4-f59c953f56.zip/node_modules/style-loader/",\
           "packageDependencies": [\
-            ["style-loader", "npm:3.3.2"]\
+            ["style-loader", "npm:3.3.3"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.3.2", {\
-          "packageLocation": "./.yarn/__virtual__/style-loader-virtual-209fbe2a86/0/cache/style-loader-npm-3.3.2-3df75edfc7-5ee5ce2dc8.zip/node_modules/style-loader/",\
+        ["virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.3.3", {\
+          "packageLocation": "./.yarn/__virtual__/style-loader-virtual-a8c8f9e5d3/0/cache/style-loader-npm-3.3.3-2e8bbeeac4-f59c953f56.zip/node_modules/style-loader/",\
           "packageDependencies": [\
-            ["style-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.3.2"],\
+            ["style-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.3.3"],\
             ["@types/webpack", null],\
             ["webpack", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:5.83.1"]\
           ],\
