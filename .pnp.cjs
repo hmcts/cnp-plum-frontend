@@ -74,7 +74,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-import", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:2.27.5"],\
             ["eslint-plugin-jest", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:27.2.1"],\
             ["express", "npm:4.18.2"],\
-            ["express-nunjucks", "npm:2.2.5"],\
+            ["express-nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.0.0"],\
             ["glob", "npm:8.1.0"],\
             ["govuk-frontend", "npm:4.6.0"],\
             ["helmet", "npm:6.2.0"],\
@@ -6116,25 +6116,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["assign-deep", [\
-        ["npm:1.0.1", {\
-          "packageLocation": "./.yarn/cache/assign-deep-npm-1.0.1-e616ff4e8a-87ec212482.zip/node_modules/assign-deep/",\
-          "packageDependencies": [\
-            ["assign-deep", "npm:1.0.1"],\
-            ["assign-symbols", "npm:2.0.2"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["assign-symbols", [\
-        ["npm:2.0.2", {\
-          "packageLocation": "./.yarn/cache/assign-symbols-npm-2.0.2-6273f74b10-98429fd55c.zip/node_modules/assign-symbols/",\
-          "packageDependencies": [\
-            ["assign-symbols", "npm:2.0.2"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
       ["astral-regex", [\
         ["npm:2.0.0", {\
           "packageLocation": "./.yarn/cache/astral-regex-npm-2.0.0-f30d866aab-876231688c.zip/node_modules/astral-regex/",\
@@ -7233,7 +7214,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-import", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:2.27.5"],\
             ["eslint-plugin-jest", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:27.2.1"],\
             ["express", "npm:4.18.2"],\
-            ["express-nunjucks", "npm:2.2.5"],\
+            ["express-nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.0.0"],\
             ["glob", "npm:8.1.0"],\
             ["govuk-frontend", "npm:4.6.0"],\
             ["helmet", "npm:6.2.0"],\
@@ -8600,15 +8581,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["es6-promisify", [\
-        ["npm:6.1.0", {\
-          "packageLocation": "./.yarn/cache/es6-promisify-npm-6.1.0-93a75d95cd-6d3a4366f0.zip/node_modules/es6-promisify/",\
-          "packageDependencies": [\
-            ["es6-promisify", "npm:6.1.0"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
       ["escalade", [\
         ["npm:3.1.1", {\
           "packageLocation": "./.yarn/cache/escalade-npm-3.1.1-e02da076aa-a3e2a99f07.zip/node_modules/escalade/",\
@@ -9103,12 +9075,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["express-nunjucks", [\
-        ["npm:2.2.5", {\
-          "packageLocation": "./.yarn/cache/express-nunjucks-npm-2.2.5-a4b40cee7f-43725f84db.zip/node_modules/express-nunjucks/",\
+        ["npm:3.0.0", {\
+          "packageLocation": "./.yarn/cache/express-nunjucks-npm-3.0.0-cb9bf6e8c6-3b1913c771.zip/node_modules/express-nunjucks/",\
           "packageDependencies": [\
-            ["express-nunjucks", "npm:2.2.5"],\
-            ["assign-deep", "npm:1.0.1"],\
-            ["nunjucks-async-loader", "npm:1.1.5"]\
+            ["express-nunjucks", "npm:3.0.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.0.0", {\
+          "packageLocation": "./.yarn/__virtual__/express-nunjucks-virtual-a251fdc0cc/0/cache/express-nunjucks-npm-3.0.0-cb9bf6e8c6-3b1913c771.zip/node_modules/express-nunjucks/",\
+          "packageDependencies": [\
+            ["express-nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.0.0"],\
+            ["@types/express", "npm:4.17.17"],\
+            ["@types/nunjucks", "npm:3.2.2"],\
+            ["express", "npm:4.18.2"],\
+            ["nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.2.4"],\
+            ["nunjucks-async-loader", "virtual:a251fdc0cc9938c9dc50be27d3fdcf4e2a4019de3fe28e0e9c999373021d789d1ef5a600af3f1fb509f33d865515e3adffe56971246f7092b8fd9f0a0f749bd3#npm:2.0.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/express",\
+            "@types/nunjucks",\
+            "express",\
+            "nunjucks"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -13010,13 +12998,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["nunjucks-async-loader", [\
-        ["npm:1.1.5", {\
-          "packageLocation": "./.yarn/cache/nunjucks-async-loader-npm-1.1.5-d98593bf7b-84818c33b1.zip/node_modules/nunjucks-async-loader/",\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/nunjucks-async-loader-npm-2.0.0-dcb3182fa8-44af991a65.zip/node_modules/nunjucks-async-loader/",\
           "packageDependencies": [\
-            ["nunjucks-async-loader", "npm:1.1.5"],\
+            ["nunjucks-async-loader", "npm:2.0.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:a251fdc0cc9938c9dc50be27d3fdcf4e2a4019de3fe28e0e9c999373021d789d1ef5a600af3f1fb509f33d865515e3adffe56971246f7092b8fd9f0a0f749bd3#npm:2.0.0", {\
+          "packageLocation": "./.yarn/__virtual__/nunjucks-async-loader-virtual-eb9f53af86/0/cache/nunjucks-async-loader-npm-2.0.0-dcb3182fa8-44af991a65.zip/node_modules/nunjucks-async-loader/",\
+          "packageDependencies": [\
+            ["nunjucks-async-loader", "virtual:a251fdc0cc9938c9dc50be27d3fdcf4e2a4019de3fe28e0e9c999373021d789d1ef5a600af3f1fb509f33d865515e3adffe56971246f7092b8fd9f0a0f749bd3#npm:2.0.0"],\
+            ["@types/nunjucks", "npm:3.2.2"],\
             ["chokidar", "npm:3.3.1"],\
-            ["co", "npm:4.6.0"],\
-            ["es6-promisify", "npm:6.1.0"]\
+            ["nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.2.4"]\
+          ],\
+          "packagePeers": [\
+            "@types/nunjucks",\
+            "nunjucks"\
           ],\
           "linkType": "HARD"\
         }]\
