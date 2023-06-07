@@ -77,7 +77,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["express-nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.0.0"],\
             ["glob", "npm:8.1.0"],\
             ["govuk-frontend", "npm:4.6.0"],\
-            ["helmet", "npm:6.2.0"],\
+            ["helmet", "npm:7.0.0"],\
             ["html-webpack-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:5.5.1"],\
             ["husky", "npm:8.0.3"],\
             ["jest", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:29.5.0"],\
@@ -7217,7 +7217,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["express-nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.0.0"],\
             ["glob", "npm:8.1.0"],\
             ["govuk-frontend", "npm:4.6.0"],\
-            ["helmet", "npm:6.2.0"],\
+            ["helmet", "npm:7.0.0"],\
             ["html-webpack-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:5.5.1"],\
             ["husky", "npm:8.0.3"],\
             ["jest", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:29.5.0"],\
@@ -10046,13 +10046,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["helmet", [\
-        ["npm:6.2.0", {\
-          "packageLocation": "./.yarn/cache/helmet-npm-6.2.0-43622c54ea-cf01e02424.zip/node_modules/helmet/",\
-          "packageDependencies": [\
-            ["helmet", "npm:6.2.0"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:7.0.0", {\
           "packageLocation": "./.yarn/cache/helmet-npm-7.0.0-13c1e96edf-3622b8b68b.zip/node_modules/helmet/",\
           "packageDependencies": [\
