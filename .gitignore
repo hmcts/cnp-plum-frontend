@@ -74,14 +74,10 @@ functional-output/
 
 .eslintcache
 
-# yarn v2
 .yarn/*
-.yarn/build-state.yml
-.yarn/install-state.gz
-.pnp.*
-
-# yarn v2 zero-install
-!.pnp.cjs
-!.yarn/unplugged
-!.yarn/plugins
 !.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
