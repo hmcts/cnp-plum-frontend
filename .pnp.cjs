@@ -267,7 +267,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["convert-source-map", "npm:1.8.0"],\
             ["debug", "virtual:071d471ccd267160a6f0ec15e4cdc2874728a012db8f34521faf9e64a516aa918ee9ebab3c4c084d955ab74aaac5b8be9afb7a168813c9f210acdb7d88754ab9#npm:4.3.4"],\
             ["gensync", "npm:1.0.0-beta.2"],\
-            ["json5", "npm:1.0.2"],\
+            ["json5", "npm:2.2.3"],\
             ["semver", "npm:6.3.0"]\
           ],\
           "linkType": "HARD"\
@@ -7281,7 +7281,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/config-npm-3.3.9-7e0be6fe2e-2c29e40be2.zip/node_modules/config/",\
           "packageDependencies": [\
             ["config", "npm:3.3.9"],\
-            ["json5", "npm:1.0.2"]\
+            ["json5", "npm:2.2.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -11584,11 +11584,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["json5", [\
-        ["npm:1.0.2", {\
-          "packageLocation": "./.yarn/cache/json5-npm-1.0.2-9607f93e30-866458a8c5.zip/node_modules/json5/",\
+        ["npm:2.2.3", {\
+          "packageLocation": "./.yarn/cache/json5-npm-2.2.3-9962c55073-2a7436a933.zip/node_modules/json5/",\
           "packageDependencies": [\
-            ["json5", "npm:1.0.2"],\
-            ["minimist", "npm:1.2.6"]\
+            ["json5", "npm:2.2.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -15807,7 +15806,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fast-json-stable-stringify", "npm:2.1.0"],\
             ["jest", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:29.5.0"],\
             ["jest-util", "npm:29.0.3"],\
-            ["json5", "npm:1.0.2"],\
+            ["json5", "npm:2.2.3"],\
             ["lodash.memoize", "npm:4.1.2"],\
             ["make-error", "npm:1.3.6"],\
             ["semver", "npm:7.3.7"],\
@@ -15912,7 +15911,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["tsconfig-paths", "npm:3.14.1"],\
             ["@types/json5", "npm:0.0.29"],\
-            ["json5", "npm:1.0.2"],\
+            ["json5", "npm:2.2.3"],\
             ["minimist", "npm:1.2.6"],\
             ["strip-bom", "npm:3.0.0"]\
           ],\
@@ -15922,7 +15921,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/tsconfig-paths-npm-4.2.0-ac1edf8677-28c5f7bbbc.zip/node_modules/tsconfig-paths/",\
           "packageDependencies": [\
             ["tsconfig-paths", "npm:4.2.0"],\
-            ["json5", "npm:1.0.2"],\
+            ["json5", "npm:2.2.3"],\
             ["minimist", "npm:1.2.6"],\
             ["strip-bom", "npm:3.0.0"]\
           ],\
