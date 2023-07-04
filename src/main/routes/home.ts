@@ -9,7 +9,6 @@ const recipesUrl = config.get('backendUrl');
 
 export default function (app: Application): void {
   app.get('/', async (req, res) => {
-
     const url = `${recipesUrl}/recipes`;
     try {
       const { recipes } = await fetch(url).then(fetchRes => fetchRes.json());
