@@ -6,16 +6,16 @@
 {% block content %}
   <h1 class="govuk-heading-xl">Recipes</h1>
 
-  <!-- TODO if empty check -->
-  <p class="govuk-body">Here are some recipes:</p>
-  <ul>
-  {% for recipe in recipes %}
-    <li>{{ recipe.name }}</li>
-  {% endfor %}
-  </ul>
+  {% if recipes | length %}
+    <p class="govuk-body">Here are some recipes:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      {% for recipe in recipes %}
+        <li>{{ recipe.name }}</li>
+      {% endfor %}
+    </ul>
 
-{#  else #}
-{#  <p>There are no recipes</p>#}
-{#  endif #}
+  {% else %}
+    <p class="govuk-body">There are no recipes</p>
+  {% endif %}
 
 {% endblock %}
