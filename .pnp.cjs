@@ -62,6 +62,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["body-parser", "npm:1.20.2"],\
             ["chai", "npm:4.3.7"],\
             ["chai-as-promised", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:7.1.1"],\
+            ["chokidar", "npm:3.5.3"],\
             ["codeceptjs", "npm:3.4.1"],\
             ["config", "npm:3.3.9"],\
             ["cookie-parser", "npm:1.4.6"],\
@@ -6795,6 +6796,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["body-parser", "npm:1.20.2"],\
             ["chai", "npm:4.3.7"],\
             ["chai-as-promised", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:7.1.1"],\
+            ["chokidar", "npm:3.5.3"],\
             ["codeceptjs", "npm:3.4.1"],\
             ["config", "npm:3.3.9"],\
             ["cookie-parser", "npm:1.4.6"],\
@@ -12467,7 +12469,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/chokidar", null],\
             ["a-sync-waterfall", "npm:1.0.1"],\
             ["asap", "npm:2.0.6"],\
-            ["chokidar", null],\
+            ["chokidar", "npm:3.5.3"],\
             ["commander", "npm:5.1.0"]\
           ],\
           "packagePeers": [\
