@@ -4,9 +4,9 @@ nodejs:
   ingressHost: plum-recipe-backend-{{ .Values.global.environment }}.service.core-compute-{{ .Values.global.environment }}.internal
   aadIdentityName: cnp
   environment:
+    # test webhook
     RECIPE_BACKEND_URL: http://plum-recipe-backend-{{ .Values.global.environment }}.service.core-compute-{{ .Values.global.environment }}.internal
   keyVaults:
     'plumsi':
       secrets:
-      # test webhook
         - name: appInsights-InstrumentationKey
