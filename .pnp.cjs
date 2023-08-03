@@ -71,7 +71,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["csurf", "npm:1.11.0"],\
             ["debug", "virtual:b78aa65463b8f4675d049b632bd7fb23af6f293032c8a6ccb0a76d1523a103859d335394aeb0fe4527483f1fa1f0e6e8125f6539ecb5feaa942e06349a238645#npm:4.3.4"],\
             ["eslint", "npm:8.46.0"],\
-            ["eslint-config-prettier", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:8.9.0"],\
+            ["eslint-config-prettier", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:8.10.0"],\
             ["eslint-plugin-import", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:2.28.0"],\
             ["eslint-plugin-jest", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:27.2.3"],\
             ["express", "npm:4.18.2"],\
@@ -7095,7 +7095,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["csurf", "npm:1.11.0"],\
             ["debug", "virtual:b78aa65463b8f4675d049b632bd7fb23af6f293032c8a6ccb0a76d1523a103859d335394aeb0fe4527483f1fa1f0e6e8125f6539ecb5feaa942e06349a238645#npm:4.3.4"],\
             ["eslint", "npm:8.46.0"],\
-            ["eslint-config-prettier", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:8.9.0"],\
+            ["eslint-config-prettier", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:8.10.0"],\
             ["eslint-plugin-import", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:2.28.0"],\
             ["eslint-plugin-jest", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:27.2.3"],\
             ["express", "npm:4.18.2"],\
@@ -8562,17 +8562,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["eslint-config-prettier", [\
-        ["npm:8.9.0", {\
-          "packageLocation": "./.yarn/cache/eslint-config-prettier-npm-8.9.0-55f18738a4-a675d0dabd.zip/node_modules/eslint-config-prettier/",\
+        ["npm:8.10.0", {\
+          "packageLocation": "./.yarn/cache/eslint-config-prettier-npm-8.10.0-c1aac67611-153266badd.zip/node_modules/eslint-config-prettier/",\
           "packageDependencies": [\
-            ["eslint-config-prettier", "npm:8.9.0"]\
+            ["eslint-config-prettier", "npm:8.10.0"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:8.9.0", {\
-          "packageLocation": "./.yarn/__virtual__/eslint-config-prettier-virtual-32c38fe325/0/cache/eslint-config-prettier-npm-8.9.0-55f18738a4-a675d0dabd.zip/node_modules/eslint-config-prettier/",\
+        ["virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:8.10.0", {\
+          "packageLocation": "./.yarn/__virtual__/eslint-config-prettier-virtual-52b29ff392/0/cache/eslint-config-prettier-npm-8.10.0-c1aac67611-153266badd.zip/node_modules/eslint-config-prettier/",\
           "packageDependencies": [\
-            ["eslint-config-prettier", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:8.9.0"],\
+            ["eslint-config-prettier", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:8.10.0"],\
             ["@types/eslint", null],\
             ["eslint", "npm:8.46.0"]\
           ],\
