@@ -378,7 +378,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@azure/logger", "npm:1.0.4"],\
             ["@opentelemetry/api", "npm:1.4.1"],\
             ["@opentelemetry/core", "virtual:0779a170ba37349d2b3b61804c2021b2c375bac0a924f06b4b91677390f72bd28175f660c29c49ae79495c22a1eebc071e96a0c4bd01a68c75882eb89af62a1e#npm:1.14.0"],\
-            ["@opentelemetry/instrumentation", "virtual:0779a170ba37349d2b3b61804c2021b2c375bac0a924f06b4b91677390f72bd28175f660c29c49ae79495c22a1eebc071e96a0c4bd01a68c75882eb89af62a1e#npm:0.40.0"],\
+            ["@opentelemetry/instrumentation", "virtual:0779a170ba37349d2b3b61804c2021b2c375bac0a924f06b4b91677390f72bd28175f660c29c49ae79495c22a1eebc071e96a0c4bd01a68c75882eb89af62a1e#npm:0.41.2"],\
             ["tslib", "npm:2.5.3"]\
           ],\
           "linkType": "HARD"\
@@ -4068,22 +4068,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@opentelemetry/instrumentation", [\
-        ["npm:0.40.0", {\
-          "packageLocation": "./.yarn/cache/@opentelemetry-instrumentation-npm-0.40.0-a48dab8126-03755fc091.zip/node_modules/@opentelemetry/instrumentation/",\
+        ["npm:0.41.2", {\
+          "packageLocation": "./.yarn/cache/@opentelemetry-instrumentation-npm-0.41.2-fffbd54e4e-73df84c356.zip/node_modules/@opentelemetry/instrumentation/",\
           "packageDependencies": [\
-            ["@opentelemetry/instrumentation", "npm:0.40.0"]\
+            ["@opentelemetry/instrumentation", "npm:0.41.2"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:0779a170ba37349d2b3b61804c2021b2c375bac0a924f06b4b91677390f72bd28175f660c29c49ae79495c22a1eebc071e96a0c4bd01a68c75882eb89af62a1e#npm:0.40.0", {\
-          "packageLocation": "./.yarn/__virtual__/@opentelemetry-instrumentation-virtual-f8ad1b63e9/0/cache/@opentelemetry-instrumentation-npm-0.40.0-a48dab8126-03755fc091.zip/node_modules/@opentelemetry/instrumentation/",\
+        ["virtual:0779a170ba37349d2b3b61804c2021b2c375bac0a924f06b4b91677390f72bd28175f660c29c49ae79495c22a1eebc071e96a0c4bd01a68c75882eb89af62a1e#npm:0.41.2", {\
+          "packageLocation": "./.yarn/__virtual__/@opentelemetry-instrumentation-virtual-8288ad764a/0/cache/@opentelemetry-instrumentation-npm-0.41.2-fffbd54e4e-73df84c356.zip/node_modules/@opentelemetry/instrumentation/",\
           "packageDependencies": [\
-            ["@opentelemetry/instrumentation", "virtual:0779a170ba37349d2b3b61804c2021b2c375bac0a924f06b4b91677390f72bd28175f660c29c49ae79495c22a1eebc071e96a0c4bd01a68c75882eb89af62a1e#npm:0.40.0"],\
+            ["@opentelemetry/instrumentation", "virtual:0779a170ba37349d2b3b61804c2021b2c375bac0a924f06b4b91677390f72bd28175f660c29c49ae79495c22a1eebc071e96a0c4bd01a68c75882eb89af62a1e#npm:0.41.2"],\
             ["@opentelemetry/api", "npm:1.4.1"],\
             ["@types/opentelemetry__api", null],\
             ["@types/shimmer", "npm:1.0.2"],\
-            ["import-in-the-middle", "npm:1.3.5"],\
-            ["require-in-the-middle", "npm:7.1.1"],\
+            ["import-in-the-middle", "npm:1.4.2"],\
+            ["require-in-the-middle", "npm:7.2.0"],\
             ["semver", "npm:7.5.4"],\
             ["shimmer", "npm:1.2.1"]\
           ],\
@@ -5477,10 +5477,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:5f579713d44c02249f314834f5b7b7482d435c88f6c358becb353425be296f24999d6edcc5c58db163d29d3b79ab2190f710484e6f4234a95266aa0b0b21be68#npm:1.9.0", {\
-          "packageLocation": "./.yarn/__virtual__/acorn-import-assertions-virtual-c6e84cf734/0/cache/acorn-import-assertions-npm-1.9.0-22f56507c7-944fb2659d.zip/node_modules/acorn-import-assertions/",\
+        ["virtual:0d6260c99a008f5be9e4359f808b7c212ffb01364e5d58ad3ffaa6cd86111a6eebcd70235a8529093b0d0158115bda51bd421ad8029e342e4db4485408536ce2#npm:1.9.0", {\
+          "packageLocation": "./.yarn/__virtual__/acorn-import-assertions-virtual-2f04282092/0/cache/acorn-import-assertions-npm-1.9.0-22f56507c7-944fb2659d.zip/node_modules/acorn-import-assertions/",\
           "packageDependencies": [\
-            ["acorn-import-assertions", "virtual:5f579713d44c02249f314834f5b7b7482d435c88f6c358becb353425be296f24999d6edcc5c58db163d29d3b79ab2190f710484e6f4234a95266aa0b0b21be68#npm:1.9.0"],\
+            ["acorn-import-assertions", "virtual:0d6260c99a008f5be9e4359f808b7c212ffb01364e5d58ad3ffaa6cd86111a6eebcd70235a8529093b0d0158115bda51bd421ad8029e342e4db4485408536ce2#npm:1.9.0"],\
             ["@types/acorn", null],\
             ["acorn", "npm:8.9.0"]\
           ],\
@@ -10246,10 +10246,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["import-in-the-middle", [\
-        ["npm:1.3.5", {\
-          "packageLocation": "./.yarn/cache/import-in-the-middle-npm-1.3.5-d75dedbf6e-e8420c863c.zip/node_modules/import-in-the-middle/",\
+        ["npm:1.4.2", {\
+          "packageLocation": "./.yarn/cache/import-in-the-middle-npm-1.4.2-0d6260c99a-52971f821e.zip/node_modules/import-in-the-middle/",\
           "packageDependencies": [\
-            ["import-in-the-middle", "npm:1.3.5"],\
+            ["import-in-the-middle", "npm:1.4.2"],\
+            ["acorn", "npm:8.9.0"],\
+            ["acorn-import-assertions", "virtual:0d6260c99a008f5be9e4359f808b7c212ffb01364e5d58ad3ffaa6cd86111a6eebcd70235a8529093b0d0158115bda51bd421ad8029e342e4db4485408536ce2#npm:1.9.0"],\
+            ["cjs-module-lexer", "npm:1.2.3"],\
             ["module-details-from-path", "npm:1.0.3"]\
           ],\
           "linkType": "HARD"\
@@ -14201,10 +14204,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["require-in-the-middle", [\
-        ["npm:7.1.1", {\
-          "packageLocation": "./.yarn/cache/require-in-the-middle-npm-7.1.1-19bd77ffa7-00c7e28c27.zip/node_modules/require-in-the-middle/",\
+        ["npm:7.2.0", {\
+          "packageLocation": "./.yarn/cache/require-in-the-middle-npm-7.2.0-80b6fc7498-5ed219d12a.zip/node_modules/require-in-the-middle/",\
           "packageDependencies": [\
-            ["require-in-the-middle", "npm:7.1.1"],\
+            ["require-in-the-middle", "npm:7.2.0"],\
             ["debug", "virtual:9eaf5a4899064c3f055c57e0f559dc88875f793a1a2609dc036bf423e91ad9e5e8ee6be23b8816bec3ad42d85476c35b425c827a9747fd484a68aa7745d5ff7a#npm:4.3.4"],\
             ["module-details-from-path", "npm:1.0.3"],\
             ["resolve", "patch:resolve@npm%3A1.22.3#~builtin<compat/resolve>::version=1.22.3&hash=c3c19d"]\
@@ -16451,7 +16454,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@webassemblyjs/wasm-edit", "npm:1.11.6"],\
             ["@webassemblyjs/wasm-parser", "npm:1.11.6"],\
             ["acorn", "npm:8.9.0"],\
-            ["acorn-import-assertions", "virtual:5f579713d44c02249f314834f5b7b7482d435c88f6c358becb353425be296f24999d6edcc5c58db163d29d3b79ab2190f710484e6f4234a95266aa0b0b21be68#npm:1.9.0"],\
+            ["acorn-import-assertions", "virtual:0d6260c99a008f5be9e4359f808b7c212ffb01364e5d58ad3ffaa6cd86111a6eebcd70235a8529093b0d0158115bda51bd421ad8029e342e4db4485408536ce2#npm:1.9.0"],\
             ["browserslist", "npm:4.21.9"],\
             ["chrome-trace-event", "npm:1.0.3"],\
             ["enhanced-resolve", "npm:5.15.0"],\
@@ -25641,7 +25644,6 @@ function reportRequiredFilesToWatchMode(files) {
 }
 
 function applyPatch(pnpapi, opts) {
-  const defaultCache = {};
   let enableNativeHooks = true;
   process.versions.pnp = String(pnpapi.VERSIONS.std);
   const moduleExports = require$$0__default.default;
@@ -25661,62 +25663,13 @@ function applyPatch(pnpapi, opts) {
   }
   const originalModuleLoad = require$$0.Module._load;
   require$$0.Module._load = function(request, parent, isMain) {
-    if (!enableNativeHooks)
-      return originalModuleLoad.call(require$$0.Module, request, parent, isMain);
-    if (isBuiltinModule(request)) {
-      try {
-        enableNativeHooks = false;
-        return originalModuleLoad.call(require$$0.Module, request, parent, isMain);
-      } finally {
-        enableNativeHooks = true;
+    if (request === `pnpapi`) {
+      const parentApiPath = opts.manager.getApiPathFromParent(parent);
+      if (parentApiPath) {
+        return opts.manager.getApiEntry(parentApiPath, true).instance;
       }
     }
-    const parentApiPath = opts.manager.getApiPathFromParent(parent);
-    const parentApi = parentApiPath !== null ? opts.manager.getApiEntry(parentApiPath, true).instance : null;
-    if (parentApi === null)
-      return originalModuleLoad(request, parent, isMain);
-    if (request === `pnpapi`)
-      return parentApi;
-    const modulePath = require$$0.Module._resolveFilename(request, parent, isMain);
-    const isOwnedByRuntime = parentApi !== null ? parentApi.findPackageLocator(modulePath) !== null : false;
-    const moduleApiPath = isOwnedByRuntime ? parentApiPath : opts.manager.findApiPathFor(npath.dirname(modulePath));
-    const entry = moduleApiPath !== null ? opts.manager.getApiEntry(moduleApiPath) : { instance: null, cache: defaultCache };
-    const cacheEntry = entry.cache[modulePath];
-    if (cacheEntry) {
-      if (cacheEntry.loaded === false && cacheEntry.isLoading !== true) {
-        try {
-          cacheEntry.isLoading = true;
-          if (isMain) {
-            process.mainModule = cacheEntry;
-            cacheEntry.id = `.`;
-          }
-          cacheEntry.load(modulePath);
-        } finally {
-          cacheEntry.isLoading = false;
-        }
-      }
-      return cacheEntry.exports;
-    }
-    const module = new require$$0.Module(modulePath, parent != null ? parent : void 0);
-    module.pnpApiPath = moduleApiPath;
-    reportRequiredFilesToWatchMode([modulePath]);
-    entry.cache[modulePath] = module;
-    if (isMain) {
-      process.mainModule = module;
-      module.id = `.`;
-    }
-    let hasThrown = true;
-    try {
-      module.isLoading = true;
-      module.load(modulePath);
-      hasThrown = false;
-    } finally {
-      module.isLoading = false;
-      if (hasThrown) {
-        delete require$$0.Module._cache[modulePath];
-      }
-    }
-    return module.exports;
+    return originalModuleLoad.call(require$$0.Module, request, parent, isMain);
   };
   function getIssuerSpecsFromPaths(paths) {
     return paths.map((path) => ({
@@ -25784,7 +25737,7 @@ function applyPatch(pnpapi, opts) {
       const parentDirectory = (parent == null ? void 0 : parent.filename) != null ? npath.dirname(parent.filename) : null;
       const absoluteRequest = npath.isAbsolute(request) ? request : parentDirectory !== null ? npath.resolve(parentDirectory, request) : null;
       if (absoluteRequest !== null) {
-        const apiPath = parentDirectory === npath.dirname(absoluteRequest) && (parent == null ? void 0 : parent.pnpApiPath) ? parent.pnpApiPath : opts.manager.findApiPathFor(absoluteRequest);
+        const apiPath = parent && parentDirectory === npath.dirname(absoluteRequest) ? opts.manager.getApiPathFromParent(parent) : opts.manager.findApiPathFor(absoluteRequest);
         if (apiPath !== null) {
           issuerSpecs.unshift({
             apiPath,
@@ -27505,7 +27458,6 @@ function makeManager(pnpapi, opts) {
   const initialApiStats = opts.fakeFs.statSync(npath.toPortablePath(initialApiPath));
   const apiMetadata = /* @__PURE__ */ new Map([
     [initialApiPath, {
-      cache: require$$0.Module._cache,
       instance: pnpapi,
       stats: initialApiStats,
       lastRefreshCheck: Date.now()
@@ -27537,7 +27489,6 @@ function makeManager(pnpapi, opts) {
       }
     } else {
       apiMetadata.set(pnpApiPath, apiEntry = {
-        cache: {},
         instance: loadApiInstance(pnpApiPath),
         stats: opts.fakeFs.statSync(pnpApiPath),
         lastRefreshCheck: Date.now()
@@ -27607,19 +27558,16 @@ ${controlSegment}
     } while (curr !== PortablePath.root);
     return addToCacheAndReturn(start, curr, null);
   }
+  const moduleToApiPathCache = /* @__PURE__ */ new WeakMap();
   function getApiPathFromParent(parent) {
     if (parent == null)
       return initialApiPath;
-    if (typeof parent.pnpApiPath === `undefined`) {
-      if (parent.filename !== null) {
-        return parent.pnpApiPath = findApiPathFor(parent.filename);
-      } else {
-        return initialApiPath;
-      }
-    }
-    if (parent.pnpApiPath !== null)
-      return parent.pnpApiPath;
-    return null;
+    let apiPath = moduleToApiPathCache.get(parent);
+    if (typeof apiPath !== `undefined`)
+      return apiPath;
+    apiPath = parent.filename ? findApiPathFor(parent.filename) : null;
+    moduleToApiPathCache.set(parent, apiPath);
+    return apiPath;
   }
   return {
     getApiPathFromParent,
