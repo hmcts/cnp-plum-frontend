@@ -83,7 +83,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["husky", "npm:8.0.3"],\
             ["jest", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:29.6.4"],\
             ["jest-html-reporter", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.10.2"],\
-            ["jquery", "npm:3.7.0"],\
+            ["jquery", "npm:3.7.1"],\
             ["js-yaml", "npm:4.1.0"],\
             ["lint-staged", "npm:14.0.1"],\
             ["lodash", "npm:4.17.21"],\
@@ -7043,7 +7043,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["husky", "npm:8.0.3"],\
             ["jest", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:29.6.4"],\
             ["jest-html-reporter", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.10.2"],\
-            ["jquery", "npm:3.7.0"],\
+            ["jquery", "npm:3.7.1"],\
             ["js-yaml", "npm:4.1.0"],\
             ["lint-staged", "npm:14.0.1"],\
             ["lodash", "npm:4.17.21"],\
@@ -11487,10 +11487,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["jquery", [\
-        ["npm:3.7.0", {\
-          "packageLocation": "./.yarn/cache/jquery-npm-3.7.0-a02a382bf4-907785e133.zip/node_modules/jquery/",\
+        ["npm:3.7.1", {\
+          "packageLocation": "./.yarn/cache/jquery-npm-3.7.1-eeeac0f21e-4370b8139d.zip/node_modules/jquery/",\
           "packageDependencies": [\
-            ["jquery", "npm:3.7.0"]\
+            ["jquery", "npm:3.7.1"]\
           ],\
           "linkType": "HARD"\
         }]\
