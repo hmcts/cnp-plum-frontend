@@ -1,6 +1,8 @@
 nodejs:
   image: ${IMAGE_NAME}
   ingressHost: ${SERVICE_FQDN}
+  useWorkloadIdentity: true
+  workloadClientID: ${WORKLOAD_IDENTITY_ID}
   # Testing ability to access another teams AAT vault from preview with workload identity
   keyVaults:
     'ccd':
