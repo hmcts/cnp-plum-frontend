@@ -1,3 +1,8 @@
 nodejs:
   image: ${IMAGE_NAME}
   ingressHost: ${SERVICE_FQDN}
+  # Testing ability to access another teams AAT vault from preview with workload identity
+  keyVaults:
+    'ccd':
+      secrets:
+        - role-assignment-host
