@@ -1,0 +1,7 @@
+{
+  "useCSRFProtection": true,
+  "backendUrl": "http://localhost:4550",
+  "appInsights": {
+    "instrumentationKey": false
+  }
+}

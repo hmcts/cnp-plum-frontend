@@ -1,0 +1,20 @@
+{% from "govuk/components/header/macro.njk" import govukHeader -%}
+{% extends "govuk/template.njk" %}
+
+{% block head %}
+  {% include "webpack/css.njk" %}
+{% endblock %}
+
+{% block header %}
+  {{ govukHeader({
+    homepageUrl: "#",
+    serviceName: "Plum recipes",
+    serviceUrl: "https://hmcts.github.io"
+  }) }}
+
+{% endblock %}
+
+{% block bodyEnd %}
+  {# Run JavaScript at end of the <body>, to avoid blocking the initial render. #}
+  {% include "webpack/js.njk" %}
+{% endblock %}

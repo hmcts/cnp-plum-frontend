@@ -1,8 +1,16 @@
-node_modules/*
-docs/*
-govuk_modules/*
-public/*
-app/assets/javascripts/jquery-1.11.3.js
-app/assets/javascripts/nomnoml.js
-app/assets/javascripts/dagre.js
-lib/*
+# /node_modules/* in the project root is ignored by default
+# build artefacts
+dist/*
+coverage/*
+# data definition files
+**/*.d.ts
+# 3rd party libs
+/src/main/public/
+# custom definition files
+/src/main/types/
+jest.*config.js
+.eslintrc.js
+src/test/*/codecept.conf.js
+src/test/config.ts
+**/*.js
+.pnp.*

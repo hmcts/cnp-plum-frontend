@@ -2,6 +2,7 @@
 
 @Library("Infrastructure@DTSPO-12678-Update-nagger-workload-identity")
 
+def type = "nodejs"
 def product = "plum"
 def component = "frontend"
 def expiresAfter = "3000-01-01"
@@ -21,8 +22,16 @@ static LinkedHashMap<String, Object> secret(String secretName, String envVar) {
   ]
 }
 
-withPipeline("nodejs", product, component) {
+def yarnBuilder = new uk.gov.hmcts.contino.YarnBuilder(this)
+
+withPipeline(type, product, component) {
   loadVaultSecrets(secrets)
   disableLegacyDeployment()
   expires(expiresAfter)
+
+  afterAlways('build') {
+    yarnBuilder.yarn('rebuild puppeteer')
+    yarnBuilder.yarn('build')
+  }
+
 }
