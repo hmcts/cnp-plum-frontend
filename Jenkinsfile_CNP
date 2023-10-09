@@ -1,7 +1,6 @@
 #!groovy
 
 @Library("Infrastructure@DTSPO-12678-Update-nagger-workload-identity")
-
 def type = "nodejs"
 def product = "plum"
 def component = "frontend"
