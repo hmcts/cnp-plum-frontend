@@ -1,6 +1,5 @@
 nodejs:
   applicationPort: 1337
-  aadIdentityName: cnp
   image: 'hmctspublic.azurecr.io/plum/frontend:latest'
   ingressHost: plum-recipe-backend-{{ .Values.global.environment }}.service.core-compute-{{ .Values.global.environment }}.internal
   environment:
