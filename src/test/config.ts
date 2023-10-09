@@ -6,6 +6,9 @@ process.on('unhandledRejection', reason => {
 export const config = {
   TEST_URL: process.env.TEST_URL || 'http://localhost:1337',
   TestHeadlessBrowser: process.env.TEST_HEADLESS ? process.env.TEST_HEADLESS === 'true' : true,
+  chromeLaunchConfig: {
+    executablePath: "/snap/bin/chromium"
+  },
   TestSlowMo: 250,
   WaitForTimeout: 10000,
 
