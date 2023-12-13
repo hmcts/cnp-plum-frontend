@@ -11,7 +11,7 @@ COPY --chown=hmcts:hmcts . .
 # ---- Build image ----
 FROM base as build
 
-RUN yarn install && yarn build:prod && \
+RUN yarn build:prod && \
     rm -rf webpack/ webpack.config.js
 
 # ---- Runtime image ----
