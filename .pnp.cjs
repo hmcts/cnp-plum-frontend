@@ -115,8 +115,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["webpack", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:5.89.0"],\
             ["webpack-cli", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:5.1.4"],\
             ["webpack-dev-middleware", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:6.1.1"],\
-            ["webpack-node-externals", "npm:3.0.0"],\
-            ["webpack-virtual-modules", "npm:0.6.1"]\
+            ["webpack-node-externals", "npm:3.0.0"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -7256,8 +7255,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["webpack", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:5.89.0"],\
             ["webpack-cli", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:5.1.4"],\
             ["webpack-dev-middleware", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:6.1.1"],\
-            ["webpack-node-externals", "npm:3.0.0"],\
-            ["webpack-virtual-modules", "npm:0.6.1"]\
+            ["webpack-node-externals", "npm:3.0.0"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -16924,15 +16922,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/webpack-sources-npm-3.2.3-6bfb5d9563-989e401b9f.zip/node_modules/webpack-sources/",\
           "packageDependencies": [\
             ["webpack-sources", "npm:3.2.3"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["webpack-virtual-modules", [\
-        ["npm:0.6.1", {\
-          "packageLocation": "./.yarn/cache/webpack-virtual-modules-npm-0.6.1-f19aa25c3e-0cd993d7b0.zip/node_modules/webpack-virtual-modules/",\
-          "packageDependencies": [\
-            ["webpack-virtual-modules", "npm:0.6.1"]\
           ],\
           "linkType": "HARD"\
         }]\
