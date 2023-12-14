@@ -41,47 +41,47 @@ steps:
     when:
       - base-amd64
 
-  - id: pull-base-image-arm64
-    cmd: docker pull --platform linux/arm64 hmctspublic.azurecr.io/base/node:pr-18-alpine && docker tag hmctspublic.azurecr.io/base/node:pr-18-alpine hmctspublic.azurecr.io/base/node/linux/arm64:pr-18-alpine
-    retries: 10
-    retryDelay: 5
-    when:
-      - pull-base-image-amd64
+  # - id: pull-base-image-arm64
+  #   cmd: docker pull --platform linux/arm64 hmctspublic.azurecr.io/base/node:pr-18-alpine && docker tag hmctspublic.azurecr.io/base/node:pr-18-alpine hmctspublic.azurecr.io/base/node/linux/arm64:pr-18-alpine
+  #   retries: 10
+  #   retryDelay: 5
+  #   when:
+  #     - pull-base-image-amd64
 
-  - id: pull-base-arm64
-    cmd: docker pull {{.Run.Registry}}/plum/frontend/base-arm64:latest || true
-    retries: 10
-    retryDelay: 5
-    when:
-      - pull-base-image-arm64
+  # - id: pull-base-arm64
+  #   cmd: docker pull {{.Run.Registry}}/plum/frontend/base-arm64:latest || true
+  #   retries: 10
+  #   retryDelay: 5
+  #   when:
+  #     - pull-base-image-arm64
 
-  - id: base-arm64
-    build: >
-      -t {{.Run.Registry}}/plum/frontend/base:arm64
-      --cache-from {{.Run.Registry}}/plum/frontend/base:arm64
-      --build-arg REGISTRY_NAME={{REGISTRY_NAME}}
-      --build-arg PLATFORM=/linux/arm64
-      --platform Linux/arm64/v8
-      --target base
-      .
-    retries: 10
-    retryDelay: 5
-    when:
-      - pull-base-arm64
+  # - id: base-arm64
+  #   build: >
+  #     -t {{.Run.Registry}}/plum/frontend/base:arm64
+  #     --cache-from {{.Run.Registry}}/plum/frontend/base:arm64
+  #     --build-arg REGISTRY_NAME={{REGISTRY_NAME}}
+  #     --build-arg PLATFORM=/linux/arm64
+  #     --platform Linux/arm64/v8
+  #     --target base
+  #     .
+  #   retries: 10
+  #   retryDelay: 5
+  #   when:
+  #     - pull-base-arm64
 
-  - id: runtime-arm64
-    build: >
-      -t {{.Run.Registry}}/{{CI_IMAGE_TAG}}-arm64
-      --cache-from {{.Run.Registry}}/plum/frontend/base:arm64
-      --build-arg REGISTRY_NAME={{REGISTRY_NAME}}
-      --build-arg PLATFORM=/linux/arm64
-      --platform Linux/arm64/v8
-      --target runtime
-      .
-    retries: 10
-    retryDelay: 5
-    when:
-      - base-arm64
+  # - id: runtime-arm64
+  #   build: >
+  #     -t {{.Run.Registry}}/{{CI_IMAGE_TAG}}-arm64
+  #     --cache-from {{.Run.Registry}}/plum/frontend/base:arm64
+  #     --build-arg REGISTRY_NAME={{REGISTRY_NAME}}
+  #     --build-arg PLATFORM=/linux/arm64
+  #     --platform Linux/arm64/v8
+  #     --target runtime
+  #     .
+  #   retries: 10
+  #   retryDelay: 5
+  #   when:
+  #     - base-arm64
 
   - id: push-images
     push:
@@ -93,18 +93,18 @@ steps:
     retryDelay: 5
     when:
       - runtime-amd64
-      - runtime-arm64
+      # - runtime-arm64
 
-  - id: manifest-create
-    cmd: docker manifest create {{.Run.Registry}}/{{CI_IMAGE_TAG}} {{.Run.Registry}}/{{CI_IMAGE_TAG}}-amd64 {{.Run.Registry}}/{{CI_IMAGE_TAG}}-arm64
-    retries: 10
-    retryDelay: 5
-    when:
-      - push-images
+  # - id: manifest-create
+  #   cmd: docker manifest create {{.Run.Registry}}/{{CI_IMAGE_TAG}} {{.Run.Registry}}/{{CI_IMAGE_TAG}}-amd64 {{.Run.Registry}}/{{CI_IMAGE_TAG}}-arm64
+  #   retries: 10
+  #   retryDelay: 5
+  #   when:
+  #     - push-images
 
-  - id: manifest-push
-    cmd: docker manifest push --purge {{.Run.Registry}}/{{CI_IMAGE_TAG}}
-    retries: 10
-    retryDelay: 5
-    when:
-      - manifest-create
+  # - id: manifest-push
+  #   cmd: docker manifest push --purge {{.Run.Registry}}/{{CI_IMAGE_TAG}}
+  #   retries: 10
+  #   retryDelay: 5
+  #   when:
+  #     - manifest-create
