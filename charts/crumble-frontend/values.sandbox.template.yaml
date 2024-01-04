@@ -1,5 +1,3 @@
 nodejs:
   image: ${IMAGE_NAME}
   ingressHost: ${SERVICE_FQDN}
-  ingressAnnotations:
-    traefik.ingress.kubernetes.io/router.tls: false
