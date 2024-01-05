@@ -14,14 +14,14 @@ RUN yarn install --immutable
 # ---- Build image ----
 FROM base as build
 
-COPY --from=builder /.yarn/cache /opt/.yarn/cache
-COPY --from=builder /.yarn/install-state.gz /opt/.yarn/
+COPY --from=builder /.yarn/cache ./.yarn/cache
+COPY --from=builder /.yarn/install-state.gz ./.yarn/
 COPY --from=builder \
-    /opt/.yarn/.pnp.cjs \
-    /opt/.yarn/.pnp.loader.mjs \
-    /opt/.yarn/.yarnrc.yml \
-    /opt/.yarn/package.json \
-    /opt/.yarn/yarn.lock \
+    ./.pnp.cjs \
+    ./.pnp.loader.mjs \
+    ./.yarnrc.yml \
+    ./.yarn/package.json \
+    ./.yarn/yarn.lock \
     ./
 
 RUN yarn build:prod && \
