@@ -8,10 +8,10 @@ USER hmcts
 
 COPY --chown=hmcts:hmcts . .
 
+RUN yarn set version 3.6.4
+
 # ---- Build image ----
 FROM base as build
-
-RUN yarn set version 3.6.4
 
 RUN export YARN_VERSION=$(yarn --version)
 
