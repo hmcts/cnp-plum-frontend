@@ -8,7 +8,10 @@ USER hmcts
 
 COPY --chown=hmcts:hmcts . .
 
-RUN yarn set version 3.6.4
+COPY ./.yarn/cache ./.yarn/cache
+COPY ./.yarnrc.yml ./package.json ./yarn.lock ./
+
+RUN yarn install --immutable
 
 # ---- Build image ----
 FROM base as build
