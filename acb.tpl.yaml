@@ -7,7 +7,7 @@ steps:
     when: ['-']
 
   - id: pull-base-amd64
-    cmd: docker pull hmctssandbox.azurecr.io/plum/frontend/base:amd64 || true
+    cmd: docker pull {{.Run.Registry}}/plum/frontend/base:amd64 || true
     retries: 10
     retryDelay: 5
     when:
@@ -16,7 +16,7 @@ steps:
   - id: base-amd64
     build: >
       -t {{.Run.Registry}}/plum/frontend/base:amd64
-      --cache-from hmctssandbox.azurecr.io/plum/frontend/base:amd64
+      --cache-from {{.Run.Registry}}/plum/frontend/base:amd64
       --build-arg REGISTRY_NAME={{REGISTRY_NAME}}
       --build-arg PLATFORM=/linux/amd64
       --platform Linux/amd64
@@ -30,7 +30,7 @@ steps:
   - id: runtime-amd64
     build: >
       -t {{.Run.Registry}}/{{CI_IMAGE_TAG}}-amd64
-      --cache-from hmctssandbox.azurecr.io/plum/frontend/base:amd64
+      --cache-from {{.Run.Registry}}/plum/frontend/base:amd64
       --build-arg REGISTRY_NAME={{REGISTRY_NAME}}
       --build-arg PLATFORM=/linux/amd64
       --platform Linux/amd64
@@ -49,7 +49,7 @@ steps:
       - pull-base-image-amd64
 
   - id: pull-base-arm64
-    cmd: docker pull hmctssandbox.azurecr.io/plum/frontend/base:arm64 || true
+    cmd: docker pull {{.Run.Registry}}/plum/frontend/base:arm64 || true
     retries: 10
     retryDelay: 5
     when:
@@ -58,7 +58,7 @@ steps:
   - id: base-arm64
     build: >
       -t {{.Run.Registry}}/plum/frontend/base:arm64
-      --cache-from hmctssandbox.azurecr.io/plum/frontend/base:arm64
+      --cache-from {{.Run.Registry}}/plum/frontend/base:arm64
       --build-arg REGISTRY_NAME={{REGISTRY_NAME}}
       --build-arg PLATFORM=/linux/arm64
       --platform Linux/arm64/v8
@@ -72,7 +72,7 @@ steps:
   - id: runtime-arm64
     build: >
       -t {{.Run.Registry}}/{{CI_IMAGE_TAG}}-arm64
-      --cache-from hmctssandbox.azurecr.io/plum/frontend/base:arm64
+      --cache-from {{.Run.Registry}}/plum/frontend/base:arm64
       --build-arg REGISTRY_NAME={{REGISTRY_NAME}}
       --build-arg PLATFORM=/linux/arm64
       --platform Linux/arm64/v8

@@ -17,7 +17,7 @@ properties([
   ])
 ])
 
-library "Infrastructure@${params.LIB_VERSION}"
+library "Infrastructure@endakelly-patch-1"
 
 def type = "nodejs"
 
