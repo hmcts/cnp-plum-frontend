@@ -11,6 +11,10 @@ COPY --chown=hmcts:hmcts . .
 # ---- Build image ----
 FROM base as build
 
+RUN YARN_VERSION=$(yarn --version)
+
+RUN echo $YARN_VERSION
+
 RUN yarn build:prod
 
 RUN rm -rf webpack/ webpack.config.js
