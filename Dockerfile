@@ -11,7 +11,7 @@ COPY --chown=hmcts:hmcts . .
 # ---- Build image ----
 FROM base as build
 
-RUN YARN_VERSION=$(yarn --version)
+RUN export YARN_VERSION=$(yarn --version)
 
 RUN echo $YARN_VERSION
 
