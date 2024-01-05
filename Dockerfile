@@ -11,7 +11,7 @@ COPY --chown=hmcts:hmcts . .
 # ---- Build image ----
 FROM base as build
 
-# RUN yarn set version ./.yarn/releases/*.cjs
+RUN yarn set version 3.6.4
 
 RUN export YARN_VERSION=$(yarn --version)
 
