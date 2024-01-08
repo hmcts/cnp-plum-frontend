@@ -45,8 +45,8 @@ steps:
   #   cmd: docker pull --platform linux/arm64 hmctspublic.azurecr.io/base/node:pr-18-alpine && docker tag hmctspublic.azurecr.io/base/node:pr-18-alpine hmctspublic.azurecr.io/base/node/linux/arm64:pr-18-alpine
   #   retries: 10
   #   retryDelay: 5
-    # when:
-    #   - pull-base-image-amd64
+  # when:
+  #   - pull-base-image-amd64
 
   # - id: pull-base-arm64
   #   cmd: docker pull {{.Run.Registry}}/plum/frontend/base-arm64:latest || true
