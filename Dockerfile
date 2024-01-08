@@ -8,13 +8,13 @@ USER hmcts
 
 COPY --chown=hmcts:hmcts . .
 
-RUN yarn install --production \
+RUN yarn workspaces focus --all --production  --production \
   && yarn cache clean
 
 # ---- Build image ----
 FROM base as build
 
-RUN yarn install --production \
+RUN yarn workspaces focus --all --production --production \
   && yarn build:prod
 
 # ---- Runtime image ----
