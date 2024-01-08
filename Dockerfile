@@ -1,6 +1,6 @@
 # ---- Base image ----
-ARG PLATFORM=""
-FROM hmctspublic.azurecr.io/base/node${PLATFORM}:pr-18-alpine as base
+ARG PLATFORM=/linux/arm64/v8
+FROM hmctspublic.azurecr.io/base/node:pr-18-alpine as base
 
 USER root
 RUN corepack enable
