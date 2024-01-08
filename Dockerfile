@@ -8,21 +8,8 @@ USER hmcts
 
 COPY --chown=hmcts:hmcts . .
 
-COPY ./.yarnrc.yml ./package.json ./yarn.lock ./
-RUN yarn install --immutable
-
 # ---- Build image ----
 FROM base as build
-
-COPY --from=builder /.yarn/cache ./.yarn/cache
-COPY --from=builder /.yarn/install-state.gz ./.yarn/
-COPY --from=builder \
-    ./.pnp.cjs \
-    ./.pnp.loader.mjs \
-    ./.yarnrc.yml \
-    ./.yarn/package.json \
-    ./.yarn/yarn.lock \
-    ./
 
 RUN yarn build:prod && \
     rm -rf webpack/ webpack.config.js
