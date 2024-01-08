@@ -11,15 +11,7 @@ COPY --chown=hmcts:hmcts . .
 # ---- Build image ----
 FROM base as build
 
-RUN YARN_VERSION_1=$(yarn --version) && \
-    echo $YARN_VERSION_1
-
-WORKDIR /opt/.yarn
-
-RUN YARN_VERSION_2=$(yarn --version) && \
-    echo $YARN_VERSION_2
-
-RUN yarn install
+RUN PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn install --immutable
 
 RUN yarn build:prod && \
     rm -rf webpack/ webpack.config.js
