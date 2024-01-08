@@ -1,6 +1,6 @@
 # ---- Base image ----
-ARG PLATFORM=/linux/arm64/v8
-FROM hmctspublic.azurecr.io/base/node:pr-18-alpine as base
+ARG PLATFORM=""
+FROM hmctspublic.azurecr.io/base/node${PLATFORM}:pr-18-alpine as base
 
 USER root
 RUN corepack enable
@@ -10,6 +10,14 @@ COPY --chown=hmcts:hmcts . .
 
 # ---- Build image ----
 FROM base as build
+
+RUN YARN_VERSION_1=$(yarn --version) && \
+    echo $YARN_VERSION_1
+
+WORKDIR /opt/.yarn
+
+RUN YARN_VERSION_2=$(yarn --version) && \
+    echo $YARN_VERSION_2
 
 RUN yarn build:prod && \
     rm -rf webpack/ webpack.config.js
