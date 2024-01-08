@@ -8,17 +8,19 @@ USER hmcts
 
 COPY --chown=hmcts:hmcts . .
 
+RUN yarn install --production \
+  && yarn cache clean
+
 # ---- Build image ----
 FROM base as build
 
-RUN PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn install --immutable
-
-RUN yarn build:prod && \
-    rm -rf webpack/ webpack.config.js
+RUN yarn install --production \
+  && yarn build:prod
 
 # ---- Runtime image ----
 FROM base as runtime
 
+RUN rm -rf webpack/ webpack.config.js
 COPY --from=build $WORKDIR/src/main ./src/main
 # TODO: expose the right port for your application
 EXPOSE 1337
