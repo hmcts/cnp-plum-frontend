@@ -19,6 +19,8 @@ WORKDIR /opt/.yarn
 RUN YARN_VERSION_2=$(yarn --version) && \
     echo $YARN_VERSION_2
 
+RUN yarn install
+
 RUN yarn build:prod && \
     rm -rf webpack/ webpack.config.js
 
