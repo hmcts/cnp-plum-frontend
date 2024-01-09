@@ -8,11 +8,6 @@ USER hmcts
 
 COPY --chown=hmcts:hmcts . .
 
-ENV PUPPETEER_SKIP_DOWNLOAD=true
-ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
-
-RUN yarn install
-
 # ---- Build image ----
 FROM base as build
 
