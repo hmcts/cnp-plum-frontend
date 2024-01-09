@@ -14,13 +14,12 @@ FROM base as build
 ENV PUPPETEER_SKIP_DOWNLOAD=true
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 
-RUN yarn install \
-  && yarn build:prod
+RUN yarn build:prod && \
+    rm -rf webpack/ webpack.config.js
 
 # ---- Runtime image ----
 FROM base as runtime
 
-RUN rm -rf webpack/ webpack.config.js
 COPY --from=build $WORKDIR/src/main ./src/main
 # TODO: expose the right port for your application
 EXPOSE 1337
