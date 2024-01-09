@@ -1,7 +1,7 @@
 version: 1.0-preview-1
 steps:
   - id: pull-base-image-amd64
-    cmd: docker pull --platform linux/amd64 hmctspublic.azurecr.io/base/node:18-alpine && docker tag hmctspublic.azurecr.io/base/node:18-alpine hmctspublic.azurecr.io/base/node/linux/amd64:18-alpine
+    cmd: docker pull --platform linux/amd64 hmctspublic.azurecr.io/base/node:pr-18-alpine && docker tag hmctspublic.azurecr.io/base/node:pr-18-alpine hmctspublic.azurecr.io/base/node/linux/amd64:pr-18-alpine
     retries: 10
     retryDelay: 5
     when: ['-']
@@ -42,7 +42,7 @@ steps:
       - base-amd64
 
   # - id: pull-base-image-arm64
-  #   cmd: docker pull --platform linux/arm64 hmctspublic.azurecr.io/base/node:18-alpine && docker tag hmctspublic.azurecr.io/base/node:18-alpine hmctspublic.azurecr.io/base/node/linux/arm64:18-alpine
+  #   cmd: docker pull --platform linux/arm64 hmctspublic.azurecr.io/base/node:pr-18-alpine && docker tag hmctspublic.azurecr.io/base/node:pr-18-alpine hmctspublic.azurecr.io/base/node/linux/arm64:pr-18-alpine
   #   retries: 10
   #   retryDelay: 5
   #   when:
