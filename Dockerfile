@@ -11,9 +11,6 @@ COPY --chown=hmcts:hmcts . .
 # ---- Build image ----
 FROM base as build
 
-ENV PUPPETEER_SKIP_DOWNLOAD=true
-ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
-
 RUN yarn build:prod && \
     rm -rf webpack/ webpack.config.js
 
