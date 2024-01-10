@@ -17,7 +17,7 @@ properties([
   ])
 ])
 
-library "Infrastructure@DTSPO-15526/yarnrc"
+library "Infrastructure"
 
 def type = "nodejs"
 
