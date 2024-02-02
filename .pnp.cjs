@@ -29,7 +29,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@babel/core", "npm:7.23.9"],\
-            ["@babel/eslint-parser", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:7.23.9"],\
+            ["@babel/eslint-parser", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:7.23.10"],\
             ["@babel/preset-env", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:7.23.9"],\
             ["@codeceptjs/allure-legacy", "npm:1.0.2"],\
             ["@codeceptjs/configure", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:0.10.0"],\
@@ -478,17 +478,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@babel/eslint-parser", [\
-        ["npm:7.23.9", {\
-          "packageLocation": "./.yarn/cache/@babel-eslint-parser-npm-7.23.9-ac6e67f974-cfb87bc48d.zip/node_modules/@babel/eslint-parser/",\
+        ["npm:7.23.10", {\
+          "packageLocation": "./.yarn/cache/@babel-eslint-parser-npm-7.23.10-7be7518fee-81249edee1.zip/node_modules/@babel/eslint-parser/",\
           "packageDependencies": [\
-            ["@babel/eslint-parser", "npm:7.23.9"]\
+            ["@babel/eslint-parser", "npm:7.23.10"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:7.23.9", {\
-          "packageLocation": "./.yarn/__virtual__/@babel-eslint-parser-virtual-3c5a9d4145/0/cache/@babel-eslint-parser-npm-7.23.9-ac6e67f974-cfb87bc48d.zip/node_modules/@babel/eslint-parser/",\
+        ["virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:7.23.10", {\
+          "packageLocation": "./.yarn/__virtual__/@babel-eslint-parser-virtual-b999f696c8/0/cache/@babel-eslint-parser-npm-7.23.10-7be7518fee-81249edee1.zip/node_modules/@babel/eslint-parser/",\
           "packageDependencies": [\
-            ["@babel/eslint-parser", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:7.23.9"],\
+            ["@babel/eslint-parser", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:7.23.10"],\
             ["@babel/core", "npm:7.23.9"],\
             ["@nicolo-ribaudo/eslint-scope-5-internals", "npm:5.1.1-v1"],\
             ["@types/babel__core", null],\
@@ -7205,7 +7205,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["cnp-plum-frontend", "workspace:."],\
             ["@babel/core", "npm:7.23.9"],\
-            ["@babel/eslint-parser", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:7.23.9"],\
+            ["@babel/eslint-parser", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:7.23.10"],\
             ["@babel/preset-env", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:7.23.9"],\
             ["@codeceptjs/allure-legacy", "npm:1.0.2"],\
             ["@codeceptjs/configure", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:0.10.0"],\
