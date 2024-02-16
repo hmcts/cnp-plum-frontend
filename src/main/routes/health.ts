@@ -21,4 +21,17 @@ export default function (app: Application): void {
   };
 
   healthcheck.addTo(app, healthCheckConfig);
+  
+  app.get('/healthz', async (req, res) => {
+    try {
+      const response = await axios.get(`${recipesUrl}/health/readiness`);
+      if (response.status === 200) {
+        res.status(200).send('OK');
+      } else {
+        res.status(503).send('Backend is Unavailable');
+      }
+    } catch (error) {
+      res.status(503).send('Backend is Unavailable');
+    }
+  });
 }
