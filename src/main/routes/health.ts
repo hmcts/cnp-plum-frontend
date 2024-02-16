@@ -20,8 +20,9 @@ export default function (app: Application): void {
     },
   };
 
+
   healthcheck.addTo(app, healthCheckConfig);
-  
+
   app.get('/healthz', async (req, res) => {
     try {
       const response = await axios.get(`${recipesUrl}/health/readiness`);
