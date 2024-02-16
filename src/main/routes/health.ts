@@ -20,7 +20,6 @@ export default function (app: Application): void {
     },
   };
 
-
   healthcheck.addTo(app, healthCheckConfig);
 
   app.get('/healthz', async (req, res) => {
