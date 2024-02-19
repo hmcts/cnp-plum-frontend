@@ -19,7 +19,7 @@ export default function (app: Application): void {
   };
   healthcheck.addTo(app, healthCheckConfig);
 
-  app.get('/health/readiness', async (req, res) => {
+  app.get('http://localhost:1337/health/readiness', async (req, res) => {
     try {
       const response = await axios.get(`${recipesUrl}/health/readiness`);
       if (response.status === 200) {
@@ -32,7 +32,7 @@ export default function (app: Application): void {
     }
   });
 
-  app.get('/health/liveness', (req, res) => {
+  app.get('http://localhost:1337/health/liveness', (req, res) => {
     res.status(200).json({ status: 'Alive' });
   });
 }
