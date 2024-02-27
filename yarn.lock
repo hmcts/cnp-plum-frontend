@@ -3191,7 +3191,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/nunjucks@npm:^3.2.1":
+"@types/nunjucks@npm:^3.2.6":
   version: 3.2.6
   resolution: "@types/nunjucks@npm:3.2.6"
   checksum: a139cc51d877052f5a471516acfc091b48c8c6e999aeaf1148e775c8dfd722f999731b092c9174492af0f7d4a6cd592004562356fbf51af8ce8fc88ee3c29e97
@@ -5063,7 +5063,7 @@ __metadata:
     "@types/jest": ^29.5.2
     "@types/lodash": ^4.14.185
     "@types/node": ^18.7.18
-    "@types/nunjucks": ^3.2.1
+    "@types/nunjucks": ^3.2.6
     "@types/require-directory": ^2.1.2
     "@types/serve-favicon": ^2.5.3
     "@types/supertest": ^2.0.12
