@@ -82,6 +82,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["helmet", "npm:7.1.0"],\
             ["html-webpack-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:5.5.4"],\
             ["husky", "npm:8.0.3"],\
+            ["ip", "npm:2.0.1"],\
             ["jest", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:29.7.0"],\
             ["jest-html-reporter", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.10.2"],\
             ["jquery", "npm:3.7.1"],\
@@ -7258,6 +7259,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["helmet", "npm:7.1.0"],\
             ["html-webpack-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:5.5.4"],\
             ["husky", "npm:8.0.3"],\
+            ["ip", "npm:2.0.1"],\
             ["jest", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:29.7.0"],\
             ["jest-html-reporter", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.10.2"],\
             ["jquery", "npm:3.7.1"],\
@@ -10653,6 +10655,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/ip-npm-2.0.0-204facb3cc-cfcfac6b87.zip/node_modules/ip/",\
           "packageDependencies": [\
             ["ip", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.0.1", {\
+          "packageLocation": "./.yarn/cache/ip-npm-2.0.1-ee48691f03-d765c9fd21.zip/node_modules/ip/",\
+          "packageDependencies": [\
+            ["ip", "npm:2.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
