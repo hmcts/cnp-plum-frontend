@@ -60,7 +60,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["axios-debug-log", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.0.0"],\
             ["babel-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:9.1.3"],\
             ["body-parser", "npm:1.20.2"],\
-            ["chai", "npm:4.3.10"],\
+            ["chai", "npm:4.4.1"],\
             ["chai-as-promised", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:7.1.1"],\
             ["chokidar", "npm:3.5.3"],\
             ["codeceptjs", "npm:3.4.1"],\
@@ -6850,10 +6850,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["chai", [\
-        ["npm:4.3.10", {\
-          "packageLocation": "./.yarn/cache/chai-npm-4.3.10-96f52a35f0-536668c60a.zip/node_modules/chai/",\
+        ["npm:4.4.1", {\
+          "packageLocation": "./.yarn/cache/chai-npm-4.4.1-ffd006b4b1-9ab84f36eb.zip/node_modules/chai/",\
           "packageDependencies": [\
-            ["chai", "npm:4.3.10"],\
+            ["chai", "npm:4.4.1"],\
             ["assertion-error", "npm:1.1.0"],\
             ["check-error", "npm:1.0.3"],\
             ["deep-eql", "npm:4.1.3"],\
@@ -6878,7 +6878,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["chai-as-promised", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:7.1.1"],\
             ["@types/chai", null],\
-            ["chai", "npm:4.3.10"],\
+            ["chai", "npm:4.4.1"],\
             ["check-error", "npm:1.0.2"]\
           ],\
           "packagePeers": [\
@@ -6901,7 +6901,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["chai-deep-match", "virtual:f8c62c7a59efb7fb2c9040fd46be5350f0b14814952bcf2adc184860b224ddf0391e8dc4e3b3e6c30ff29ece0cfa44f05cbf83fd8bc7b0f32760ab131134f544#npm:1.2.1"],\
             ["@types/chai", null],\
-            ["chai", "npm:4.3.10"],\
+            ["chai", "npm:4.4.1"],\
             ["deep-keys", "npm:0.5.0"],\
             ["lodash", "npm:4.17.21"],\
             ["lodash-pickdeep", "npm:1.0.2"]\
@@ -7218,7 +7218,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["axios-debug-log", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.0.0"],\
             ["babel-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:9.1.3"],\
             ["body-parser", "npm:1.20.2"],\
-            ["chai", "npm:4.3.10"],\
+            ["chai", "npm:4.4.1"],\
             ["chai-as-promised", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:7.1.1"],\
             ["chokidar", "npm:3.5.3"],\
             ["codeceptjs", "npm:3.4.1"],\
@@ -7301,7 +7301,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["acorn", "npm:7.4.1"],\
             ["arrify", "npm:2.0.1"],\
             ["axios", "npm:1.6.7"],\
-            ["chai", "npm:4.3.10"],\
+            ["chai", "npm:4.4.1"],\
             ["chai-deep-match", "virtual:f8c62c7a59efb7fb2c9040fd46be5350f0b14814952bcf2adc184860b224ddf0391e8dc4e3b3e6c30ff29ece0cfa44f05cbf83fd8bc7b0f32760ab131134f544#npm:1.2.1"],\
             ["chalk", "npm:4.1.2"],\
             ["commander", "npm:2.20.3"],\
@@ -15065,7 +15065,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["sinon-chai", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.7.0"],\
             ["@types/chai", null],\
             ["@types/sinon", null],\
-            ["chai", "npm:4.3.10"],\
+            ["chai", "npm:4.4.1"],\
             ["sinon", "npm:16.1.3"]\
           ],\
           "packagePeers": [\
