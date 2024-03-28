@@ -90,7 +90,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lint-staged", "npm:15.2.2"],\
             ["lodash", "npm:4.17.21"],\
             ["mini-css-extract-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:2.7.6"],\
-            ["nock", "npm:13.4.0"],\
+            ["nock", "npm:13.5.4"],\
             ["nodemon", "npm:3.0.2"],\
             ["nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.2.4"],\
             ["pa11y", "npm:6.2.3"],\
@@ -7289,7 +7289,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lint-staged", "npm:15.2.2"],\
             ["lodash", "npm:4.17.21"],\
             ["mini-css-extract-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:2.7.6"],\
-            ["nock", "npm:13.4.0"],\
+            ["nock", "npm:13.5.4"],\
             ["nodemon", "npm:3.0.2"],\
             ["nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.2.4"],\
             ["pa11y", "npm:6.2.3"],\
@@ -13111,10 +13111,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["nock", [\
-        ["npm:13.4.0", {\
-          "packageLocation": "./.yarn/cache/nock-npm-13.4.0-200f928100-30c3751854.zip/node_modules/nock/",\
+        ["npm:13.5.4", {\
+          "packageLocation": "./.yarn/cache/nock-npm-13.5.4-2c4f77b249-d31f924e34.zip/node_modules/nock/",\
           "packageDependencies": [\
-            ["nock", "npm:13.4.0"],\
+            ["nock", "npm:13.5.4"],\
             ["debug", "virtual:8b235322a8a24e48c015315ac31d9a45375a931d446b3d9b05b3960f64165451979d09fb0441934c12e21122cff6f3cbc821971e2170239ee8406b043c8fdde4#npm:4.3.4"],\
             ["json-stringify-safe", "npm:5.0.1"],\
             ["propagate", "npm:2.0.1"]\
