@@ -62,7 +62,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["body-parser", "npm:1.20.2"],\
             ["chai", "npm:4.4.1"],\
             ["chai-as-promised", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:7.1.1"],\
-            ["chokidar", "npm:3.5.3"],\
+            ["chokidar", "npm:3.6.0"],\
             ["codeceptjs", "npm:3.4.1"],\
             ["config", "npm:3.3.11"],\
             ["cookie-parser", "npm:1.4.6"],\
@@ -7062,6 +7062,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["readdirp", "npm:3.6.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:3.6.0", {\
+          "packageLocation": "./.yarn/cache/chokidar-npm-3.6.0-3c413a828f-d2f29f4997.zip/node_modules/chokidar/",\
+          "packageDependencies": [\
+            ["chokidar", "npm:3.6.0"],\
+            ["anymatch", "npm:3.1.3"],\
+            ["braces", "npm:3.0.2"],\
+            ["fsevents", "patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"],\
+            ["glob-parent", "npm:5.1.2"],\
+            ["is-binary-path", "npm:2.1.0"],\
+            ["is-glob", "npm:4.0.3"],\
+            ["normalize-path", "npm:3.0.0"],\
+            ["readdirp", "npm:3.6.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["chownr", [\
@@ -7258,7 +7273,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["body-parser", "npm:1.20.2"],\
             ["chai", "npm:4.4.1"],\
             ["chai-as-promised", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:7.1.1"],\
-            ["chokidar", "npm:3.5.3"],\
+            ["chokidar", "npm:3.6.0"],\
             ["codeceptjs", "npm:3.4.1"],\
             ["config", "npm:3.3.11"],\
             ["cookie-parser", "npm:1.4.6"],\
@@ -13196,7 +13211,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/unplugged/nodemon-npm-3.0.2-cdcc6f3da7/node_modules/nodemon/",\
           "packageDependencies": [\
             ["nodemon", "npm:3.0.2"],\
-            ["chokidar", "npm:3.5.3"],\
+            ["chokidar", "npm:3.6.0"],\
             ["debug", "virtual:cdcc6f3da7f89f4f693b033af4f99b7f7eb2f3f501c7d5f495b2e59334593feeb573fc7147bf9c632d1fc88514fbaf4f1d948c77e8f525aefbead37e648d68e4#npm:4.3.4"],\
             ["ignore-by-default", "npm:1.0.1"],\
             ["minimatch", "npm:3.1.2"],\
@@ -13306,7 +13321,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/chokidar", null],\
             ["a-sync-waterfall", "npm:1.0.1"],\
             ["asap", "npm:2.0.6"],\
-            ["chokidar", "npm:3.5.3"],\
+            ["chokidar", "npm:3.6.0"],\
             ["commander", "npm:5.1.0"]\
           ],\
           "packagePeers": [\
@@ -14831,7 +14846,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/sass-npm-1.72.0-fb38bb530c-f420079c7d.zip/node_modules/sass/",\
           "packageDependencies": [\
             ["sass", "npm:1.72.0"],\
-            ["chokidar", "npm:3.5.3"],\
+            ["chokidar", "npm:3.6.0"],\
             ["immutable", "npm:4.3.0"],\
             ["source-map-js", "npm:1.0.2"]\
           ],\
