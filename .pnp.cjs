@@ -6659,7 +6659,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["http-errors", "npm:2.0.0"],\
             ["iconv-lite", "npm:0.4.24"],\
             ["on-finished", "npm:2.4.1"],\
-            ["qs", "npm:6.12.0"],\
+            ["qs", "npm:6.12.1"],\
             ["raw-body", "npm:2.5.2"],\
             ["type-is", "npm:1.6.18"],\
             ["unpipe", "npm:1.0.0"]\
@@ -9244,7 +9244,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["parseurl", "npm:1.3.3"],\
             ["path-to-regexp", "npm:0.1.7"],\
             ["proxy-addr", "npm:2.0.7"],\
-            ["qs", "npm:6.12.0"],\
+            ["qs", "npm:6.12.1"],\
             ["range-parser", "npm:1.2.1"],\
             ["safe-buffer", "npm:5.2.1"],\
             ["send", "npm:0.18.0"],\
@@ -9712,7 +9712,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["dezalgo", "npm:1.0.4"],\
             ["hexoid", "npm:1.0.0"],\
             ["once", "npm:1.4.0"],\
-            ["qs", "npm:6.12.0"]\
+            ["qs", "npm:6.12.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -14232,10 +14232,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["qs", [\
-        ["npm:6.12.0", {\
-          "packageLocation": "./.yarn/cache/qs-npm-6.12.0-c6571f061c-ba007fb248.zip/node_modules/qs/",\
+        ["npm:6.12.1", {\
+          "packageLocation": "./.yarn/cache/qs-npm-6.12.1-8172168073-aa761d99e6.zip/node_modules/qs/",\
           "packageDependencies": [\
-            ["qs", "npm:6.12.0"],\
+            ["qs", "npm:6.12.1"],\
             ["side-channel", "npm:1.0.6"]\
           ],\
           "linkType": "HARD"\
@@ -14478,7 +14478,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mime-types", "npm:2.1.35"],\
             ["oauth-sign", "npm:0.9.0"],\
             ["performance-now", "npm:2.1.0"],\
-            ["qs", "npm:6.12.0"],\
+            ["qs", "npm:6.12.1"],\
             ["safe-buffer", "npm:5.2.1"],\
             ["tough-cookie", "npm:2.5.0"],\
             ["tunnel-agent", "npm:0.6.0"],\
@@ -15717,7 +15717,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["formidable", "npm:2.1.2"],\
             ["methods", "npm:1.1.2"],\
             ["mime", "npm:2.6.0"],\
-            ["qs", "npm:6.12.0"],\
+            ["qs", "npm:6.12.1"],\
             ["semver", "npm:7.6.0"]\
           ],\
           "linkType": "HARD"\
