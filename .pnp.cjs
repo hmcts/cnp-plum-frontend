@@ -419,7 +419,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@opentelemetry/api", "npm:1.8.0"],\
             ["@opentelemetry/api-logs", "npm:0.50.0"],\
             ["@opentelemetry/core", "virtual:7541fd850276f58b097f20dc56cc7edacc4dbdb3a7f4e85280cf3bb6d740ae5f411a5a36d99b76fac2cc3c325c6cef8d0e562767fbda0cd95ccedd415d4b9b2a#npm:1.23.0"],\
-            ["@opentelemetry/instrumentation", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.50.0"],\
+            ["@opentelemetry/instrumentation", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.51.0"],\
             ["@opentelemetry/instrumentation-bunyan", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.37.0"],\
             ["@opentelemetry/instrumentation-http", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.50.0"],\
             ["@opentelemetry/instrumentation-mongodb", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.42.0"],\
@@ -501,7 +501,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@azure/logger", "npm:1.0.4"],\
             ["@opentelemetry/api", "npm:1.4.1"],\
             ["@opentelemetry/core", "virtual:1dd4d8bebf496333420f554162cb425b1049ae4ffca452c6e271586e19d5735fa9d18d8cc868fbc93d522aac322641bf9b128ea8b19b63c447aa9c92921151d3#npm:1.15.2"],\
-            ["@opentelemetry/instrumentation", "virtual:1dd4d8bebf496333420f554162cb425b1049ae4ffca452c6e271586e19d5735fa9d18d8cc868fbc93d522aac322641bf9b128ea8b19b63c447aa9c92921151d3#npm:0.50.0"],\
+            ["@opentelemetry/instrumentation", "virtual:1dd4d8bebf496333420f554162cb425b1049ae4ffca452c6e271586e19d5735fa9d18d8cc868fbc93d522aac322641bf9b128ea8b19b63c447aa9c92921151d3#npm:0.51.0"],\
             ["tslib", "npm:2.5.3"]\
           ],\
           "linkType": "HARD"\
@@ -4366,6 +4366,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@opentelemetry/api", "npm:1.8.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:0.51.0", {\
+          "packageLocation": "./.yarn/cache/@opentelemetry-api-logs-npm-0.51.0-d32536d04c-3cf11263ee.zip/node_modules/@opentelemetry/api-logs/",\
+          "packageDependencies": [\
+            ["@opentelemetry/api-logs", "npm:0.51.0"],\
+            ["@opentelemetry/api", "npm:1.8.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@opentelemetry/context-async-hooks", [\
@@ -4598,19 +4606,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@opentelemetry/instrumentation", [\
-        ["npm:0.50.0", {\
-          "packageLocation": "./.yarn/cache/@opentelemetry-instrumentation-npm-0.50.0-5e2c947335-371398639c.zip/node_modules/@opentelemetry/instrumentation/",\
+        ["npm:0.51.0", {\
+          "packageLocation": "./.yarn/cache/@opentelemetry-instrumentation-npm-0.51.0-d4f8602118-26bb3499c4.zip/node_modules/@opentelemetry/instrumentation/",\
           "packageDependencies": [\
-            ["@opentelemetry/instrumentation", "npm:0.50.0"]\
+            ["@opentelemetry/instrumentation", "npm:0.51.0"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:1dd4d8bebf496333420f554162cb425b1049ae4ffca452c6e271586e19d5735fa9d18d8cc868fbc93d522aac322641bf9b128ea8b19b63c447aa9c92921151d3#npm:0.50.0", {\
-          "packageLocation": "./.yarn/__virtual__/@opentelemetry-instrumentation-virtual-bd7b0a890c/0/cache/@opentelemetry-instrumentation-npm-0.50.0-5e2c947335-371398639c.zip/node_modules/@opentelemetry/instrumentation/",\
+        ["virtual:1dd4d8bebf496333420f554162cb425b1049ae4ffca452c6e271586e19d5735fa9d18d8cc868fbc93d522aac322641bf9b128ea8b19b63c447aa9c92921151d3#npm:0.51.0", {\
+          "packageLocation": "./.yarn/__virtual__/@opentelemetry-instrumentation-virtual-e911958537/0/cache/@opentelemetry-instrumentation-npm-0.51.0-d4f8602118-26bb3499c4.zip/node_modules/@opentelemetry/instrumentation/",\
           "packageDependencies": [\
-            ["@opentelemetry/instrumentation", "virtual:1dd4d8bebf496333420f554162cb425b1049ae4ffca452c6e271586e19d5735fa9d18d8cc868fbc93d522aac322641bf9b128ea8b19b63c447aa9c92921151d3#npm:0.50.0"],\
+            ["@opentelemetry/instrumentation", "virtual:1dd4d8bebf496333420f554162cb425b1049ae4ffca452c6e271586e19d5735fa9d18d8cc868fbc93d522aac322641bf9b128ea8b19b63c447aa9c92921151d3#npm:0.51.0"],\
             ["@opentelemetry/api", "npm:1.4.1"],\
-            ["@opentelemetry/api-logs", "npm:0.50.0"],\
+            ["@opentelemetry/api-logs", "npm:0.51.0"],\
             ["@types/opentelemetry__api", null],\
             ["@types/shimmer", "npm:1.0.2"],\
             ["import-in-the-middle", "npm:1.7.1"],\
@@ -4624,12 +4632,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.50.0", {\
-          "packageLocation": "./.yarn/__virtual__/@opentelemetry-instrumentation-virtual-e8cd0f3906/0/cache/@opentelemetry-instrumentation-npm-0.50.0-5e2c947335-371398639c.zip/node_modules/@opentelemetry/instrumentation/",\
+        ["virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.51.0", {\
+          "packageLocation": "./.yarn/__virtual__/@opentelemetry-instrumentation-virtual-559636826b/0/cache/@opentelemetry-instrumentation-npm-0.51.0-d4f8602118-26bb3499c4.zip/node_modules/@opentelemetry/instrumentation/",\
           "packageDependencies": [\
-            ["@opentelemetry/instrumentation", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.50.0"],\
+            ["@opentelemetry/instrumentation", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.51.0"],\
             ["@opentelemetry/api", "npm:1.8.0"],\
-            ["@opentelemetry/api-logs", "npm:0.50.0"],\
+            ["@opentelemetry/api-logs", "npm:0.51.0"],\
             ["@types/opentelemetry__api", null],\
             ["@types/shimmer", "npm:1.0.2"],\
             ["import-in-the-middle", "npm:1.7.1"],\
@@ -4658,7 +4666,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@opentelemetry/instrumentation-bunyan", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.37.0"],\
             ["@opentelemetry/api", "npm:1.8.0"],\
             ["@opentelemetry/api-logs", "npm:0.50.0"],\
-            ["@opentelemetry/instrumentation", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.50.0"],\
+            ["@opentelemetry/instrumentation", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.51.0"],\
             ["@types/bunyan", "npm:1.8.9"],\
             ["@types/opentelemetry__api", null]\
           ],\
@@ -4683,7 +4691,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@opentelemetry/instrumentation-http", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.50.0"],\
             ["@opentelemetry/api", "npm:1.8.0"],\
             ["@opentelemetry/core", "virtual:7541fd850276f58b097f20dc56cc7edacc4dbdb3a7f4e85280cf3bb6d740ae5f411a5a36d99b76fac2cc3c325c6cef8d0e562767fbda0cd95ccedd415d4b9b2a#npm:1.23.0"],\
-            ["@opentelemetry/instrumentation", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.50.0"],\
+            ["@opentelemetry/instrumentation", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.51.0"],\
             ["@opentelemetry/semantic-conventions", "npm:1.23.0"],\
             ["@types/opentelemetry__api", null],\
             ["semver", "npm:7.6.0"]\
@@ -4708,7 +4716,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@opentelemetry/instrumentation-mongodb", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.42.0"],\
             ["@opentelemetry/api", "npm:1.8.0"],\
-            ["@opentelemetry/instrumentation", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.50.0"],\
+            ["@opentelemetry/instrumentation", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.51.0"],\
             ["@opentelemetry/sdk-metrics", "virtual:7541fd850276f58b097f20dc56cc7edacc4dbdb3a7f4e85280cf3bb6d740ae5f411a5a36d99b76fac2cc3c325c6cef8d0e562767fbda0cd95ccedd415d4b9b2a#npm:1.23.0"],\
             ["@opentelemetry/semantic-conventions", "npm:1.23.0"],\
             ["@types/opentelemetry__api", null]\
@@ -4733,7 +4741,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@opentelemetry/instrumentation-mysql", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.37.0"],\
             ["@opentelemetry/api", "npm:1.8.0"],\
-            ["@opentelemetry/instrumentation", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.50.0"],\
+            ["@opentelemetry/instrumentation", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.51.0"],\
             ["@opentelemetry/semantic-conventions", "npm:1.23.0"],\
             ["@types/mysql", "npm:2.15.22"],\
             ["@types/opentelemetry__api", null]\
@@ -4758,7 +4766,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@opentelemetry/instrumentation-pg", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.40.0"],\
             ["@opentelemetry/api", "npm:1.8.0"],\
-            ["@opentelemetry/instrumentation", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.50.0"],\
+            ["@opentelemetry/instrumentation", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.51.0"],\
             ["@opentelemetry/semantic-conventions", "npm:1.23.0"],\
             ["@opentelemetry/sql-common", "virtual:fff0f0374ed1d6b6720b8095552ebdafbbedb828c56c718d3b7eb237c85c5b43663406437cc21d5d3c059fc7e5955efc0381ea17e77404d08092e31ba0c3784f#npm:0.40.0"],\
             ["@types/opentelemetry__api", null],\
@@ -4785,7 +4793,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@opentelemetry/instrumentation-redis", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.38.0"],\
             ["@opentelemetry/api", "npm:1.8.0"],\
-            ["@opentelemetry/instrumentation", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.50.0"],\
+            ["@opentelemetry/instrumentation", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.51.0"],\
             ["@opentelemetry/redis-common", "npm:0.36.1"],\
             ["@opentelemetry/semantic-conventions", "npm:1.23.0"],\
             ["@types/opentelemetry__api", null]\
@@ -4810,7 +4818,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@opentelemetry/instrumentation-redis-4", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.38.0"],\
             ["@opentelemetry/api", "npm:1.8.0"],\
-            ["@opentelemetry/instrumentation", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.50.0"],\
+            ["@opentelemetry/instrumentation", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.51.0"],\
             ["@opentelemetry/redis-common", "npm:0.36.1"],\
             ["@opentelemetry/semantic-conventions", "npm:1.23.0"],\
             ["@types/opentelemetry__api", null]\
@@ -5099,7 +5107,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@opentelemetry/exporter-trace-otlp-http", "virtual:c57b134c4815274ae51c6d39db8115434756a03f596f98252f078447a47b3c9d1786ea5a09f524a12ec07df69257c5979895791b22a3963e8ec046f324f86aba#npm:0.50.0"],\
             ["@opentelemetry/exporter-trace-otlp-proto", "virtual:c57b134c4815274ae51c6d39db8115434756a03f596f98252f078447a47b3c9d1786ea5a09f524a12ec07df69257c5979895791b22a3963e8ec046f324f86aba#npm:0.50.0"],\
             ["@opentelemetry/exporter-zipkin", "virtual:c57b134c4815274ae51c6d39db8115434756a03f596f98252f078447a47b3c9d1786ea5a09f524a12ec07df69257c5979895791b22a3963e8ec046f324f86aba#npm:1.23.0"],\
-            ["@opentelemetry/instrumentation", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.50.0"],\
+            ["@opentelemetry/instrumentation", "virtual:750161c10bd8de901d17543b2a75cf6aa33a1921657f66fe419220b6ab1ecd0c9275398dd8229facd307e79efd0f5c7ce3d4dea9c1ee78b178da7db28efd17af#npm:0.51.0"],\
             ["@opentelemetry/resources", "virtual:7541fd850276f58b097f20dc56cc7edacc4dbdb3a7f4e85280cf3bb6d740ae5f411a5a36d99b76fac2cc3c325c6cef8d0e562767fbda0cd95ccedd415d4b9b2a#npm:1.23.0"],\
             ["@opentelemetry/sdk-logs", "virtual:7541fd850276f58b097f20dc56cc7edacc4dbdb3a7f4e85280cf3bb6d740ae5f411a5a36d99b76fac2cc3c325c6cef8d0e562767fbda0cd95ccedd415d4b9b2a#npm:0.50.0"],\
             ["@opentelemetry/sdk-metrics", "virtual:7541fd850276f58b097f20dc56cc7edacc4dbdb3a7f4e85280cf3bb6d740ae5f411a5a36d99b76fac2cc3c325c6cef8d0e562767fbda0cd95ccedd415d4b9b2a#npm:1.23.0"],\
