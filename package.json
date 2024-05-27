@@ -85,7 +85,7 @@
     "copy-webpack-plugin": "9.1.0",
     "css-loader": "^7.0.0",
     "debug": "^4.3.4",
-    "eslint": "^8.55.0",
+    "eslint": "^9.0.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-import-resolver-node": "^0.3.9",
     "eslint-plugin-import": "^2.29.0",
