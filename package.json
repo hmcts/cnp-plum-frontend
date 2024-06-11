@@ -122,7 +122,9 @@
     "json5": "^2.0.0",
     "http-cache-semantics": "^4.1.1",
     "cookiejar": "^2.1.4",
-    "ip": "^2.0.1"
+    "ip": "^2.0.1",
+    "tar": "6.2.1",
+    "@grpc/grpc-js": "1.10.9"
   },
   "lint-staged": {
     "*.{js,ts}": "eslint --cache --fix",
