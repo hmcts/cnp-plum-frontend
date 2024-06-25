@@ -87,7 +87,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-html-reporter", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.10.2"],\
             ["jquery", "npm:3.7.1"],\
             ["js-yaml", "npm:4.1.0"],\
-            ["lint-staged", "npm:15.2.5"],\
+            ["lint-staged", "npm:15.2.7"],\
             ["lodash", "npm:4.17.21"],\
             ["mini-css-extract-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:2.9.0"],\
             ["nock", "npm:13.5.4"],\
@@ -8299,7 +8299,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-html-reporter", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.10.2"],\
             ["jquery", "npm:3.7.1"],\
             ["js-yaml", "npm:4.1.0"],\
-            ["lint-staged", "npm:15.2.5"],\
+            ["lint-staged", "npm:15.2.7"],\
             ["lodash", "npm:4.17.21"],\
             ["mini-css-extract-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:2.9.0"],\
             ["nock", "npm:13.5.4"],\
@@ -13234,10 +13234,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["lint-staged", [\
-        ["npm:15.2.5", {\
-          "packageLocation": "./.yarn/cache/lint-staged-npm-15.2.5-078d73644c-3025868d96.zip/node_modules/lint-staged/",\
+        ["npm:15.2.7", {\
+          "packageLocation": "./.yarn/cache/lint-staged-npm-15.2.7-2a90203033-0f21d1b44c.zip/node_modules/lint-staged/",\
           "packageDependencies": [\
-            ["lint-staged", "npm:15.2.5"],\
+            ["lint-staged", "npm:15.2.7"],\
             ["chalk", "npm:5.3.0"],\
             ["commander", "npm:12.1.0"],\
             ["debug", "virtual:b26422bd59fa17e008d6bc0175738ae8cd421c0bdf97531bc9d7ba8df7eb875cf3586702fdab2ad784dd2bd788b2ef7d413cd512768add7bfe10a3e1b04e9659#npm:4.3.5"],\
