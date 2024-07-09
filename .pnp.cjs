@@ -78,7 +78,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["express", "npm:4.19.2"],\
             ["express-nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.1.2"],\
             ["follow-redirects", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.15.6"],\
-            ["glob", "npm:10.4.3"],\
+            ["glob", "npm:10.4.4"],\
             ["govuk-frontend", "npm:4.8.0"],\
             ["helmet", "npm:7.1.0"],\
             ["html-webpack-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:5.6.0"],\
@@ -7969,7 +7969,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cacache", "npm:17.1.3"],\
             ["@npmcli/fs", "npm:3.1.0"],\
             ["fs-minipass", "npm:3.0.2"],\
-            ["glob", "npm:10.4.3"],\
+            ["glob", "npm:10.4.4"],\
             ["lru-cache", "npm:7.18.3"],\
             ["minipass", "npm:5.0.0"],\
             ["minipass-collect", "npm:1.0.2"],\
@@ -8459,7 +8459,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["express", "npm:4.19.2"],\
             ["express-nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.1.2"],\
             ["follow-redirects", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.15.6"],\
-            ["glob", "npm:10.4.3"],\
+            ["glob", "npm:10.4.4"],\
             ["govuk-frontend", "npm:4.8.0"],\
             ["helmet", "npm:7.1.0"],\
             ["html-webpack-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:5.6.0"],\
@@ -11139,10 +11139,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["glob", [\
-        ["npm:10.4.3", {\
-          "packageLocation": "./.yarn/cache/glob-npm-10.4.3-bf249cfb31-a1daeb570b.zip/node_modules/glob/",\
+        ["npm:10.4.4", {\
+          "packageLocation": "./.yarn/cache/glob-npm-10.4.4-7dabc41df1-49d3b15d73.zip/node_modules/glob/",\
           "packageDependencies": [\
-            ["glob", "npm:10.4.3"],\
+            ["glob", "npm:10.4.4"],\
             ["foreground-child", "npm:3.1.1"],\
             ["jackspeak", "npm:3.1.2"],\
             ["minimatch", "npm:9.0.4"],\
@@ -16117,7 +16117,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/rimraf-npm-5.0.7-5c7aa1db5b-884852abf8.zip/node_modules/rimraf/",\
           "packageDependencies": [\
             ["rimraf", "npm:5.0.7"],\
-            ["glob", "npm:10.4.3"]\
+            ["glob", "npm:10.4.4"]\
           ],\
           "linkType": "HARD"\
         }]\
