@@ -47,7 +47,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/glob", "npm:8.1.0"],\
             ["@types/helmet", "npm:4.0.0"],\
             ["@types/jest", "npm:29.5.12"],\
-            ["@types/lodash", "npm:4.17.6"],\
+            ["@types/lodash", "npm:4.17.7"],\
             ["@types/node", "npm:20.14.10"],\
             ["@types/nunjucks", "npm:3.2.6"],\
             ["@types/require-directory", "npm:2.1.6"],\
@@ -6078,10 +6078,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/lodash", [\
-        ["npm:4.17.6", {\
-          "packageLocation": "./.yarn/cache/@types-lodash-npm-4.17.6-a11eead63f-f748c672f4.zip/node_modules/@types/lodash/",\
+        ["npm:4.17.7", {\
+          "packageLocation": "./.yarn/cache/@types-lodash-npm-4.17.7-2077805efb-09e58a119c.zip/node_modules/@types/lodash/",\
           "packageDependencies": [\
-            ["@types/lodash", "npm:4.17.6"]\
+            ["@types/lodash", "npm:4.17.7"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -8587,7 +8587,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/glob", "npm:8.1.0"],\
             ["@types/helmet", "npm:4.0.0"],\
             ["@types/jest", "npm:29.5.12"],\
-            ["@types/lodash", "npm:4.17.6"],\
+            ["@types/lodash", "npm:4.17.7"],\
             ["@types/node", "npm:20.14.10"],\
             ["@types/nunjucks", "npm:3.2.6"],\
             ["@types/require-directory", "npm:2.1.6"],\
