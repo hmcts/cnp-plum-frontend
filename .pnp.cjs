@@ -94,7 +94,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["nodemon", "npm:3.1.4"],\
             ["nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.2.4"],\
             ["pa11y", "npm:6.2.3"],\
-            ["playwright", "npm:1.45.2"],\
+            ["playwright", "npm:1.37.1"],\
             ["prettier", "npm:2.8.8"],\
             ["request", "npm:2.88.2"],\
             ["require-directory", "npm:2.1.1"],\
@@ -8634,7 +8634,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["nodemon", "npm:3.1.4"],\
             ["nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.2.4"],\
             ["pa11y", "npm:6.2.3"],\
-            ["playwright", "npm:1.45.2"],\
+            ["playwright", "npm:1.37.1"],\
             ["prettier", "npm:2.8.8"],\
             ["request", "npm:2.88.2"],\
             ["require-directory", "npm:2.1.1"],\
@@ -15371,21 +15371,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["playwright", [\
-        ["npm:1.45.2", {\
-          "packageLocation": "./.yarn/cache/playwright-npm-1.45.2-1f25a985a6-ff37a27f85.zip/node_modules/playwright/",\
+        ["npm:1.37.1", {\
+          "packageLocation": "./.yarn/unplugged/playwright-npm-1.37.1-5e4bf191e0/node_modules/playwright/",\
           "packageDependencies": [\
-            ["playwright", "npm:1.45.2"],\
-            ["fsevents", "patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"],\
-            ["playwright-core", "npm:1.45.2"]\
+            ["playwright", "npm:1.37.1"],\
+            ["playwright-core", "npm:1.37.1"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["playwright-core", [\
-        ["npm:1.45.2", {\
-          "packageLocation": "./.yarn/unplugged/playwright-core-npm-1.45.2-cb8f504299/node_modules/playwright-core/",\
+        ["npm:1.37.1", {\
+          "packageLocation": "./.yarn/unplugged/playwright-core-npm-1.37.1-2c4000290a/node_modules/playwright-core/",\
           "packageDependencies": [\
-            ["playwright-core", "npm:1.45.2"]\
+            ["playwright-core", "npm:1.37.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -20877,8 +20876,7 @@ class ZipFS extends BasePortableFakeFS {
           stream$1.destroy();
         },
         bytesRead: 0,
-        path: p,
-        pending: false
+        path: p
       }
     );
     const immediate = setImmediate(async () => {
@@ -20919,12 +20917,11 @@ class ZipFS extends BasePortableFakeFS {
         }
       }),
       {
-        close() {
-          stream$1.destroy();
-        },
         bytesWritten: 0,
         path: p,
-        pending: false
+        close() {
+          stream$1.destroy();
+        }
       }
     );
     stream$1.on(`data`, (chunk) => {
@@ -21864,10 +21861,18 @@ class ProxiedFS extends FakeFS {
     return this.baseFs.symlinkSync(mappedTarget, mappedP, type);
   }
   async readFilePromise(p, encoding) {
-    return this.baseFs.readFilePromise(this.fsMapToBase(p), encoding);
+    if (encoding === `utf8`) {
+      return this.baseFs.readFilePromise(this.fsMapToBase(p), encoding);
+    } else {
+      return this.baseFs.readFilePromise(this.fsMapToBase(p), encoding);
+    }
   }
   readFileSync(p, encoding) {
-    return this.baseFs.readFileSync(this.fsMapToBase(p), encoding);
+    if (encoding === `utf8`) {
+      return this.baseFs.readFileSync(this.fsMapToBase(p), encoding);
+    } else {
+      return this.baseFs.readFileSync(this.fsMapToBase(p), encoding);
+    }
   }
   async readdirPromise(p, opts) {
     return this.baseFs.readdirPromise(this.mapToBase(p), opts);
@@ -22593,14 +22598,24 @@ class ZipOpenFS extends BasePortableFakeFS {
   }
   async readFilePromise(p, encoding) {
     return this.makeCallPromise(p, async () => {
-      return await this.baseFs.readFilePromise(p, encoding);
+      switch (encoding) {
+        case `utf8`:
+          return await this.baseFs.readFilePromise(p, encoding);
+        default:
+          return await this.baseFs.readFilePromise(p, encoding);
+      }
     }, async (zipFs, { subPath }) => {
       return await zipFs.readFilePromise(subPath, encoding);
     });
   }
   readFileSync(p, encoding) {
     return this.makeCallSync(p, () => {
-      return this.baseFs.readFileSync(p, encoding);
+      switch (encoding) {
+        case `utf8`:
+          return this.baseFs.readFileSync(p, encoding);
+        default:
+          return this.baseFs.readFileSync(p, encoding);
+      }
     }, (zipFs, { subPath }) => {
       return zipFs.readFileSync(subPath, encoding);
     });
@@ -23292,28 +23307,38 @@ function patchFs(patchedFs, fakeFs) {
     patchedFs.realpathSync.native = patchedFs.realpathSync;
   }
   {
-    const patchedFsPromises = patchedFs.promises;
-    for (const fnName of ASYNC_IMPLEMENTATIONS) {
-      const origName = fnName.replace(/Promise$/, ``);
-      if (typeof patchedFsPromises[origName] === `undefined`)
-        continue;
-      const fakeImpl = fakeFs[fnName];
-      if (typeof fakeImpl === `undefined`)
-        continue;
-      if (fnName === `open`)
-        continue;
-      setupFn(patchedFsPromises, origName, (pathLike, ...args) => {
-        if (pathLike instanceof FileHandle) {
-          return pathLike[origName].apply(pathLike, args);
-        } else {
-          return fakeImpl.call(fakeFs, pathLike, ...args);
-        }
+    const origEmitWarning = process.emitWarning;
+    process.emitWarning = () => {
+    };
+    let patchedFsPromises;
+    try {
+      patchedFsPromises = patchedFs.promises;
+    } finally {
+      process.emitWarning = origEmitWarning;
+    }
+    if (typeof patchedFsPromises !== `undefined`) {
+      for (const fnName of ASYNC_IMPLEMENTATIONS) {
+        const origName = fnName.replace(/Promise$/, ``);
+        if (typeof patchedFsPromises[origName] === `undefined`)
+          continue;
+        const fakeImpl = fakeFs[fnName];
+        if (typeof fakeImpl === `undefined`)
+          continue;
+        if (fnName === `open`)
+          continue;
+        setupFn(patchedFsPromises, origName, (pathLike, ...args) => {
+          if (pathLike instanceof FileHandle) {
+            return pathLike[origName].apply(pathLike, args);
+          } else {
+            return fakeImpl.call(fakeFs, pathLike, ...args);
+          }
+        });
+      }
+      setupFn(patchedFsPromises, `open`, async (...args) => {
+        const fd = await fakeFs.openPromise(...args);
+        return new FileHandle(fd, fakeFs);
       });
     }
-    setupFn(patchedFsPromises, `open`, async (...args) => {
-      const fd = await fakeFs.openPromise(...args);
-      return new FileHandle(fd, fakeFs);
-    });
   }
   {
     patchedFs.read[nodeUtils.promisify.custom] = async (fd, buffer, ...args) => {
