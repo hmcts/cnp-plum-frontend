@@ -94,7 +94,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["nodemon", "npm:3.1.4"],\
             ["nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.2.4"],\
             ["pa11y", "npm:6.2.3"],\
-            ["playwright", "npm:1.37.1"],\
             ["prettier", "npm:2.8.8"],\
             ["request", "npm:2.88.2"],\
             ["require-directory", "npm:2.1.1"],\
@@ -8642,7 +8641,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["nodemon", "npm:3.1.4"],\
             ["nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.2.4"],\
             ["pa11y", "npm:6.2.3"],\
-            ["playwright", "npm:1.37.1"],\
             ["prettier", "npm:2.8.8"],\
             ["request", "npm:2.88.2"],\
             ["require-directory", "npm:2.1.1"],\
@@ -15374,25 +15372,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["pkg-dir", "npm:7.0.0"],\
             ["find-up", "npm:6.3.0"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["playwright", [\
-        ["npm:1.37.1", {\
-          "packageLocation": "./.yarn/unplugged/playwright-npm-1.37.1-5e4bf191e0/node_modules/playwright/",\
-          "packageDependencies": [\
-            ["playwright", "npm:1.37.1"],\
-            ["playwright-core", "npm:1.37.1"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["playwright-core", [\
-        ["npm:1.37.1", {\
-          "packageLocation": "./.yarn/unplugged/playwright-core-npm-1.37.1-2c4000290a/node_modules/playwright-core/",\
-          "packageDependencies": [\
-            ["playwright-core", "npm:1.37.1"]\
           ],\
           "linkType": "HARD"\
         }]\
