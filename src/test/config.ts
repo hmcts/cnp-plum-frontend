@@ -17,13 +17,13 @@ export const config = {
 };
 
 config.helpers = {
-  Playwright: {
-    url: config.TEST_URL,
-    show: !config.TestHeadlessBrowser,
-    browser: 'chromium',
-    waitForTimeout: config.WaitForTimeout,
-    waitForAction: 1000,
-    waitForNavigation: 'networkidle0',
-    ignoreHTTPSErrors: true,
-  },
+  // Playwright: {
+  //   url: config.TEST_URL,
+  //   show: !config.TestHeadlessBrowser,
+  //   browser: 'chromium',
+  //   waitForTimeout: config.WaitForTimeout,
+  //   waitForAction: 1000,
+  //   waitForNavigation: 'networkidle0',
+  //   ignoreHTTPSErrors: true,
+  // },
 };
