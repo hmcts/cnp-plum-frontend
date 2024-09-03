@@ -15069,8 +15069,8 @@ __metadata:
   linkType: hard
 
 "webpack-dev-middleware@npm:^7.0.0":
-  version: 7.4.1
-  resolution: "webpack-dev-middleware@npm:7.4.1"
+  version: 7.4.2
+  resolution: "webpack-dev-middleware@npm:7.4.2"
   dependencies:
     colorette: ^2.0.10
     memfs: ^4.6.0
@@ -15083,7 +15083,7 @@ __metadata:
   peerDependenciesMeta:
     webpack:
       optional: true
-  checksum: 786a2b47e08e7081c35cfdb80a0999af69dcc53bc8a2d9a849f97cf83a6b115bdd58d51ee5a4cc57f776b71ec4253d9351d054f974684d739ee8ac72382886c7
+  checksum: 39314ec5e4468d177dd61fb51af87ec097e920fe0f0dc101e1bf71796740a7e49fd4f7f939cf91e130232714d6d2fffd948d72dc65dec10f87ac30339929f018
   languageName: node
   linkType: hard
 
