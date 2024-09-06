@@ -77,7 +77,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-jest", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:28.8.2"],\
             ["express", "npm:4.19.2"],\
             ["express-nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.1.2"],\
-            ["follow-redirects", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.15.6"],\
+            ["follow-redirects", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.15.9"],\
             ["glob", "npm:11.0.0"],\
             ["govuk-frontend", "npm:4.8.0"],\
             ["helmet", "npm:7.1.0"],\
@@ -7639,7 +7639,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/axios-npm-1.7.7-cfbedc233d-882d4fe0ec.zip/node_modules/axios/",\
           "packageDependencies": [\
             ["axios", "npm:1.7.7"],\
-            ["follow-redirects", "virtual:cfbedc233d4c16068d815547ad303dec1092fdb3b8bb4ec9ab9c56bdd55b4e87650c7a525a88805756f4d2819c03abfd96a9983cfa927fedf995d1b8b879db38#npm:1.15.6"],\
+            ["follow-redirects", "virtual:cfbedc233d4c16068d815547ad303dec1092fdb3b8bb4ec9ab9c56bdd55b4e87650c7a525a88805756f4d2819c03abfd96a9983cfa927fedf995d1b8b879db38#npm:1.15.9"],\
             ["form-data", "npm:4.0.0"],\
             ["proxy-from-env", "npm:1.1.0"]\
           ],\
@@ -8686,7 +8686,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-jest", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:28.8.2"],\
             ["express", "npm:4.19.2"],\
             ["express-nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.1.2"],\
-            ["follow-redirects", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.15.6"],\
+            ["follow-redirects", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.15.9"],\
             ["glob", "npm:11.0.0"],\
             ["govuk-frontend", "npm:4.8.0"],\
             ["helmet", "npm:7.1.0"],\
@@ -11173,17 +11173,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["follow-redirects", [\
-        ["npm:1.15.6", {\
-          "packageLocation": "./.yarn/cache/follow-redirects-npm-1.15.6-50635fe51d-a62c378dfc.zip/node_modules/follow-redirects/",\
+        ["npm:1.15.9", {\
+          "packageLocation": "./.yarn/cache/follow-redirects-npm-1.15.9-539785d34c-859e2bacc7.zip/node_modules/follow-redirects/",\
           "packageDependencies": [\
-            ["follow-redirects", "npm:1.15.6"]\
+            ["follow-redirects", "npm:1.15.9"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.15.6", {\
-          "packageLocation": "./.yarn/__virtual__/follow-redirects-virtual-f139315c19/0/cache/follow-redirects-npm-1.15.6-50635fe51d-a62c378dfc.zip/node_modules/follow-redirects/",\
+        ["virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.15.9", {\
+          "packageLocation": "./.yarn/__virtual__/follow-redirects-virtual-39d2156b20/0/cache/follow-redirects-npm-1.15.9-539785d34c-859e2bacc7.zip/node_modules/follow-redirects/",\
           "packageDependencies": [\
-            ["follow-redirects", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.15.6"],\
+            ["follow-redirects", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.15.9"],\
             ["@types/debug", null],\
             ["debug", "virtual:54915bee9c6121bcb9b034526912936ae8c4cdca123a702d78f163d8a6d7adc7353dc821a23a5078dd1266af97af369b1228dd2b7f3535bfff0ad729e590d069#npm:4.3.6"]\
           ],\
@@ -11193,10 +11193,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["virtual:cfbedc233d4c16068d815547ad303dec1092fdb3b8bb4ec9ab9c56bdd55b4e87650c7a525a88805756f4d2819c03abfd96a9983cfa927fedf995d1b8b879db38#npm:1.15.6", {\
-          "packageLocation": "./.yarn/__virtual__/follow-redirects-virtual-ccbb070eb1/0/cache/follow-redirects-npm-1.15.6-50635fe51d-a62c378dfc.zip/node_modules/follow-redirects/",\
+        ["virtual:cfbedc233d4c16068d815547ad303dec1092fdb3b8bb4ec9ab9c56bdd55b4e87650c7a525a88805756f4d2819c03abfd96a9983cfa927fedf995d1b8b879db38#npm:1.15.9", {\
+          "packageLocation": "./.yarn/__virtual__/follow-redirects-virtual-334ade9a15/0/cache/follow-redirects-npm-1.15.9-539785d34c-859e2bacc7.zip/node_modules/follow-redirects/",\
           "packageDependencies": [\
-            ["follow-redirects", "virtual:cfbedc233d4c16068d815547ad303dec1092fdb3b8bb4ec9ab9c56bdd55b4e87650c7a525a88805756f4d2819c03abfd96a9983cfa927fedf995d1b8b879db38#npm:1.15.6"],\
+            ["follow-redirects", "virtual:cfbedc233d4c16068d815547ad303dec1092fdb3b8bb4ec9ab9c56bdd55b4e87650c7a525a88805756f4d2819c03abfd96a9983cfa927fedf995d1b8b879db38#npm:1.15.9"],\
             ["@types/debug", null],\
             ["debug", null]\
           ],\
