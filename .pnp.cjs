@@ -47,7 +47,7 @@ const RAW_RUNTIME_STATE =
           ["@types/glob", "npm:8.1.0"],\
           ["@types/helmet", "npm:4.0.0"],\
           ["@types/jest", "npm:29.5.13"],\
-          ["@types/lodash", "npm:4.17.9"],\
+          ["@types/lodash", "npm:4.17.10"],\
           ["@types/node", "npm:20.16.10"],\
           ["@types/nunjucks", "npm:3.2.6"],\
           ["@types/require-directory", "npm:2.1.6"],\
@@ -7114,10 +7114,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/lodash", [\
-      ["npm:4.17.9", {\
-        "packageLocation": "./.yarn/cache/@types-lodash-npm-4.17.9-5b0de3d8b7-49e35caaf6.zip/node_modules/@types/lodash/",\
+      ["npm:4.17.10", {\
+        "packageLocation": "./.yarn/cache/@types-lodash-npm-4.17.10-033d752d27-10fe24a93a.zip/node_modules/@types/lodash/",\
         "packageDependencies": [\
-          ["@types/lodash", "npm:4.17.9"]\
+          ["@types/lodash", "npm:4.17.10"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -10204,7 +10204,7 @@ const RAW_RUNTIME_STATE =
           ["@types/glob", "npm:8.1.0"],\
           ["@types/helmet", "npm:4.0.0"],\
           ["@types/jest", "npm:29.5.13"],\
-          ["@types/lodash", "npm:4.17.9"],\
+          ["@types/lodash", "npm:4.17.10"],\
           ["@types/node", "npm:20.16.10"],\
           ["@types/nunjucks", "npm:3.2.6"],\
           ["@types/require-directory", "npm:2.1.6"],\
