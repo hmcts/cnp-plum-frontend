@@ -73,7 +73,7 @@ const RAW_RUNTIME_STATE =
           ["eslint", "npm:8.57.1"],\
           ["eslint-config-prettier", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:9.1.0"],\
           ["eslint-import-resolver-node", "npm:0.3.9"],\
-          ["eslint-plugin-import", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:2.30.0"],\
+          ["eslint-plugin-import", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:2.31.0"],\
           ["eslint-plugin-jest", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:28.8.3"],\
           ["express", "npm:4.21.0"],\
           ["express-nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.1.2"],\
@@ -10929,7 +10929,7 @@ const RAW_RUNTIME_STATE =
           ["eslint", "npm:8.57.1"],\
           ["eslint-config-prettier", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:9.1.0"],\
           ["eslint-import-resolver-node", "npm:0.3.9"],\
-          ["eslint-plugin-import", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:2.30.0"],\
+          ["eslint-plugin-import", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:2.31.0"],\
           ["eslint-plugin-jest", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:28.8.3"],\
           ["express", "npm:4.21.0"],\
           ["express-nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.1.2"],\
@@ -12936,10 +12936,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:8a5c0747416b237d9a6a142c3661daf0917048cb9f3bfc94ac6a6364aead06450b281ac0742480a4c8b31d21706b1607ae17717dcc2fe803b8fca455dc5b8de6#npm:2.12.0", {\
-        "packageLocation": "./.yarn/__virtual__/eslint-module-utils-virtual-de98f2af18/0/cache/eslint-module-utils-npm-2.12.0-120238a0bc-dd27791147.zip/node_modules/eslint-module-utils/",\
+      ["virtual:625ba780ca9ad7122fb9f2764508ef2910836d772078d4620d5d61953711b0d3833033698d76330fb00f8f39aba56704cefcf24884222e39f42e4f333b443317#npm:2.12.0", {\
+        "packageLocation": "./.yarn/__virtual__/eslint-module-utils-virtual-dde2e5652f/0/cache/eslint-module-utils-npm-2.12.0-120238a0bc-dd27791147.zip/node_modules/eslint-module-utils/",\
         "packageDependencies": [\
-          ["eslint-module-utils", "virtual:8a5c0747416b237d9a6a142c3661daf0917048cb9f3bfc94ac6a6364aead06450b281ac0742480a4c8b31d21706b1607ae17717dcc2fe803b8fca455dc5b8de6#npm:2.12.0"],\
+          ["eslint-module-utils", "virtual:625ba780ca9ad7122fb9f2764508ef2910836d772078d4620d5d61953711b0d3833033698d76330fb00f8f39aba56704cefcf24884222e39f42e4f333b443317#npm:2.12.0"],\
           ["@types/eslint", null],\
           ["@types/eslint-import-resolver-node", null],\
           ["@types/eslint-import-resolver-typescript", null],\
@@ -12968,17 +12968,17 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["eslint-plugin-import", [\
-      ["npm:2.30.0", {\
-        "packageLocation": "./.yarn/cache/eslint-plugin-import-npm-2.30.0-4fd74d3ee6-a5f85dfe76.zip/node_modules/eslint-plugin-import/",\
+      ["npm:2.31.0", {\
+        "packageLocation": "./.yarn/cache/eslint-plugin-import-npm-2.31.0-3c7ca668cd-6b76bd009a.zip/node_modules/eslint-plugin-import/",\
         "packageDependencies": [\
-          ["eslint-plugin-import", "npm:2.30.0"]\
+          ["eslint-plugin-import", "npm:2.31.0"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:2.30.0", {\
-        "packageLocation": "./.yarn/__virtual__/eslint-plugin-import-virtual-8a5c074741/0/cache/eslint-plugin-import-npm-2.30.0-4fd74d3ee6-a5f85dfe76.zip/node_modules/eslint-plugin-import/",\
+      ["virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:2.31.0", {\
+        "packageLocation": "./.yarn/__virtual__/eslint-plugin-import-virtual-625ba780ca/0/cache/eslint-plugin-import-npm-2.31.0-3c7ca668cd-6b76bd009a.zip/node_modules/eslint-plugin-import/",\
         "packageDependencies": [\
-          ["eslint-plugin-import", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:2.30.0"],\
+          ["eslint-plugin-import", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:2.31.0"],\
           ["@rtsao/scc", "npm:1.1.0"],\
           ["@types/eslint", null],\
           ["@types/typescript-eslint__parser", null],\
@@ -12991,7 +12991,7 @@ const RAW_RUNTIME_STATE =
           ["doctrine", "npm:2.1.0"],\
           ["eslint", "npm:8.57.1"],\
           ["eslint-import-resolver-node", "npm:0.3.9"],\
-          ["eslint-module-utils", "virtual:8a5c0747416b237d9a6a142c3661daf0917048cb9f3bfc94ac6a6364aead06450b281ac0742480a4c8b31d21706b1607ae17717dcc2fe803b8fca455dc5b8de6#npm:2.12.0"],\
+          ["eslint-module-utils", "virtual:625ba780ca9ad7122fb9f2764508ef2910836d772078d4620d5d61953711b0d3833033698d76330fb00f8f39aba56704cefcf24884222e39f42e4f333b443317#npm:2.12.0"],\
           ["hasown", "npm:2.0.2"],\
           ["is-core-module", "npm:2.15.1"],\
           ["is-glob", "npm:4.0.3"],\
@@ -13000,6 +13000,7 @@ const RAW_RUNTIME_STATE =
           ["object.groupby", "npm:1.0.3"],\
           ["object.values", "npm:1.2.0"],\
           ["semver", "npm:7.6.3"],\
+          ["string.prototype.trimend", "npm:1.0.8"],\
           ["tsconfig-paths", "npm:3.15.0"]\
         ],\
         "packagePeers": [\
