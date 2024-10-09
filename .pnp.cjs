@@ -62,7 +62,7 @@ const RAW_RUNTIME_STATE =
           ["body-parser", "npm:1.20.3"],\
           ["chai", "npm:4.5.0"],\
           ["chai-as-promised", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:8.0.0"],\
-          ["chokidar", "npm:3.6.0"],\
+          ["chokidar", "npm:4.0.1"],\
           ["codeceptjs", "npm:3.6.7"],\
           ["config", "npm:3.3.12"],\
           ["cookie-parser", "npm:1.4.6"],\
@@ -10849,7 +10849,7 @@ const RAW_RUNTIME_STATE =
           ["body-parser", "npm:1.20.3"],\
           ["chai", "npm:4.5.0"],\
           ["chai-as-promised", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:8.0.0"],\
-          ["chokidar", "npm:3.6.0"],\
+          ["chokidar", "npm:4.0.1"],\
           ["codeceptjs", "npm:3.6.7"],\
           ["config", "npm:3.3.12"],\
           ["cookie-parser", "npm:1.4.6"],\
@@ -18312,7 +18312,7 @@ const RAW_RUNTIME_STATE =
           ["@types/chokidar", null],\
           ["a-sync-waterfall", "npm:1.0.1"],\
           ["asap", "npm:2.0.6"],\
-          ["chokidar", "npm:3.6.0"],\
+          ["chokidar", "npm:4.0.1"],\
           ["commander", "npm:5.1.0"]\
         ],\
         "packagePeers": [\
