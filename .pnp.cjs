@@ -80,7 +80,7 @@ const RAW_RUNTIME_STATE =
           ["follow-redirects", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.15.9"],\
           ["glob", "npm:11.0.0"],\
           ["govuk-frontend", "npm:4.8.0"],\
-          ["helmet", "npm:7.2.0"],\
+          ["helmet", "npm:8.0.0"],\
           ["html-webpack-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:5.6.0"],\
           ["husky", "npm:9.1.6"],\
           ["jest", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:29.7.0"],\
@@ -10867,7 +10867,7 @@ const RAW_RUNTIME_STATE =
           ["follow-redirects", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.15.9"],\
           ["glob", "npm:11.0.0"],\
           ["govuk-frontend", "npm:4.8.0"],\
-          ["helmet", "npm:7.2.0"],\
+          ["helmet", "npm:8.0.0"],\
           ["html-webpack-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:5.6.0"],\
           ["husky", "npm:9.1.6"],\
           ["jest", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:29.7.0"],\
@@ -14420,13 +14420,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["helmet", [\
-      ["npm:7.2.0", {\
-        "packageLocation": "./.yarn/cache/helmet-npm-7.2.0-c5ff2da1c6-3741935175.zip/node_modules/helmet/",\
-        "packageDependencies": [\
-          ["helmet", "npm:7.2.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:8.0.0", {\
         "packageLocation": "./.yarn/cache/helmet-npm-8.0.0-ba86ece81a-cf30579d1d.zip/node_modules/helmet/",\
         "packageDependencies": [\

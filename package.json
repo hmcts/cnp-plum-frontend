@@ -52,7 +52,7 @@
     "follow-redirects": "^1.15.6",
     "glob": "^11.0.0",
     "govuk-frontend": "4.8.0",
-    "helmet": "^7.0.0",
+    "helmet": "^8.0.0",
     "jquery": "^3.6.1",
     "js-yaml": "^4.1.0",
     "lodash": "^4.17.21",
