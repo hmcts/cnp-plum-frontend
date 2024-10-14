@@ -79,7 +79,7 @@ const RAW_RUNTIME_STATE =
           ["express-nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.1.2"],\
           ["follow-redirects", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.15.9"],\
           ["glob", "npm:11.0.0"],\
-          ["govuk-frontend", "npm:4.8.0"],\
+          ["govuk-frontend", "npm:4.9.0"],\
           ["helmet", "npm:8.0.0"],\
           ["html-webpack-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:5.6.0"],\
           ["husky", "npm:9.1.6"],\
@@ -11134,7 +11134,7 @@ const RAW_RUNTIME_STATE =
           ["express-nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.1.2"],\
           ["follow-redirects", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.15.9"],\
           ["glob", "npm:11.0.0"],\
-          ["govuk-frontend", "npm:4.8.0"],\
+          ["govuk-frontend", "npm:4.9.0"],\
           ["helmet", "npm:8.0.0"],\
           ["html-webpack-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:5.6.0"],\
           ["husky", "npm:9.1.6"],\
@@ -14568,10 +14568,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["govuk-frontend", [\
-      ["npm:4.8.0", {\
-        "packageLocation": "./.yarn/cache/govuk-frontend-npm-4.8.0-48d4f1031d-be938670a9.zip/node_modules/govuk-frontend/",\
+      ["npm:4.9.0", {\
+        "packageLocation": "./.yarn/cache/govuk-frontend-npm-4.9.0-c8763a0d08-03bae503b0.zip/node_modules/govuk-frontend/",\
         "packageDependencies": [\
-          ["govuk-frontend", "npm:4.8.0"]\
+          ["govuk-frontend", "npm:4.9.0"]\
         ],\
         "linkType": "HARD"\
       }]\
