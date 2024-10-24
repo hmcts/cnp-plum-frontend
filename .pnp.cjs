@@ -46,7 +46,7 @@ const RAW_RUNTIME_STATE =
           ["@types/express", "npm:5.0.0"],\
           ["@types/glob", "npm:8.1.0"],\
           ["@types/helmet", "npm:4.0.0"],\
-          ["@types/jest", "npm:29.5.13"],\
+          ["@types/jest", "npm:29.5.14"],\
           ["@types/lodash", "npm:4.17.12"],\
           ["@types/node", "npm:20.16.14"],\
           ["@types/nunjucks", "npm:3.2.6"],\
@@ -8268,10 +8268,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/jest", [\
-      ["npm:29.5.13", {\
-        "packageLocation": "./.yarn/cache/@types-jest-npm-29.5.13-b43d0e7497-7d6e3e4ef4.zip/node_modules/@types/jest/",\
+      ["npm:29.5.14", {\
+        "packageLocation": "./.yarn/cache/@types-jest-npm-29.5.14-506446c38e-59ec7a9c46.zip/node_modules/@types/jest/",\
         "packageDependencies": [\
-          ["@types/jest", "npm:29.5.13"],\
+          ["@types/jest", "npm:29.5.14"],\
           ["expect", "npm:29.7.0"],\
           ["pretty-format", "npm:29.7.0"]\
         ],\
@@ -11391,7 +11391,7 @@ const RAW_RUNTIME_STATE =
           ["@types/express", "npm:5.0.0"],\
           ["@types/glob", "npm:8.1.0"],\
           ["@types/helmet", "npm:4.0.0"],\
-          ["@types/jest", "npm:29.5.13"],\
+          ["@types/jest", "npm:29.5.14"],\
           ["@types/lodash", "npm:4.17.12"],\
           ["@types/node", "npm:20.16.14"],\
           ["@types/nunjucks", "npm:3.2.6"],\
@@ -13539,7 +13539,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["eslint-plugin-jest", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:28.8.3"],\
           ["@types/eslint", null],\
-          ["@types/jest", "npm:29.5.13"],\
+          ["@types/jest", "npm:29.5.14"],\
           ["@types/typescript-eslint__eslint-plugin", null],\
           ["@typescript-eslint/eslint-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:7.18.0"],\
           ["@typescript-eslint/utils", "virtual:15441b5c241dbd6437e7f746b7a04d0bf6f75d08c662e221512493583d40d999a5f0f2914914cef8b13fa7eae9f7cc0f11cd1aa4f1f42b9023fd5eaaf906a39d#npm:8.8.0"],\
@@ -16413,7 +16413,7 @@ const RAW_RUNTIME_STATE =
           ["jest-html-reporter", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.10.2"],\
           ["@jest/test-result", "npm:29.7.0"],\
           ["@jest/types", "npm:29.6.3"],\
-          ["@types/jest", "npm:29.5.13"],\
+          ["@types/jest", "npm:29.5.14"],\
           ["@types/typescript", null],\
           ["dateformat", "npm:3.0.2"],\
           ["jest", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:29.7.0"],\
@@ -22929,7 +22929,7 @@ const RAW_RUNTIME_STATE =
           ["@types/babel-jest", null],\
           ["@types/babel__core", null],\
           ["@types/esbuild", null],\
-          ["@types/jest", "npm:29.5.13"],\
+          ["@types/jest", "npm:29.5.14"],\
           ["@types/jest__transform", null],\
           ["@types/jest__types", null],\
           ["@types/typescript", null],\
