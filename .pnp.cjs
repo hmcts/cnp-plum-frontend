@@ -94,7 +94,7 @@ const RAW_RUNTIME_STATE =
           ["nodemon", "npm:3.1.7"],\
           ["nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.2.4"],\
           ["pa11y", "npm:6.2.3"],\
-          ["playwright", "npm:1.48.2"],\
+          ["playwright", "npm:1.49.0"],\
           ["prettier", "npm:2.8.8"],\
           ["react-native", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:0.76.2"],\
           ["request", "npm:2.88.2"],\
@@ -11340,7 +11340,7 @@ const RAW_RUNTIME_STATE =
           ["nodemon", "npm:3.1.7"],\
           ["nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.2.4"],\
           ["pa11y", "npm:6.2.3"],\
-          ["playwright", "npm:1.48.2"],\
+          ["playwright", "npm:1.49.0"],\
           ["prettier", "npm:2.8.8"],\
           ["react-native", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:0.76.2"],\
           ["request", "npm:2.88.2"],\
@@ -19881,21 +19881,21 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["playwright", [\
-      ["npm:1.48.2", {\
-        "packageLocation": "./.yarn/cache/playwright-npm-1.48.2-7628504eaa-331af35250.zip/node_modules/playwright/",\
+      ["npm:1.49.0", {\
+        "packageLocation": "./.yarn/cache/playwright-npm-1.49.0-d57440d7c1-1fb198d09d.zip/node_modules/playwright/",\
         "packageDependencies": [\
-          ["playwright", "npm:1.48.2"],\
+          ["playwright", "npm:1.49.0"],\
           ["fsevents", "patch:fsevents@npm%3A2.3.2#optional!builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"],\
-          ["playwright-core", "npm:1.48.2"]\
+          ["playwright-core", "npm:1.49.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["playwright-core", [\
-      ["npm:1.48.2", {\
-        "packageLocation": "./.yarn/unplugged/playwright-core-npm-1.48.2-f1270e8a40/node_modules/playwright-core/",\
+      ["npm:1.49.0", {\
+        "packageLocation": "./.yarn/unplugged/playwright-core-npm-1.49.0-4a6c09b0ee/node_modules/playwright-core/",\
         "packageDependencies": [\
-          ["playwright-core", "npm:1.48.2"]\
+          ["playwright-core", "npm:1.49.0"]\
         ],\
         "linkType": "HARD"\
       }]\
