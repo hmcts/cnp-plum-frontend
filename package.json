@@ -127,7 +127,7 @@
     "cookiejar": "^2.1.4",
     "ip": "^2.0.1",
     "tar": "7.4.3",
-    "@grpc/grpc-js": "1.12.3",
+    "@grpc/grpc-js": "1.12.4",
     "cross-spawn": "7.0.6"
   },
   "lint-staged": {
