@@ -62,7 +62,7 @@ const RAW_RUNTIME_STATE =
           ["body-parser", "npm:1.20.3"],\
           ["chai", "npm:4.5.0"],\
           ["chai-as-promised", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:8.0.1"],\
-          ["chokidar", "npm:4.0.1"],\
+          ["chokidar", "npm:4.0.3"],\
           ["codeceptjs", "npm:3.6.10"],\
           ["config", "npm:3.3.12"],\
           ["cookie-parser", "npm:1.4.6"],\
@@ -10752,10 +10752,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:4.0.1", {\
-        "packageLocation": "./.yarn/cache/chokidar-npm-4.0.1-989df9ae3c-62749d2173.zip/node_modules/chokidar/",\
+      ["npm:4.0.3", {\
+        "packageLocation": "./.yarn/cache/chokidar-npm-4.0.3-962354fbb4-bf2a575ea5.zip/node_modules/chokidar/",\
         "packageDependencies": [\
-          ["chokidar", "npm:4.0.1"],\
+          ["chokidar", "npm:4.0.3"],\
           ["readdirp", "npm:4.0.1"]\
         ],\
         "linkType": "HARD"\
@@ -11028,7 +11028,7 @@ const RAW_RUNTIME_STATE =
           ["body-parser", "npm:1.20.3"],\
           ["chai", "npm:4.5.0"],\
           ["chai-as-promised", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:8.0.1"],\
-          ["chokidar", "npm:4.0.1"],\
+          ["chokidar", "npm:4.0.3"],\
           ["codeceptjs", "npm:3.6.10"],\
           ["config", "npm:3.3.12"],\
           ["cookie-parser", "npm:1.4.6"],\
@@ -18385,7 +18385,7 @@ const RAW_RUNTIME_STATE =
           ["@types/chokidar", null],\
           ["a-sync-waterfall", "npm:1.0.1"],\
           ["asap", "npm:2.0.6"],\
-          ["chokidar", "npm:4.0.1"],\
+          ["chokidar", "npm:4.0.3"],\
           ["commander", "npm:5.1.0"]\
         ],\
         "packagePeers": [\
@@ -20626,7 +20626,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["sass", "npm:1.82.0"],\
           ["@parcel/watcher", "npm:2.4.1"],\
-          ["chokidar", "npm:4.0.1"],\
+          ["chokidar", "npm:4.0.3"],\
           ["immutable", "npm:5.0.2"],\
           ["source-map-js", "npm:1.2.1"]\
         ],\
