@@ -51,7 +51,7 @@ function runPally(url: string): Promise<Pa11yResult> {
   return pa11y(url, {
     hideElements: '.govuk-footer__licence-logo, .govuk-header__logotype-crown',
     chromeLaunchConfig: {
-      args: ['--no-sandbox', '--disable-setuid-sandbox'],
+      args: ['--disable-setuid-sandbox'],
     },
   });
 }
