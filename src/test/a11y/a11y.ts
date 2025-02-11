@@ -57,11 +57,11 @@ function runPally(url: string): Promise<Pa11yResult> {
       info: console.info,
     },
   })
-    .then(result => {
+    .then((result: Promise<Pa11yResult>) => {
       console.log('Pa11y scan completed successfully');
       return result;
     })
-    .catch(error => {
+    .catch((error: Promise<Pa11yResult>) => {
       console.error('Pa11y scan failed:', error);
       throw error;
     });
