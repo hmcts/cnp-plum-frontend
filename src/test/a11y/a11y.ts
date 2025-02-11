@@ -51,20 +51,7 @@ function runPally(url: string): Promise<Pa11yResult> {
   return pa11y(url, {
     hideElements: '.govuk-footer__licence-logo, .govuk-header__logotype-crown',
     timeout: 60000,
-    log: {
-      debug: console.log,
-      error: console.error,
-      info: console.info,
-    },
-  })
-    .then((result: Promise<Pa11yResult>) => {
-      console.log('Pa11y scan completed successfully');
-      return result;
-    })
-    .catch((error: Promise<Pa11yResult>) => {
-      console.error('Pa11y scan failed:', error);
-      throw error;
-    });
+  });
 }
 
 function expectNoErrors(messages: PallyIssue[]): void {
