@@ -48,7 +48,7 @@ const RAW_RUNTIME_STATE =
           ["@types/helmet", "npm:4.0.0"],\
           ["@types/jest", "npm:29.5.14"],\
           ["@types/lodash", "npm:4.17.15"],\
-          ["@types/node", "npm:20.17.17"],\
+          ["@types/node", "npm:22.13.4"],\
           ["@types/nunjucks", "npm:3.2.6"],\
           ["@types/require-directory", "npm:2.1.6"],\
           ["@types/serve-favicon", "npm:2.5.7"],\
@@ -8305,18 +8305,18 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/node", [\
-      ["npm:20.17.17", {\
-        "packageLocation": "./.yarn/cache/@types-node-npm-20.17.17-bbcd13f536-97319597fb.zip/node_modules/@types/node/",\
-        "packageDependencies": [\
-          ["@types/node", "npm:20.17.17"],\
-          ["undici-types", "npm:6.19.8"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:22.13.1", {\
         "packageLocation": "./.yarn/cache/@types-node-npm-22.13.1-f9de886009-d8ba7068b0.zip/node_modules/@types/node/",\
         "packageDependencies": [\
           ["@types/node", "npm:22.13.1"],\
+          ["undici-types", "npm:6.20.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:22.13.4", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-22.13.4-80985669cb-716e05b1b8.zip/node_modules/@types/node/",\
+        "packageDependencies": [\
+          ["@types/node", "npm:22.13.4"],\
           ["undici-types", "npm:6.20.0"]\
         ],\
         "linkType": "HARD"\
@@ -11370,7 +11370,7 @@ const RAW_RUNTIME_STATE =
           ["@types/helmet", "npm:4.0.0"],\
           ["@types/jest", "npm:29.5.14"],\
           ["@types/lodash", "npm:4.17.15"],\
-          ["@types/node", "npm:20.17.17"],\
+          ["@types/node", "npm:22.13.4"],\
           ["@types/nunjucks", "npm:3.2.6"],\
           ["@types/require-directory", "npm:2.1.6"],\
           ["@types/serve-favicon", "npm:2.5.7"],\
@@ -22849,7 +22849,7 @@ const RAW_RUNTIME_STATE =
           ["@tsconfig/node12", "npm:1.0.11"],\
           ["@tsconfig/node14", "npm:1.0.3"],\
           ["@tsconfig/node16", "npm:1.0.4"],\
-          ["@types/node", "npm:20.17.17"],\
+          ["@types/node", "npm:22.13.4"],\
           ["@types/swc__core", null],\
           ["@types/swc__wasm", null],\
           ["@types/typescript", null],\
@@ -23154,13 +23154,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["undici-types", [\
-      ["npm:6.19.8", {\
-        "packageLocation": "./.yarn/cache/undici-types-npm-6.19.8-9f12285b7a-cf0b48ed4f.zip/node_modules/undici-types/",\
-        "packageDependencies": [\
-          ["undici-types", "npm:6.19.8"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:6.20.0", {\
         "packageLocation": "./.yarn/cache/undici-types-npm-6.20.0-bd21e669af-583ac7bbf4.zip/node_modules/undici-types/",\
         "packageDependencies": [\
