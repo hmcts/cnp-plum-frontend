@@ -38,7 +38,7 @@ const RAW_RUNTIME_STATE =
           ["@hmcts/properties-volume", "npm:1.2.0"],\
           ["@types/body-parser", "npm:1.19.5"],\
           ["@types/chai", "npm:5.2.0"],\
-          ["@types/chai-as-promised", "npm:8.0.1"],\
+          ["@types/chai-as-promised", "npm:8.0.2"],\
           ["@types/config", "npm:3.3.5"],\
           ["@types/cookie-parser", "npm:1.4.7"],\
           ["@types/csurf", "npm:1.11.5"],\
@@ -8314,10 +8314,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/chai-as-promised", [\
-      ["npm:8.0.1", {\
-        "packageLocation": "./.yarn/cache/@types-chai-as-promised-npm-8.0.1-e0aa16855e-827f7d8d5a.zip/node_modules/@types/chai-as-promised/",\
+      ["npm:8.0.2", {\
+        "packageLocation": "./.yarn/cache/@types-chai-as-promised-npm-8.0.2-7f20dac090-c1ff3eb32f.zip/node_modules/@types/chai-as-promised/",\
         "packageDependencies": [\
-          ["@types/chai-as-promised", "npm:8.0.1"],\
+          ["@types/chai-as-promised", "npm:8.0.2"],\
           ["@types/chai", "npm:5.2.0"]\
         ],\
         "linkType": "HARD"\
@@ -11688,7 +11688,7 @@ const RAW_RUNTIME_STATE =
           ["@hmcts/properties-volume", "npm:1.2.0"],\
           ["@types/body-parser", "npm:1.19.5"],\
           ["@types/chai", "npm:5.2.0"],\
-          ["@types/chai-as-promised", "npm:8.0.1"],\
+          ["@types/chai-as-promised", "npm:8.0.2"],\
           ["@types/config", "npm:3.3.5"],\
           ["@types/cookie-parser", "npm:1.4.7"],\
           ["@types/csurf", "npm:1.11.5"],\
