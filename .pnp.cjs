@@ -43,7 +43,7 @@ const RAW_RUNTIME_STATE =
           ["@types/cookie-parser", "npm:1.4.7"],\
           ["@types/csurf", "npm:1.11.5"],\
           ["@types/es6-promisify", "npm:6.0.4"],\
-          ["@types/express", "npm:5.0.0"],\
+          ["@types/express", "npm:5.0.1"],\
           ["@types/glob", "npm:8.1.0"],\
           ["@types/helmet", "npm:4.0.0"],\
           ["@types/jest", "npm:29.5.14"],\
@@ -8448,7 +8448,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@types-cookie-parser-npm-1.4.7-b74a485836-7b87c59420.zip/node_modules/@types/cookie-parser/",\
         "packageDependencies": [\
           ["@types/cookie-parser", "npm:1.4.7"],\
-          ["@types/express", "npm:5.0.0"]\
+          ["@types/express", "npm:5.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -8532,13 +8532,12 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/express", [\
-      ["npm:5.0.0", {\
-        "packageLocation": "./.yarn/cache/@types-express-npm-5.0.0-a645691cd5-45b199ab66.zip/node_modules/@types/express/",\
+      ["npm:5.0.1", {\
+        "packageLocation": "./.yarn/cache/@types-express-npm-5.0.1-b3469c8935-189dd07867.zip/node_modules/@types/express/",\
         "packageDependencies": [\
-          ["@types/express", "npm:5.0.0"],\
+          ["@types/express", "npm:5.0.1"],\
           ["@types/body-parser", "npm:1.19.5"],\
           ["@types/express-serve-static-core", "npm:5.0.0"],\
-          ["@types/qs", "npm:6.9.16"],\
           ["@types/serve-static", "npm:1.15.7"]\
         ],\
         "linkType": "HARD"\
@@ -8824,7 +8823,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@types-serve-favicon-npm-2.5.7-91d885686a-1ae98ff01c.zip/node_modules/@types/serve-favicon/",\
         "packageDependencies": [\
           ["@types/serve-favicon", "npm:2.5.7"],\
-          ["@types/express", "npm:5.0.0"]\
+          ["@types/express", "npm:5.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -11815,7 +11814,7 @@ const RAW_RUNTIME_STATE =
           ["@types/cookie-parser", "npm:1.4.7"],\
           ["@types/csurf", "npm:1.11.5"],\
           ["@types/es6-promisify", "npm:6.0.4"],\
-          ["@types/express", "npm:5.0.0"],\
+          ["@types/express", "npm:5.0.1"],\
           ["@types/glob", "npm:8.1.0"],\
           ["@types/helmet", "npm:4.0.0"],\
           ["@types/jest", "npm:29.5.14"],\
@@ -14275,7 +14274,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/express-nunjucks-virtual-820286895c/0/cache/express-nunjucks-npm-3.1.2-3e9cb7ed22-d5c259a26b.zip/node_modules/express-nunjucks/",\
         "packageDependencies": [\
           ["express-nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.1.2"],\
-          ["@types/express", "npm:5.0.0"],\
+          ["@types/express", "npm:5.0.1"],\
           ["@types/nunjucks", "npm:3.2.6"],\
           ["express", "npm:4.21.0"],\
           ["nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.2.4"],\
