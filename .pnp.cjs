@@ -99,7 +99,7 @@ const RAW_RUNTIME_STATE =
           ["react-native", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:0.78.2"],\
           ["request", "npm:2.88.2"],\
           ["require-directory", "npm:2.1.1"],\
-          ["sass", "npm:1.86.1"],\
+          ["sass", "npm:1.86.2"],\
           ["sass-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:16.0.5"],\
           ["serve-favicon", "npm:2.5.0"],\
           ["sinon", "npm:19.0.5"],\
@@ -11878,7 +11878,7 @@ const RAW_RUNTIME_STATE =
           ["react-native", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:0.78.2"],\
           ["request", "npm:2.88.2"],\
           ["require-directory", "npm:2.1.1"],\
-          ["sass", "npm:1.86.1"],\
+          ["sass", "npm:1.86.2"],\
           ["sass-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:16.0.5"],\
           ["serve-favicon", "npm:2.5.0"],\
           ["sinon", "npm:19.0.5"],\
@@ -21908,10 +21908,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["sass", [\
-      ["npm:1.86.1", {\
-        "packageLocation": "./.yarn/cache/sass-npm-1.86.1-53b0823a69-81f6815a3d.zip/node_modules/sass/",\
+      ["npm:1.86.2", {\
+        "packageLocation": "./.yarn/cache/sass-npm-1.86.2-acad0ce37c-0c4a7f1695.zip/node_modules/sass/",\
         "packageDependencies": [\
-          ["sass", "npm:1.86.1"],\
+          ["sass", "npm:1.86.2"],\
           ["@parcel/watcher", "npm:2.4.1"],\
           ["chokidar", "npm:4.0.3"],\
           ["immutable", "npm:5.0.2"],\
@@ -21940,7 +21940,7 @@ const RAW_RUNTIME_STATE =
           ["@types/webpack", null],\
           ["neo-async", "npm:2.6.2"],\
           ["node-sass", null],\
-          ["sass", "npm:1.86.1"],\
+          ["sass", "npm:1.86.2"],\
           ["sass-embedded", null],\
           ["webpack", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:5.98.0"]\
         ],\
