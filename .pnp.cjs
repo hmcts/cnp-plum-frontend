@@ -78,7 +78,7 @@ const RAW_RUNTIME_STATE =
           ["express", "npm:4.21.0"],\
           ["express-nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.1.2"],\
           ["follow-redirects", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.15.9"],\
-          ["glob", "npm:11.0.1"],\
+          ["glob", "npm:11.0.2"],\
           ["govuk-frontend", "npm:4.9.0"],\
           ["helmet", "npm:8.1.0"],\
           ["html-webpack-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:5.6.3"],\
@@ -11300,7 +11300,7 @@ const RAW_RUNTIME_STATE =
           ["express", "npm:4.21.0"],\
           ["express-nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.1.2"],\
           ["follow-redirects", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.15.9"],\
-          ["glob", "npm:11.0.1"],\
+          ["glob", "npm:11.0.2"],\
           ["govuk-frontend", "npm:4.9.0"],\
           ["helmet", "npm:8.1.0"],\
           ["html-webpack-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:5.6.3"],\
@@ -14554,10 +14554,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:11.0.1", {\
-        "packageLocation": "./.yarn/cache/glob-npm-11.0.1-2249503635-57b12a05cc.zip/node_modules/glob/",\
+      ["npm:11.0.2", {\
+        "packageLocation": "./.yarn/cache/glob-npm-11.0.2-cd5db3a299-5350153024.zip/node_modules/glob/",\
         "packageDependencies": [\
-          ["glob", "npm:11.0.1"],\
+          ["glob", "npm:11.0.2"],\
           ["foreground-child", "npm:3.3.0"],\
           ["jackspeak", "npm:4.0.2"],\
           ["minimatch", "npm:10.0.1"],\
