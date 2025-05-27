@@ -42,7 +42,7 @@ const RAW_RUNTIME_STATE =
           ["@types/config", "npm:3.3.5"],\
           ["@types/cookie-parser", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.4.8"],\
           ["@types/es6-promisify", "npm:6.0.4"],\
-          ["@types/express", "npm:5.0.1"],\
+          ["@types/express", "npm:5.0.2"],\
           ["@types/glob", "npm:8.1.0"],\
           ["@types/helmet", "npm:4.0.0"],\
           ["@types/jest", "npm:29.5.14"],\
@@ -7926,7 +7926,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@types-cookie-parser-virtual-f13c57b692/0/cache/@types-cookie-parser-npm-1.4.8-fa95028070-b26ace5560.zip/node_modules/@types/cookie-parser/",\
         "packageDependencies": [\
           ["@types/cookie-parser", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.4.8"],\
-          ["@types/express", "npm:5.0.1"]\
+          ["@types/express", "npm:5.0.2"]\
         ],\
         "packagePeers": [\
           "@types/express"\
@@ -8003,10 +8003,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/express", [\
-      ["npm:5.0.1", {\
-        "packageLocation": "./.yarn/cache/@types-express-npm-5.0.1-b3469c8935-189dd07867.zip/node_modules/@types/express/",\
+      ["npm:5.0.2", {\
+        "packageLocation": "./.yarn/cache/@types-express-npm-5.0.2-da02de3116-c6f73c75c2.zip/node_modules/@types/express/",\
         "packageDependencies": [\
-          ["@types/express", "npm:5.0.1"],\
+          ["@types/express", "npm:5.0.2"],\
           ["@types/body-parser", "npm:1.19.5"],\
           ["@types/express-serve-static-core", "npm:5.0.0"],\
           ["@types/serve-static", "npm:1.15.7"]\
@@ -8284,7 +8284,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@types-serve-favicon-npm-2.5.7-91d885686a-1ae98ff01c.zip/node_modules/@types/serve-favicon/",\
         "packageDependencies": [\
           ["@types/serve-favicon", "npm:2.5.7"],\
-          ["@types/express", "npm:5.0.1"]\
+          ["@types/express", "npm:5.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -11281,7 +11281,7 @@ const RAW_RUNTIME_STATE =
           ["@types/config", "npm:3.3.5"],\
           ["@types/cookie-parser", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.4.8"],\
           ["@types/es6-promisify", "npm:6.0.4"],\
-          ["@types/express", "npm:5.0.1"],\
+          ["@types/express", "npm:5.0.2"],\
           ["@types/glob", "npm:8.1.0"],\
           ["@types/helmet", "npm:4.0.0"],\
           ["@types/jest", "npm:29.5.14"],\
@@ -13633,7 +13633,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/express-nunjucks-virtual-820286895c/0/cache/express-nunjucks-npm-3.1.2-3e9cb7ed22-d5c259a26b.zip/node_modules/express-nunjucks/",\
         "packageDependencies": [\
           ["express-nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.1.2"],\
-          ["@types/express", "npm:5.0.1"],\
+          ["@types/express", "npm:5.0.2"],\
           ["@types/nunjucks", "npm:3.2.6"],\
           ["express", "npm:4.21.2"],\
           ["nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.2.4"],\
