@@ -85,7 +85,7 @@ const RAW_RUNTIME_STATE =
           ["jest-html-reporter", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.10.2"],\
           ["jquery", "npm:3.7.1"],\
           ["js-yaml", "npm:4.1.0"],\
-          ["lint-staged", "npm:15.5.1"],\
+          ["lint-staged", "npm:15.5.2"],\
           ["lodash", "npm:4.17.21"],\
           ["mini-css-extract-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:2.9.2"],\
           ["nock", "npm:13.5.6"],\
@@ -11324,7 +11324,7 @@ const RAW_RUNTIME_STATE =
           ["jest-html-reporter", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.10.2"],\
           ["jquery", "npm:3.7.1"],\
           ["js-yaml", "npm:4.1.0"],\
-          ["lint-staged", "npm:15.5.1"],\
+          ["lint-staged", "npm:15.5.2"],\
           ["lodash", "npm:4.17.21"],\
           ["mini-css-extract-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:2.9.2"],\
           ["nock", "npm:13.5.6"],\
@@ -17034,10 +17034,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["lint-staged", [\
-      ["npm:15.5.1", {\
-        "packageLocation": "./.yarn/cache/lint-staged-npm-15.5.1-a7bfb2de49-58662ea6e4.zip/node_modules/lint-staged/",\
+      ["npm:15.5.2", {\
+        "packageLocation": "./.yarn/cache/lint-staged-npm-15.5.2-5de9f8ff0d-523c332d6c.zip/node_modules/lint-staged/",\
         "packageDependencies": [\
-          ["lint-staged", "npm:15.5.1"],\
+          ["lint-staged", "npm:15.5.2"],\
           ["chalk", "npm:5.4.1"],\
           ["commander", "npm:13.1.0"],\
           ["debug", "virtual:bdeb9ff2c27652ab0b48e2b4b7da3b19c234e296477c492f7e86e093d9623a8d5d6d542fa002289eee5daadea58324c140cd734b64ffb6d3abf38cb16b56e15c#npm:4.4.1"],\
