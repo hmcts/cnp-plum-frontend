@@ -33,7 +33,7 @@ const RAW_RUNTIME_STATE =
           ["@codeceptjs/allure-legacy", "npm:1.0.2"],\
           ["@codeceptjs/configure", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.0.6"],\
           ["@hmcts/info-provider", "npm:1.2.3"],\
-          ["@hmcts/nodejs-healthcheck", "npm:1.8.5"],\
+          ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/nodejs-logging", "npm:4.0.4"],\
           ["@hmcts/properties-volume", "npm:1.2.0"],\
           ["@types/body-parser", "npm:1.19.6"],\
@@ -4214,10 +4214,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@hmcts/nodejs-healthcheck", [\
-      ["npm:1.8.5", {\
-        "packageLocation": "./.yarn/cache/@hmcts-nodejs-healthcheck-npm-1.8.5-fa7409827a-c847735784.zip/node_modules/@hmcts/nodejs-healthcheck/",\
+      ["npm:1.8.6", {\
+        "packageLocation": "./.yarn/cache/@hmcts-nodejs-healthcheck-npm-1.8.6-da4b651ec1-baa0fcb688.zip/node_modules/@hmcts/nodejs-healthcheck/",\
         "packageDependencies": [\
-          ["@hmcts/nodejs-healthcheck", "npm:1.8.5"],\
+          ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/nodejs-logging", "npm:4.0.4"],\
           ["js-yaml", "npm:4.1.0"],\
           ["superagent", "npm:10.2.1"]\
@@ -10812,7 +10812,7 @@ const RAW_RUNTIME_STATE =
           ["@codeceptjs/allure-legacy", "npm:1.0.2"],\
           ["@codeceptjs/configure", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.0.6"],\
           ["@hmcts/info-provider", "npm:1.2.3"],\
-          ["@hmcts/nodejs-healthcheck", "npm:1.8.5"],\
+          ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/nodejs-logging", "npm:4.0.4"],\
           ["@hmcts/properties-volume", "npm:1.2.0"],\
           ["@types/body-parser", "npm:1.19.6"],\
