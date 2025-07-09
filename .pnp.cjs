@@ -4220,7 +4220,7 @@ const RAW_RUNTIME_STATE =
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/nodejs-logging", "npm:4.0.4"],\
           ["js-yaml", "npm:4.1.0"],\
-          ["superagent", "npm:10.2.1"]\
+          ["superagent", "npm:10.2.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -21646,10 +21646,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["superagent", [\
-      ["npm:10.2.1", {\
-        "packageLocation": "./.yarn/cache/superagent-npm-10.2.1-76013dcce6-fb91785361.zip/node_modules/superagent/",\
+      ["npm:10.2.2", {\
+        "packageLocation": "./.yarn/cache/superagent-npm-10.2.2-e8b673973b-e89ae49163.zip/node_modules/superagent/",\
         "packageDependencies": [\
-          ["superagent", "npm:10.2.1"],\
+          ["superagent", "npm:10.2.2"],\
           ["component-emitter", "npm:1.3.1"],\
           ["cookiejar", "npm:2.1.4"],\
           ["debug", "virtual:79c04ad3e1a6fd2d709fa98b600dcac6a2f15cd22977c7cd3134e1c65d2ed6662ffb4e8d238599d8712dc7885c312d49a60dea01f5022c79e546891d17d12ae4#npm:4.4.1"],\
@@ -21669,7 +21669,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["supertest", "npm:7.1.1"],\
           ["methods", "npm:1.1.2"],\
-          ["superagent", "npm:10.2.1"]\
+          ["superagent", "npm:10.2.2"]\
         ],\
         "linkType": "HARD"\
       }]\
