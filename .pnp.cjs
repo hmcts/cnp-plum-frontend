@@ -63,7 +63,7 @@ const RAW_RUNTIME_STATE =
           ["chai-as-promised", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:8.0.1"],\
           ["chokidar", "npm:4.0.3"],\
           ["codeceptjs", "npm:3.6.10"],\
-          ["config", "npm:3.3.12"],\
+          ["config", "npm:4.0.0"],\
           ["cookie-parser", "npm:1.4.7"],\
           ["copy-webpack-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:9.1.0"],\
           ["css-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:7.1.2"],\
@@ -10864,7 +10864,7 @@ const RAW_RUNTIME_STATE =
           ["chai-as-promised", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:8.0.1"],\
           ["chokidar", "npm:4.0.3"],\
           ["codeceptjs", "npm:3.6.10"],\
-          ["config", "npm:3.3.12"],\
+          ["config", "npm:4.0.0"],\
           ["cookie-parser", "npm:1.4.7"],\
           ["copy-webpack-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:9.1.0"],\
           ["css-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:7.1.2"],\
@@ -11201,10 +11201,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["config", [\
-      ["npm:3.3.12", {\
-        "packageLocation": "./.yarn/cache/config-npm-3.3.12-ad44bb207f-f7973d1192.zip/node_modules/config/",\
+      ["npm:4.0.0", {\
+        "packageLocation": "./.yarn/cache/config-npm-4.0.0-e951dcb4e6-a430adc25a.zip/node_modules/config/",\
         "packageDependencies": [\
-          ["config", "npm:3.3.12"],\
+          ["config", "npm:4.0.0"],\
           ["json5", "npm:2.2.3"]\
         ],\
         "linkType": "HARD"\
