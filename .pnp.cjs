@@ -275,7 +275,7 @@ const RAW_RUNTIME_STATE =
           ["@azure/functions", "npm:4.7.3"],\
           ["cookie", "npm:1.0.2"],\
           ["long", "npm:4.0.0"],\
-          ["undici", "npm:5.29.0"]\
+          ["undici", "npm:7.11.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4227,15 +4227,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@eslint-js-npm-8.57.1-dec269f278-7562b21be1.zip/node_modules/@eslint/js/",\
         "packageDependencies": [\
           ["@eslint/js", "npm:8.57.1"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["@fastify/busboy", [\
-      ["npm:2.1.1", {\
-        "packageLocation": "./.yarn/cache/@fastify-busboy-npm-2.1.1-455d8b6bf5-2bb8a7eca8.zip/node_modules/@fastify/busboy/",\
-        "packageDependencies": [\
-          ["@fastify/busboy", "npm:2.1.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -22915,11 +22906,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["undici", [\
-      ["npm:5.29.0", {\
-        "packageLocation": "./.yarn/cache/undici-npm-5.29.0-caeb96c8ee-0ceca8924a.zip/node_modules/undici/",\
+      ["npm:7.11.0", {\
+        "packageLocation": "./.yarn/cache/undici-npm-7.11.0-28ae936507-0066fc1c0a.zip/node_modules/undici/",\
         "packageDependencies": [\
-          ["undici", "npm:5.29.0"],\
-          ["@fastify/busboy", "npm:2.1.1"]\
+          ["undici", "npm:7.11.0"]\
         ],\
         "linkType": "HARD"\
       }]\
