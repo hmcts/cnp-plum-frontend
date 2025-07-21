@@ -30,12 +30,6 @@ properties([
 
 def expiresAfter = "3000-01-01"
 
-before('functionalTest:sandbox') {
-  sh """
-    yarn install
-    yarn playwright install
-  """
-}
 
 withParameterizedPipeline(params.TYPE, params.PRODUCT_NAME, params.APP, params.ENVIRONMENT, params.SUBSCRIPTION) {
   //enableApiGatewayTest()
