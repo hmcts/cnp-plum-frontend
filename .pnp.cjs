@@ -88,7 +88,7 @@ const RAW_RUNTIME_STATE =
           ["jest-util", "npm:30.0.5"],\
           ["jquery", "npm:3.7.1"],\
           ["js-yaml", "npm:4.1.0"],\
-          ["lint-staged", "npm:16.1.2"],\
+          ["lint-staged", "npm:16.1.4"],\
           ["lodash", "npm:4.17.21"],\
           ["mini-css-extract-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:2.9.2"],\
           ["nock", "npm:14.0.7"],\
@@ -10874,7 +10874,7 @@ const RAW_RUNTIME_STATE =
           ["jest-util", "npm:30.0.5"],\
           ["jquery", "npm:3.7.1"],\
           ["js-yaml", "npm:4.1.0"],\
-          ["lint-staged", "npm:16.1.2"],\
+          ["lint-staged", "npm:16.1.4"],\
           ["lodash", "npm:4.17.21"],\
           ["mini-css-extract-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:2.9.2"],\
           ["nock", "npm:14.0.7"],\
@@ -16588,15 +16588,15 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["lint-staged", [\
-      ["npm:16.1.2", {\
-        "packageLocation": "./.yarn/cache/lint-staged-npm-16.1.2-b98c92e9a9-90df77c2f5.zip/node_modules/lint-staged/",\
+      ["npm:16.1.4", {\
+        "packageLocation": "./.yarn/cache/lint-staged-npm-16.1.4-fbe673094c-71330be72e.zip/node_modules/lint-staged/",\
         "packageDependencies": [\
           ["chalk", "npm:5.4.1"],\
           ["commander", "npm:14.0.0"],\
           ["debug", "virtual:66b3390b4eccbfa0e7f88b649ba0bbc12a2944432838d6fddbf862e3ce97448fd27286b33697fdcd278339dcbac4ff595eb84b91eeb93160166752a0fcae7007#npm:4.4.1"],\
           ["lilconfig", "npm:3.1.3"],\
-          ["lint-staged", "npm:16.1.2"],\
-          ["listr2", "npm:8.3.3"],\
+          ["lint-staged", "npm:16.1.4"],\
+          ["listr2", "npm:9.0.1"],\
           ["micromatch", "npm:4.0.8"],\
           ["nano-spawn", "npm:1.0.2"],\
           ["pidtree", "npm:0.6.0"],\
@@ -16607,13 +16607,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["listr2", [\
-      ["npm:8.3.3", {\
-        "packageLocation": "./.yarn/cache/listr2-npm-8.3.3-378fa43619-92f1bb60e9.zip/node_modules/listr2/",\
+      ["npm:9.0.1", {\
+        "packageLocation": "./.yarn/cache/listr2-npm-9.0.1-6f1beb3bb9-ac5f98317f.zip/node_modules/listr2/",\
         "packageDependencies": [\
           ["cli-truncate", "npm:4.0.0"],\
           ["colorette", "npm:2.0.20"],\
           ["eventemitter3", "npm:5.0.1"],\
-          ["listr2", "npm:8.3.3"],\
+          ["listr2", "npm:9.0.1"],\
           ["log-update", "npm:6.1.0"],\
           ["rfdc", "npm:1.4.1"],\
           ["wrap-ansi", "npm:9.0.0"]\
