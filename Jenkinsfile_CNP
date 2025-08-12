@@ -57,12 +57,4 @@ withPipeline(type, product, component) {
     """
   }
 
-  // Ensure Playwright browsers are installed for any functional test stage
-  beforeAlways('functionalTest') {
-    sh """
-      yarn install
-      yarn playwright install
-    """
-  }
-
 }
