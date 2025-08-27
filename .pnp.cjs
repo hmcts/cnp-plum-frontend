@@ -111,7 +111,7 @@ const RAW_RUNTIME_STATE =
           ["stylelint-config-standard-scss", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:15.0.1"],\
           ["supertest", "npm:7.1.4"],\
           ["ts-jest", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:29.4.1"],\
-          ["ts-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:9.5.2"],\
+          ["ts-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:9.5.4"],\
           ["ts-node", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:10.9.2"],\
           ["tsconfig-paths", "npm:4.2.0"],\
           ["typescript", "patch:typescript@npm%3A5.9.2#optional!builtin<compat/typescript>::version=5.9.2&hash=5786d5"],\
@@ -11035,7 +11035,7 @@ const RAW_RUNTIME_STATE =
           ["stylelint-config-standard-scss", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:15.0.1"],\
           ["supertest", "npm:7.1.4"],\
           ["ts-jest", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:29.4.1"],\
-          ["ts-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:9.5.2"],\
+          ["ts-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:9.5.4"],\
           ["ts-node", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:10.9.2"],\
           ["tsconfig-paths", "npm:4.2.0"],\
           ["typescript", "patch:typescript@npm%3A5.9.2#optional!builtin<compat/typescript>::version=5.9.2&hash=5786d5"],\
@@ -22130,15 +22130,15 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["ts-loader", [\
-      ["npm:9.5.2", {\
-        "packageLocation": "./.yarn/cache/ts-loader-npm-9.5.2-15fe2fd8a6-b2d0a4ae9e.zip/node_modules/ts-loader/",\
+      ["npm:9.5.4", {\
+        "packageLocation": "./.yarn/cache/ts-loader-npm-9.5.4-c828f5cb90-a9977dce1c.zip/node_modules/ts-loader/",\
         "packageDependencies": [\
-          ["ts-loader", "npm:9.5.2"]\
+          ["ts-loader", "npm:9.5.4"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:9.5.2", {\
-        "packageLocation": "./.yarn/__virtual__/ts-loader-virtual-74c63049f9/0/cache/ts-loader-npm-9.5.2-15fe2fd8a6-b2d0a4ae9e.zip/node_modules/ts-loader/",\
+      ["virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:9.5.4", {\
+        "packageLocation": "./.yarn/__virtual__/ts-loader-virtual-6bf5398cfa/0/cache/ts-loader-npm-9.5.4-c828f5cb90-a9977dce1c.zip/node_modules/ts-loader/",\
         "packageDependencies": [\
           ["@types/typescript", null],\
           ["@types/webpack", null],\
@@ -22147,7 +22147,7 @@ const RAW_RUNTIME_STATE =
           ["micromatch", "npm:4.0.8"],\
           ["semver", "npm:7.7.2"],\
           ["source-map", "npm:0.7.4"],\
-          ["ts-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:9.5.2"],\
+          ["ts-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:9.5.4"],\
           ["typescript", "patch:typescript@npm%3A5.9.2#optional!builtin<compat/typescript>::version=5.9.2&hash=5786d5"],\
           ["webpack", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:5.101.3"]\
         ],\
