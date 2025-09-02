@@ -88,7 +88,7 @@ const RAW_RUNTIME_STATE =
           ["jest-util", "npm:30.0.5"],\
           ["jquery", "npm:3.7.1"],\
           ["js-yaml", "npm:4.1.0"],\
-          ["lint-staged", "npm:16.1.5"],\
+          ["lint-staged", "npm:16.1.6"],\
           ["lodash", "npm:4.17.21"],\
           ["mini-css-extract-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:2.9.4"],\
           ["nock", "npm:14.0.10"],\
@@ -10628,10 +10628,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:5.5.0", {\
-        "packageLocation": "./.yarn/cache/chalk-npm-5.5.0-cb75d7771a-19f6905b47.zip/node_modules/chalk/",\
+      ["npm:5.6.0", {\
+        "packageLocation": "./.yarn/cache/chalk-npm-5.6.0-a3b5d69c6e-f0e0646a72.zip/node_modules/chalk/",\
         "packageDependencies": [\
-          ["chalk", "npm:5.5.0"]\
+          ["chalk", "npm:5.6.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -11012,7 +11012,7 @@ const RAW_RUNTIME_STATE =
           ["jest-util", "npm:30.0.5"],\
           ["jquery", "npm:3.7.1"],\
           ["js-yaml", "npm:4.1.0"],\
-          ["lint-staged", "npm:16.1.5"],\
+          ["lint-staged", "npm:16.1.6"],\
           ["lodash", "npm:4.17.21"],\
           ["mini-css-extract-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:2.9.4"],\
           ["nock", "npm:14.0.10"],\
@@ -16769,15 +16769,15 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["lint-staged", [\
-      ["npm:16.1.5", {\
-        "packageLocation": "./.yarn/cache/lint-staged-npm-16.1.5-8b8b80d7ec-02b284f89d.zip/node_modules/lint-staged/",\
+      ["npm:16.1.6", {\
+        "packageLocation": "./.yarn/cache/lint-staged-npm-16.1.6-91d0ce9f1d-922b4392ae.zip/node_modules/lint-staged/",\
         "packageDependencies": [\
-          ["chalk", "npm:5.5.0"],\
+          ["chalk", "npm:5.6.0"],\
           ["commander", "npm:14.0.0"],\
           ["debug", "virtual:7786c501c79aa105de26d543c50999bc3ffc28c31c1a6f2d58b7186cb22c72362e89eca24786c0d5c6c0538a0bef1031c054fdc988813e6f7e1df708f2aee1cd#npm:4.4.1"],\
           ["lilconfig", "npm:3.1.3"],\
-          ["lint-staged", "npm:16.1.5"],\
-          ["listr2", "npm:9.0.1"],\
+          ["lint-staged", "npm:16.1.6"],\
+          ["listr2", "npm:9.0.3"],\
           ["micromatch", "npm:4.0.8"],\
           ["nano-spawn", "npm:1.0.2"],\
           ["pidtree", "npm:0.6.0"],\
@@ -16788,13 +16788,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["listr2", [\
-      ["npm:9.0.1", {\
-        "packageLocation": "./.yarn/cache/listr2-npm-9.0.1-6f1beb3bb9-ac5f98317f.zip/node_modules/listr2/",\
+      ["npm:9.0.3", {\
+        "packageLocation": "./.yarn/cache/listr2-npm-9.0.3-70117e4a48-8cb7cd1cec.zip/node_modules/listr2/",\
         "packageDependencies": [\
           ["cli-truncate", "npm:4.0.0"],\
           ["colorette", "npm:2.0.20"],\
           ["eventemitter3", "npm:5.0.1"],\
-          ["listr2", "npm:9.0.1"],\
+          ["listr2", "npm:9.0.3"],\
           ["log-update", "npm:6.1.0"],\
           ["rfdc", "npm:1.4.1"],\
           ["wrap-ansi", "npm:9.0.0"]\
