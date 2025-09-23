@@ -4143,24 +4143,24 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@grpc/grpc-js", [\
-      ["npm:1.13.4", {\
-        "packageLocation": "./.yarn/cache/@grpc-grpc-js-npm-1.13.4-4aa5cd2dfd-f1eb910ff7.zip/node_modules/@grpc/grpc-js/",\
+      ["npm:1.14.0", {\
+        "packageLocation": "./.yarn/cache/@grpc-grpc-js-npm-1.14.0-23f158f5eb-e1f7d15dde.zip/node_modules/@grpc/grpc-js/",\
         "packageDependencies": [\
-          ["@grpc/grpc-js", "npm:1.13.4"],\
-          ["@grpc/proto-loader", "npm:0.7.15"],\
+          ["@grpc/grpc-js", "npm:1.14.0"],\
+          ["@grpc/proto-loader", "npm:0.8.0"],\
           ["@js-sdsl/ordered-map", "npm:4.4.2"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@grpc/proto-loader", [\
-      ["npm:0.7.15", {\
-        "packageLocation": "./.yarn/cache/@grpc-proto-loader-npm-0.7.15-889e15aec1-2e2b33ace8.zip/node_modules/@grpc/proto-loader/",\
+      ["npm:0.8.0", {\
+        "packageLocation": "./.yarn/cache/@grpc-proto-loader-npm-0.8.0-b53ddeb647-216813bdca.zip/node_modules/@grpc/proto-loader/",\
         "packageDependencies": [\
-          ["@grpc/proto-loader", "npm:0.7.15"],\
+          ["@grpc/proto-loader", "npm:0.8.0"],\
           ["lodash.camelcase", "npm:4.3.0"],\
           ["long", "npm:5.3.2"],\
-          ["protobufjs", "npm:7.5.3"],\
+          ["protobufjs", "npm:7.5.4"],\
           ["yargs", "npm:17.7.2"]\
         ],\
         "linkType": "HARD"\
@@ -5369,7 +5369,7 @@ const RAW_RUNTIME_STATE =
       ["virtual:a2a2248ff775afaffa2668d5f95e20ed0db00942de874435a83c8b65b6824d67d3865e689142112ab38f0391d916ba15c3156217c9b8d4e38ec6c6870f993b1b#npm:0.200.0", {\
         "packageLocation": "./.yarn/__virtual__/@opentelemetry-exporter-logs-otlp-grpc-virtual-0482a7297a/0/cache/@opentelemetry-exporter-logs-otlp-grpc-npm-0.200.0-db77ecb590-45bb6b6579.zip/node_modules/@opentelemetry/exporter-logs-otlp-grpc/",\
         "packageDependencies": [\
-          ["@grpc/grpc-js", "npm:1.13.4"],\
+          ["@grpc/grpc-js", "npm:1.14.0"],\
           ["@opentelemetry/api", "npm:1.9.0"],\
           ["@opentelemetry/core", "virtual:30c68832481d4755001a1ea0eacc77632bd09b6eb594031efa17c4826e7fe064484b05aa2fb179a8cd7dcbd2aae51279f7f2367a667a7e5449a791c5de90bb08#npm:2.0.0"],\
           ["@opentelemetry/exporter-logs-otlp-grpc", "virtual:a2a2248ff775afaffa2668d5f95e20ed0db00942de874435a83c8b65b6824d67d3865e689142112ab38f0391d916ba15c3156217c9b8d4e38ec6c6870f993b1b#npm:0.200.0"],\
@@ -5478,7 +5478,7 @@ const RAW_RUNTIME_STATE =
       ["virtual:a2a2248ff775afaffa2668d5f95e20ed0db00942de874435a83c8b65b6824d67d3865e689142112ab38f0391d916ba15c3156217c9b8d4e38ec6c6870f993b1b#npm:0.200.0", {\
         "packageLocation": "./.yarn/__virtual__/@opentelemetry-exporter-metrics-otlp-grpc-virtual-48a6d310ed/0/cache/@opentelemetry-exporter-metrics-otlp-grpc-npm-0.200.0-593987abc0-d622ecd2f5.zip/node_modules/@opentelemetry/exporter-metrics-otlp-grpc/",\
         "packageDependencies": [\
-          ["@grpc/grpc-js", "npm:1.13.4"],\
+          ["@grpc/grpc-js", "npm:1.14.0"],\
           ["@opentelemetry/api", "npm:1.9.0"],\
           ["@opentelemetry/core", "virtual:30c68832481d4755001a1ea0eacc77632bd09b6eb594031efa17c4826e7fe064484b05aa2fb179a8cd7dcbd2aae51279f7f2367a667a7e5449a791c5de90bb08#npm:2.0.0"],\
           ["@opentelemetry/exporter-metrics-otlp-grpc", "virtual:a2a2248ff775afaffa2668d5f95e20ed0db00942de874435a83c8b65b6824d67d3865e689142112ab38f0391d916ba15c3156217c9b8d4e38ec6c6870f993b1b#npm:0.200.0"],\
@@ -5613,7 +5613,7 @@ const RAW_RUNTIME_STATE =
       ["virtual:a2a2248ff775afaffa2668d5f95e20ed0db00942de874435a83c8b65b6824d67d3865e689142112ab38f0391d916ba15c3156217c9b8d4e38ec6c6870f993b1b#npm:0.200.0", {\
         "packageLocation": "./.yarn/__virtual__/@opentelemetry-exporter-trace-otlp-grpc-virtual-8b591bdda1/0/cache/@opentelemetry-exporter-trace-otlp-grpc-npm-0.200.0-3db7d2b812-874cdf1482.zip/node_modules/@opentelemetry/exporter-trace-otlp-grpc/",\
         "packageDependencies": [\
-          ["@grpc/grpc-js", "npm:1.13.4"],\
+          ["@grpc/grpc-js", "npm:1.14.0"],\
           ["@opentelemetry/api", "npm:1.9.0"],\
           ["@opentelemetry/core", "virtual:30c68832481d4755001a1ea0eacc77632bd09b6eb594031efa17c4826e7fe064484b05aa2fb179a8cd7dcbd2aae51279f7f2367a667a7e5449a791c5de90bb08#npm:2.0.0"],\
           ["@opentelemetry/exporter-trace-otlp-grpc", "virtual:a2a2248ff775afaffa2668d5f95e20ed0db00942de874435a83c8b65b6824d67d3865e689142112ab38f0391d916ba15c3156217c9b8d4e38ec6c6870f993b1b#npm:0.200.0"],\
@@ -6020,7 +6020,7 @@ const RAW_RUNTIME_STATE =
       ["virtual:0482a7297af45d08a0b39dfd5c455d4c976cf4c3b6b8682320bdea1c8aa7f8c5ee8c39249c1650c1ffc8b5a2c1478969be50047ed1461713ed6908f47548baad#npm:0.200.0", {\
         "packageLocation": "./.yarn/__virtual__/@opentelemetry-otlp-grpc-exporter-base-virtual-00fdfa0098/0/cache/@opentelemetry-otlp-grpc-exporter-base-npm-0.200.0-d11240ce63-17db2994ca.zip/node_modules/@opentelemetry/otlp-grpc-exporter-base/",\
         "packageDependencies": [\
-          ["@grpc/grpc-js", "npm:1.13.4"],\
+          ["@grpc/grpc-js", "npm:1.14.0"],\
           ["@opentelemetry/api", "npm:1.9.0"],\
           ["@opentelemetry/core", "virtual:30c68832481d4755001a1ea0eacc77632bd09b6eb594031efa17c4826e7fe064484b05aa2fb179a8cd7dcbd2aae51279f7f2367a667a7e5449a791c5de90bb08#npm:2.0.0"],\
           ["@opentelemetry/otlp-exporter-base", "virtual:0482a7297af45d08a0b39dfd5c455d4c976cf4c3b6b8682320bdea1c8aa7f8c5ee8c39249c1650c1ffc8b5a2c1478969be50047ed1461713ed6908f47548baad#npm:0.200.0"],\
@@ -19684,6 +19684,25 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:24.5.1"],\
           ["long", "npm:5.3.2"],\
           ["protobufjs", "npm:7.5.3"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:7.5.4", {\
+        "packageLocation": "./.yarn/unplugged/protobufjs-npm-7.5.4-4d6f681551/node_modules/protobufjs/",\
+        "packageDependencies": [\
+          ["@protobufjs/aspromise", "npm:1.1.2"],\
+          ["@protobufjs/base64", "npm:1.1.2"],\
+          ["@protobufjs/codegen", "npm:2.0.4"],\
+          ["@protobufjs/eventemitter", "npm:1.1.0"],\
+          ["@protobufjs/fetch", "npm:1.1.0"],\
+          ["@protobufjs/float", "npm:1.0.2"],\
+          ["@protobufjs/inquire", "npm:1.1.0"],\
+          ["@protobufjs/path", "npm:1.1.2"],\
+          ["@protobufjs/pool", "npm:1.1.0"],\
+          ["@protobufjs/utf8", "npm:1.1.0"],\
+          ["@types/node", "npm:24.5.1"],\
+          ["long", "npm:5.3.2"],\
+          ["protobufjs", "npm:7.5.4"]\
         ],\
         "linkType": "HARD"\
       }]\
