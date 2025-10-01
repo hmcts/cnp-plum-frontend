@@ -94,7 +94,7 @@ const RAW_RUNTIME_STATE =
           ["nock", "npm:14.0.10"],\
           ["nodemon", "npm:3.1.10"],\
           ["nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.2.4"],\
-          ["pa11y", "npm:9.0.0"],\
+          ["pa11y", "npm:9.0.1"],\
           ["playwright", "npm:1.55.1"],\
           ["prettier", "npm:2.8.8"],\
           ["react-native", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:0.81.1"],\
@@ -10526,7 +10526,7 @@ const RAW_RUNTIME_STATE =
           ["nock", "npm:14.0.10"],\
           ["nodemon", "npm:3.1.10"],\
           ["nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.2.4"],\
-          ["pa11y", "npm:9.0.0"],\
+          ["pa11y", "npm:9.0.1"],\
           ["playwright", "npm:1.55.1"],\
           ["prettier", "npm:2.8.8"],\
           ["react-native", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:0.81.1"],\
@@ -18025,8 +18025,8 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["pa11y", [\
-      ["npm:9.0.0", {\
-        "packageLocation": "./.yarn/cache/pa11y-npm-9.0.0-b2b87b3f4c-177e58e8d2.zip/node_modules/pa11y/",\
+      ["npm:9.0.1", {\
+        "packageLocation": "./.yarn/cache/pa11y-npm-9.0.1-65a2fcb723-9df4ee7da9.zip/node_modules/pa11y/",\
         "packageDependencies": [\
           ["axe-core", "npm:4.10.3"],\
           ["bfj", "npm:9.1.2"],\
@@ -18036,7 +18036,7 @@ const RAW_RUNTIME_STATE =
           ["kleur", "npm:4.1.5"],\
           ["mustache", "npm:4.2.0"],\
           ["node.extend", "npm:2.0.3"],\
-          ["pa11y", "npm:9.0.0"],\
+          ["pa11y", "npm:9.0.1"],\
           ["puppeteer", "npm:24.12.1"],\
           ["semver", "npm:7.7.2"]\
         ],\
