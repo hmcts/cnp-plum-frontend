@@ -9,3 +9,4 @@ nodejs:
     'plumsi':
       secrets:
         - name: appInsights-InstrumentationKey
+        - name: secretDoesNotExist
