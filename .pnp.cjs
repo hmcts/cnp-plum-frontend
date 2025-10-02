@@ -100,7 +100,7 @@ const RAW_RUNTIME_STATE =
           ["react-native", "virtual:de1c022466fe7d3ca578e466a2dd8cb9d8d22d74b87ce4adbac1437ade35a7ab11162626e53246453f00b0692a0145361bfa57492e7fb890e5eb31b9eb73a287#npm:0.81.4"],\
           ["request", "npm:2.88.2"],\
           ["require-directory", "npm:2.1.1"],\
-          ["sass", "npm:1.92.1"],\
+          ["sass", "npm:1.93.2"],\
           ["sass-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:16.0.5"],\
           ["serve-favicon", "npm:2.5.1"],\
           ["sinon", "npm:21.0.0"],\
@@ -10470,7 +10470,7 @@ const RAW_RUNTIME_STATE =
           ["react-native", "virtual:de1c022466fe7d3ca578e466a2dd8cb9d8d22d74b87ce4adbac1437ade35a7ab11162626e53246453f00b0692a0145361bfa57492e7fb890e5eb31b9eb73a287#npm:0.81.4"],\
           ["request", "npm:2.88.2"],\
           ["require-directory", "npm:2.1.1"],\
-          ["sass", "npm:1.92.1"],\
+          ["sass", "npm:1.93.2"],\
           ["sass-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:16.0.5"],\
           ["serve-favicon", "npm:2.5.1"],\
           ["sinon", "npm:21.0.0"],\
@@ -18800,7 +18800,7 @@ const RAW_RUNTIME_STATE =
           ["@protobufjs/path", "npm:1.1.2"],\
           ["@protobufjs/pool", "npm:1.1.0"],\
           ["@protobufjs/utf8", "npm:1.1.0"],\
-          ["@types/node", "npm:24.5.1"],\
+          ["@types/node", "npm:24.6.1"],\
           ["long", "npm:5.3.2"],\
           ["protobufjs", "npm:7.5.4"]\
         ],\
@@ -19592,13 +19592,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["sass", [\
-      ["npm:1.92.1", {\
-        "packageLocation": "./.yarn/cache/sass-npm-1.92.1-a62a885e34-ded47fd238.zip/node_modules/sass/",\
+      ["npm:1.93.2", {\
+        "packageLocation": "./.yarn/cache/sass-npm-1.93.2-b5109840d8-2fc0dcafdf.zip/node_modules/sass/",\
         "packageDependencies": [\
           ["@parcel/watcher", "npm:2.5.1"],\
           ["chokidar", "npm:4.0.3"],\
           ["immutable", "npm:5.1.3"],\
-          ["sass", "npm:1.92.1"],\
+          ["sass", "npm:1.93.2"],\
           ["source-map-js", "npm:1.2.1"]\
         ],\
         "linkType": "HARD"\
@@ -19623,7 +19623,7 @@ const RAW_RUNTIME_STATE =
           ["@types/webpack", null],\
           ["neo-async", "npm:2.6.2"],\
           ["node-sass", null],\
-          ["sass", "npm:1.92.1"],\
+          ["sass", "npm:1.93.2"],\
           ["sass-embedded", null],\
           ["sass-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:16.0.5"],\
           ["webpack", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:5.101.3"]\
