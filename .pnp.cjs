@@ -266,7 +266,7 @@ const RAW_RUNTIME_STATE =
           ["@azure/functions", "npm:4.7.3"],\
           ["cookie", "npm:1.0.2"],\
           ["long", "npm:4.0.0"],\
-          ["undici", "npm:7.14.0"]\
+          ["undici", "npm:7.16.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -10140,7 +10140,7 @@ const RAW_RUNTIME_STATE =
           ["parse5", "npm:7.3.0"],\
           ["parse5-htmlparser2-tree-adapter", "npm:7.1.0"],\
           ["parse5-parser-stream", "npm:7.1.2"],\
-          ["undici", "npm:7.14.0"],\
+          ["undici", "npm:7.16.0"],\
           ["whatwg-mimetype", "npm:4.0.0"]\
         ],\
         "linkType": "HARD"\
@@ -18800,7 +18800,7 @@ const RAW_RUNTIME_STATE =
           ["@protobufjs/path", "npm:1.1.2"],\
           ["@protobufjs/pool", "npm:1.1.0"],\
           ["@protobufjs/utf8", "npm:1.1.0"],\
-          ["@types/node", "npm:24.5.1"],\
+          ["@types/node", "npm:24.6.1"],\
           ["long", "npm:5.3.2"],\
           ["protobufjs", "npm:7.5.4"]\
         ],\
@@ -21507,10 +21507,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["undici", [\
-      ["npm:7.14.0", {\
-        "packageLocation": "./.yarn/cache/undici-npm-7.14.0-bfc8735d4a-df71e67fcc.zip/node_modules/undici/",\
+      ["npm:7.16.0", {\
+        "packageLocation": "./.yarn/cache/undici-npm-7.16.0-f6b1c9157f-2bb71672b2.zip/node_modules/undici/",\
         "packageDependencies": [\
-          ["undici", "npm:7.14.0"]\
+          ["undici", "npm:7.16.0"]\
         ],\
         "linkType": "HARD"\
       }]\
