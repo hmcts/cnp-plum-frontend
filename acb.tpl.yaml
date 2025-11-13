@@ -1,10 +1,17 @@
 version: 1.0-preview-1
 steps:
+  - id: setup-qemu
+    cmd: docker run --rm --privileged tonistiigi/binfmt:latest --install all
+    retries: 3
+    retryDelay: 5
+    when: ['-']
+
   - id: pull-base-image-amd64
     cmd: docker pull --platform linux/amd64 hmctspublic.azurecr.io/base/node:20-alpine && docker tag hmctspublic.azurecr.io/base/node:20-alpine hmctspublic.azurecr.io/base/node/linux/amd64:20-alpine
     retries: 10
     retryDelay: 5
-    when: ['-']
+    when: 
+      - setup-qemu
 
   - id: pull-base-amd64
     cmd: docker pull {{.Run.Registry}}/plum/frontend/base:amd64 || true
