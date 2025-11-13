@@ -4,13 +4,13 @@ steps:
     cmd: docker run --rm --privileged tonistiigi/binfmt:latest --install all
     retries: 3
     retryDelay: 5
-    when: ['-']
+    when: ["-"]
 
   - id: pull-base-image-amd64
     cmd: docker pull --platform linux/amd64 hmctspublic.azurecr.io/base/node:20-alpine && docker tag hmctspublic.azurecr.io/base/node:20-alpine hmctspublic.azurecr.io/base/node/linux/amd64:20-alpine
     retries: 10
     retryDelay: 5
-    when: 
+    when:
       - setup-qemu
 
   - id: pull-base-amd64
@@ -92,10 +92,10 @@ steps:
 
   - id: push-images
     push:
-      - '{{.Run.Registry}}/plum/frontend/base:amd64'
-      - '{{.Run.Registry}}/{{CI_IMAGE_TAG}}-amd64'
-      - '{{.Run.Registry}}/plum/frontend/base:arm64'
-      - '{{.Run.Registry}}/{{CI_IMAGE_TAG}}-arm64'
+      - "{{.Run.Registry}}/plum/frontend/base:amd64"
+      - "{{.Run.Registry}}/{{CI_IMAGE_TAG}}-amd64"
+      - "{{.Run.Registry}}/plum/frontend/base:arm64"
+      - "{{.Run.Registry}}/{{CI_IMAGE_TAG}}-arm64"
     retries: 10
     retryDelay: 5
     when:
