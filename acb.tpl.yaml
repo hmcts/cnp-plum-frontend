@@ -10,8 +10,7 @@ steps:
     cmd: docker pull --platform linux/amd64 hmctspublic.azurecr.io/base/node:20-alpine && docker tag hmctspublic.azurecr.io/base/node:20-alpine hmctspublic.azurecr.io/base/node/linux/amd64:20-alpine
     retries: 10
     retryDelay: 5
-    when:
-      - setup-qemu
+    when: ['-']
 
   - id: pull-base-amd64
     cmd: docker pull {{.Run.Registry}}/plum/frontend/base:amd64 || true
@@ -53,7 +52,7 @@ steps:
     retries: 10
     retryDelay: 5
     when:
-      - pull-base-image-amd64
+      - setup-qemu
 
   - id: pull-base-arm64
     cmd: docker pull {{.Run.Registry}}/plum/frontend/base-arm64:latest || true
