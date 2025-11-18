@@ -1,6 +1,6 @@
 #!groovy
 
-@Library("Infrastructure")
+@Library("Infrastructure@performance-stages-tidy") //  Infrastructure
 
 def type = "nodejs"
 def product = "plum"
@@ -54,5 +54,16 @@ withPipeline(type, product, component) {
       yarn playwright install
     """
   }
+
+  /*=====================================================
+    Dynatrace and Performance Configuration
+  =======================================================*/
+  enablePerformanceTestStages(timeout: 60)
+  enableGatlingLoadTests([
+    repo: 'https://github.com/hmcts/performance-testing.git',
+    branch: 'add-et-tests', 
+    simulation: 'et.simulations.EtCitizenSimulation',
+    timeout: 10
+  ])
 
 }
