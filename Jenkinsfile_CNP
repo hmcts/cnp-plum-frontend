@@ -4,7 +4,7 @@
 
 def type = "nodejs"
 def product = "plum"
-def component = "frontend" 
+def component = "frontend"
 def expiresAfter = "3000-01-01"
 
 def secrets = [ 'plumsi-${env}':
@@ -59,11 +59,11 @@ withPipeline(type, product, component) {
     Dynatrace and Performance Configuration
   =======================================================*/
   enablePerformanceTestStages(timeout: 60)
-  enableGatlingLoadTests([
-    repo: 'https://github.com/hmcts/performance-testing.git',
-    branch: 'add-et-tests', 
-    simulation: 'et.simulations.EtCitizenSimulation',
-    timeout: 10
-  ])
+  // enableGatlingLoadTests([
+  //   repo: 'https://github.com/hmcts/performance-testing.git',
+  //   branch: 'add-et-tests',
+  //   simulation: 'et.simulations.EtCitizenSimulation',
+  //   timeout: 10
+  // ])
 
 }
