@@ -59,7 +59,7 @@ const RAW_RUNTIME_STATE =
           ["axios", "npm:1.12.2"],\
           ["axios-debug-log", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.0.0"],\
           ["babel-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:10.0.0"],\
-          ["body-parser", "npm:2.2.0"],\
+          ["body-parser", "npm:2.2.1"],\
           ["chai", "npm:4.5.0"],\
           ["chai-as-promised", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:8.0.2"],\
           ["chokidar", "npm:4.0.3"],\
@@ -9607,18 +9607,18 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:2.2.0", {\
-        "packageLocation": "./.yarn/cache/body-parser-npm-2.2.0-b3d2aaf918-e9d844b036.zip/node_modules/body-parser/",\
+      ["npm:2.2.1", {\
+        "packageLocation": "./.yarn/cache/body-parser-npm-2.2.1-79691d0c2a-cab162d62d.zip/node_modules/body-parser/",\
         "packageDependencies": [\
-          ["body-parser", "npm:2.2.0"],\
+          ["body-parser", "npm:2.2.1"],\
           ["bytes", "npm:3.1.2"],\
           ["content-type", "npm:1.0.5"],\
           ["debug", "virtual:ffade2903a4701eb4335a8fa42fa50796f82be3ca5c115da3b817ada5adedc1813f0898772f15874e5d8b4e98346e9b24720d1a1180ea98d64817037afb9b443#npm:4.4.3"],\
           ["http-errors", "npm:2.0.0"],\
-          ["iconv-lite", "npm:0.6.3"],\
+          ["iconv-lite", "npm:0.7.0"],\
           ["on-finished", "npm:2.4.1"],\
           ["qs", "npm:6.14.0"],\
-          ["raw-body", "npm:3.0.0"],\
+          ["raw-body", "npm:3.0.2"],\
           ["type-is", "npm:2.0.1"]\
         ],\
         "linkType": "HARD"\
@@ -10429,7 +10429,7 @@ const RAW_RUNTIME_STATE =
           ["axios", "npm:1.12.2"],\
           ["axios-debug-log", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.0.0"],\
           ["babel-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:10.0.0"],\
-          ["body-parser", "npm:2.2.0"],\
+          ["body-parser", "npm:2.2.1"],\
           ["chai", "npm:4.5.0"],\
           ["chai-as-promised", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:8.0.2"],\
           ["chokidar", "npm:4.0.3"],\
@@ -13966,6 +13966,18 @@ const RAW_RUNTIME_STATE =
           ["inherits", "npm:2.0.4"],\
           ["setprototypeof", "npm:1.2.0"],\
           ["statuses", "npm:2.0.1"],\
+          ["toidentifier", "npm:1.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:2.0.1", {\
+        "packageLocation": "./.yarn/cache/http-errors-npm-2.0.1-6d19ab492e-9fe31bc0ed.zip/node_modules/http-errors/",\
+        "packageDependencies": [\
+          ["depd", "npm:2.0.0"],\
+          ["http-errors", "npm:2.0.1"],\
+          ["inherits", "npm:2.0.4"],\
+          ["setprototypeof", "npm:1.2.0"],\
+          ["statuses", "npm:2.0.2"],\
           ["toidentifier", "npm:1.0.1"]\
         ],\
         "linkType": "HARD"\
@@ -18982,13 +18994,13 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:3.0.0", {\
-        "packageLocation": "./.yarn/cache/raw-body-npm-3.0.0-cd8403b401-2443429bbb.zip/node_modules/raw-body/",\
+      ["npm:3.0.2", {\
+        "packageLocation": "./.yarn/cache/raw-body-npm-3.0.2-77b7ebce9c-4168c82157.zip/node_modules/raw-body/",\
         "packageDependencies": [\
           ["bytes", "npm:3.1.2"],\
-          ["http-errors", "npm:2.0.0"],\
-          ["iconv-lite", "npm:0.6.3"],\
-          ["raw-body", "npm:3.0.0"],\
+          ["http-errors", "npm:2.0.1"],\
+          ["iconv-lite", "npm:0.7.0"],\
+          ["raw-body", "npm:3.0.2"],\
           ["unpipe", "npm:1.0.0"]\
         ],\
         "linkType": "HARD"\
@@ -20202,6 +20214,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/statuses-npm-2.0.1-81d2b97fee-18c7623fdb.zip/node_modules/statuses/",\
         "packageDependencies": [\
           ["statuses", "npm:2.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:2.0.2", {\
+        "packageLocation": "./.yarn/cache/statuses-npm-2.0.2-2d84c63b8c-6927feb50c.zip/node_modules/statuses/",\
+        "packageDependencies": [\
+          ["statuses", "npm:2.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
