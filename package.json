@@ -132,7 +132,8 @@
     "nanoid": "^3.3.8",
     "superagent": "10.2.3",
     "formidable": "^3.5.4",
-    "cookie": "1.0.2"
+    "cookie": "1.0.2",
+    "jws": "^3.2.3"
   },
   "lint-staged": {
     "*.{js,ts}": "eslint --cache --fix",
