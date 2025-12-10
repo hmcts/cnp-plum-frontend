@@ -7,18 +7,29 @@ import jestPlugin from 'eslint-plugin-jest';
 import prettierConfig from 'eslint-config-prettier';
 
 export default [
-  // Base JS recommended rules
   js.configs.recommended,
-
-  // Disable rules that conflict with Prettier
   prettierConfig,
-
-  // Ignore patterns
   {
-    ignores: ['src/main/views/govuk/**'],
+    // Expanded ignore patterns provided
+    ignores: [
+      'dist/**',
+      'coverage/**',
+      '**/*.d.ts',
+      'src/main/public/**',
+      'src/main/types/**',
+      'jest.config.js',
+      'jest.*.config.js',
+      '.eslintrc.js',
+      'src/test/*/codecept.conf.js',
+      'src/test/config.ts',
+      '.pnp.*',
+      '.pnp.cjs',
+      '.pnp.loader.mjs',
+      'node_modules/**',
+      '.yarn/**',
+      'src/main/views/govuk/**',
+    ],
   },
-
-  // Main ruleset applied to JS/TS files
   {
     files: ['**/*.ts', '**/*.js'],
     languageOptions: {
@@ -39,15 +50,12 @@ export default [
       jest: jestPlugin,
     },
     rules: {
-      // Typescript rules
       '@typescript-eslint/array-type': 'error',
       '@typescript-eslint/explicit-module-boundary-types': 'error',
       '@typescript-eslint/no-explicit-any': 'error',
       '@typescript-eslint/no-shadow': 'error',
       '@typescript-eslint/no-unused-vars': ['error', { ignoreRestSiblings: true }],
       '@typescript-eslint/no-var-requires': 'off',
-
-      // General rules
       curly: 'error',
       eqeqeq: 'error',
       'import/no-duplicates': 'error',
