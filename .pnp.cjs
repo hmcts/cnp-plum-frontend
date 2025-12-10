@@ -266,7 +266,7 @@ const RAW_RUNTIME_STATE =
           ["@azure/functions", "npm:4.7.3"],\
           ["cookie", "npm:1.0.2"],\
           ["long", "npm:4.0.0"],\
-          ["undici", "npm:7.14.0"]\
+          ["undici", "npm:7.16.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -10140,7 +10140,7 @@ const RAW_RUNTIME_STATE =
           ["parse5", "npm:7.3.0"],\
           ["parse5-htmlparser2-tree-adapter", "npm:7.1.0"],\
           ["parse5-parser-stream", "npm:7.1.2"],\
-          ["undici", "npm:7.14.0"],\
+          ["undici", "npm:7.16.0"],\
           ["whatwg-mimetype", "npm:4.0.0"]\
         ],\
         "linkType": "HARD"\
@@ -21526,10 +21526,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["undici", [\
-      ["npm:7.14.0", {\
-        "packageLocation": "./.yarn/cache/undici-npm-7.14.0-bfc8735d4a-df71e67fcc.zip/node_modules/undici/",\
+      ["npm:7.16.0", {\
+        "packageLocation": "./.yarn/cache/undici-npm-7.16.0-f6b1c9157f-2bb71672b2.zip/node_modules/undici/",\
         "packageDependencies": [\
-          ["undici", "npm:7.14.0"]\
+          ["undici", "npm:7.16.0"]\
         ],\
         "linkType": "HARD"\
       }]\
