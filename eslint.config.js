@@ -5,12 +5,13 @@ import tsParser from '@typescript-eslint/parser';
 import importPlugin from 'eslint-plugin-import';
 import jestPlugin from 'eslint-plugin-jest';
 import prettierConfig from 'eslint-config-prettier';
+// Handle both ESM and CommonJS exports to avoid __esModule issue
+const prettier = prettierConfig.default || prettierConfig;
 
 export default [
   js.configs.recommended,
-  prettierConfig,
+  prettier,
   {
-    // Expanded ignore patterns provided
     ignores: [
       'dist/**',
       'coverage/**',
