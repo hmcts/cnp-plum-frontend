@@ -1,0 +1,24 @@
+plugins {
+  id 'java'
+}
+
+repositories {
+  mavenCentral()
+  maven {
+    url = uri('https://pkgs.dev.azure.com/hmcts/Artifacts/_packaging/hmcts-lib/maven/v1')
+  }
+}
+
+dependencies {
+  testImplementation group: 'com.github.hmcts', name: 'fortify-client', version: '1.4.9', classifier: 'all'
+}
+
+task fortifyScan(type: JavaExec) {
+  description = "Runs Fortify on Demand scan via hmcts fortify-client"
+  group = "Verification"
+
+  mainClass = "uk.gov.hmcts.fortifyclient.FortifyClientMainApp"
+  classpath += sourceSets.test.runtimeClasspath
+  jvmArgs = ['--add-opens=java.base/java.lang.reflect=ALL-UNNAMED']
+}
+
