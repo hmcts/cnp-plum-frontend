@@ -1,6 +1,6 @@
 #!groovy
 
-@Library("Infrastructure")
+@Library("Infrastructure@DTSPO-27708")
 
 def type = "nodejs"
 def product = "plum"
