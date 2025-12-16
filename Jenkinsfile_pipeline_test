@@ -13,12 +13,12 @@
 
 properties([
   parameters([
-    string(name: 'LIB_VERSION', defaultValue: 'DTSPO-27708', description: 'Branch name of pipeline library to use')
+    string(name: 'LIB_VERSION', defaultValue: 'master', description: 'Branch name of pipeline library to use')
   ])
 ])
 
-library "Infrastructure@DTSPO-27708"
-  
+library "Infrastructure@DTSPO-27708-Test"
+
 def type = "nodejs"
 
 def product = "crumble"
