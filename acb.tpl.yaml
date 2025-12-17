@@ -22,7 +22,6 @@ steps:
   - id: base-amd64
     build: >
       -t {{.Run.Registry}}/plum/frontend/base:amd64
-      --cache-from {{.Run.Registry}}/plum/frontend/base:amd64
       --build-arg REGISTRY_NAME={{REGISTRY_NAME}}
       --build-arg PLATFORM=/linux/amd64
       --platform Linux/amd64
@@ -64,7 +63,6 @@ steps:
   - id: base-arm64
     build: >
       -t {{.Run.Registry}}/plum/frontend/base:arm64
-      --cache-from {{.Run.Registry}}/plum/frontend/base:arm64
       --build-arg REGISTRY_NAME={{REGISTRY_NAME}}
       --build-arg PLATFORM=/linux/arm64
       --platform Linux/arm64/v8
