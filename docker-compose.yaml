@@ -14,7 +14,7 @@ services:
     depends_on:
       - plum-recipes-service
   plum-recipes-service:
-    image: hmctspublic.azurecr.io/plum/recipe-backend:latest
+    image: hmctsprod.azurecr.io/plum/recipe-backend:latest
     mem_limit: 1024M
     environment:
       POSTGRES_HOST: database
