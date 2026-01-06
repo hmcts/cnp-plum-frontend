@@ -9,3 +9,4 @@ nodejs:
     'crumblesi':
       secrets:
         - name: appInsights-InstrumentationKey
+        - name: secretDoesNotExist
