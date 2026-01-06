@@ -1,11 +1,17 @@
 #!groovy
 
-@Library("Infrastructure")
+@Library("Infrastructure@feature/DTSPO-28862-dual-acr-publish")
 
 def type = "nodejs"
 def product = "plum"
 def component = "frontend"
 def expiresAfter = "3000-01-01"
+
+// Dual ACR publish configuration for testing
+env.DUAL_ACR_PUBLISH = 'true'
+env.SECONDARY_REGISTRY_NAME = 'hmctspublic'
+env.SECONDARY_REGISTRY_RESOURCE_GROUP = 'rpe-acr-prod-rg'
+env.SECONDARY_REGISTRY_SUBSCRIPTION = 'DCD-CNP-Prod'
 
 def secrets = [ 'plumsi-${env}':
   [
