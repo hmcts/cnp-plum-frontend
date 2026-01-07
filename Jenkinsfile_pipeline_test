@@ -25,8 +25,16 @@ def product = "crumble"
 
 def app = "frontend"
 
+
 withPipeline(type, product, app) {
   // never skip stages when testing the pipeline
   env.NO_SKIP_IMG_BUILD = 'true'
+  
+  before('functionalTest:sandbox') {
+    sh """
+      yarn install
+      yarn playwright install
+    """
+  }
   disableLegacyDeployment()
 }
