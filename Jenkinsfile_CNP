@@ -8,14 +8,12 @@ def component = "frontend"
 def expiresAfter = "3000-01-01"
 
 // Dual ACR publish configuration for testing
-// Note: For full dual-ACR testing, both registries need base images.
-// The sandbox ACR (hmctssbox) lacks base images, so we use hmctspublic for both
-// to verify the dual publish code paths work correctly.
-// In production, the Key Vault will point to the new ZA-enabled ACR.
+// Primary ACR (from Key Vault) = hmctspublic (old)
+// Secondary ACR = hmctssbox (new ZA-enabled sandbox ACR)
 env.DUAL_ACR_PUBLISH = 'true'
-env.SECONDARY_REGISTRY_NAME = 'hmctspublic'
-env.SECONDARY_REGISTRY_RESOURCE_GROUP = 'rpe-acr-prod-rg'
-env.SECONDARY_REGISTRY_SUBSCRIPTION = 'DCD-CNP-Prod'
+env.SECONDARY_REGISTRY_NAME = 'hmctssbox'
+env.SECONDARY_REGISTRY_RESOURCE_GROUP = 'cnp-acr-rg'
+env.SECONDARY_REGISTRY_SUBSCRIPTION = 'DCD-CFT-Sandbox'
 
 def secrets = [ 'plumsi-${env}':
   [
