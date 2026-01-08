@@ -1,6 +1,7 @@
 # ---- Base image ----
 ARG PLATFORM=""
-FROM hmctspublic.azurecr.io/base/node${PLATFORM}:20-alpine as base
+ARG REGISTRY_NAME="hmctspublic"
+FROM ${REGISTRY_NAME}.azurecr.io/base/node${PLATFORM}:20-alpine as base
 
 USER root
 RUN corepack enable
