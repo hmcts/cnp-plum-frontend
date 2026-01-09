@@ -7,7 +7,7 @@ steps:
     when: ['-']
 
   - id: pull-base-image-amd64
-    cmd: docker pull --platform linux/amd64 {{REGISTRY_NAME}}.azurecr.io/base/node:20-alpine && docker tag {{REGISTRY_NAME}}.azurecr.io/base/node:20-alpine {{REGISTRY_NAME}}.azurecr.io/base/node/linux/amd64:20-alpine
+    cmd: docker pull --platform linux/amd64 {{REGISTRY_NAME}}.azurecr.io/base/node:20-alpine
     retries: 10
     retryDelay: 5
     when: ['setup-qemu']
@@ -24,8 +24,7 @@ steps:
       -t {{.Run.Registry}}/plum/frontend/base:amd64
       --cache-from {{.Run.Registry}}/plum/frontend/base:amd64
       --build-arg REGISTRY_NAME={{REGISTRY_NAME}}
-      --build-arg PLATFORM=/linux/amd64
-      --platform Linux/amd64
+      --platform linux/amd64
       --target base
       .
     retries: 10
@@ -38,8 +37,7 @@ steps:
       -t {{.Run.Registry}}/{{CI_IMAGE_TAG}}-amd64
       --cache-from {{.Run.Registry}}/plum/frontend/base:amd64
       --build-arg REGISTRY_NAME={{REGISTRY_NAME}}
-      --build-arg PLATFORM=/linux/amd64
-      --platform Linux/amd64
+      --platform linux/amd64
       --target runtime
       .
     retries: 10
@@ -48,7 +46,7 @@ steps:
       - base-amd64
 
   - id: pull-base-image-arm64
-    cmd: docker pull --platform linux/arm64 {{REGISTRY_NAME}}.azurecr.io/base/node:20-alpine && docker tag {{REGISTRY_NAME}}.azurecr.io/base/node:20-alpine {{REGISTRY_NAME}}.azurecr.io/base/node/linux/arm64:20-alpine
+    cmd: docker pull --platform linux/arm64 {{REGISTRY_NAME}}.azurecr.io/base/node:20-alpine
     retries: 10
     retryDelay: 5
     when:
@@ -66,8 +64,7 @@ steps:
       -t {{.Run.Registry}}/plum/frontend/base:arm64
       --cache-from {{.Run.Registry}}/plum/frontend/base:arm64
       --build-arg REGISTRY_NAME={{REGISTRY_NAME}}
-      --build-arg PLATFORM=/linux/arm64
-      --platform Linux/arm64/v8
+      --platform linux/arm64
       --target base
       .
     retries: 10
@@ -80,8 +77,7 @@ steps:
       -t {{.Run.Registry}}/{{CI_IMAGE_TAG}}-arm64
       --cache-from {{.Run.Registry}}/plum/frontend/base:arm64
       --build-arg REGISTRY_NAME={{REGISTRY_NAME}}
-      --build-arg PLATFORM=/linux/arm64
-      --platform Linux/arm64/v8
+      --platform linux/arm64
       --target runtime
       .
     retries: 10
