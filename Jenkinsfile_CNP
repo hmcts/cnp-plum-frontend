@@ -1,11 +1,21 @@
 #!groovy
 
-@Library("Infrastructure")
+@Library("Infrastructure@feature/DTSPO-28862-dual-acr-publish")
 
 def type = "nodejs"
 def product = "plum"
 def component = "frontend" 
 def expiresAfter = "3000-01-01"
+
+// Dual ACR publish configuration for testing
+// Primary ACR (from Key Vault) = hmctssandbox (sandbox primary)
+// Secondary ACR = hmctssbox (new ZA-enabled sandbox ACR)
+// NOTE: withRegistrySecrets.groovy checks DUAL_ACR_PUBLISH (not _ENABLED)
+//       and then sets DUAL_ACR_PUBLISH_ENABLED internally via withEnv
+env.DUAL_ACR_PUBLISH = 'true'
+env.SECONDARY_REGISTRY_NAME = 'hmctssbox'
+env.SECONDARY_REGISTRY_RESOURCE_GROUP = 'cnp-acr-rg'
+env.SECONDARY_REGISTRY_SUBSCRIPTION = 'DCD-CFT-Sandbox'
 
 def secrets = [ 'plumsi-${env}':
   [

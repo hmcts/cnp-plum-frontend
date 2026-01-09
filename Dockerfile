@@ -1,6 +1,7 @@
 # ---- Base image ----
-ARG PLATFORM=""
-FROM hmctspublic.azurecr.io/base/node${PLATFORM}:20-alpine as base
+# BASE_IMAGE is the full image reference (either from ACR or local tag)
+ARG BASE_IMAGE=hmctspublic.azurecr.io/base/node:20-alpine
+FROM ${BASE_IMAGE} as base
 
 USER root
 RUN corepack enable

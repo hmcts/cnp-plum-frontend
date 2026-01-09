@@ -13,7 +13,7 @@
 
 properties([
   parameters([
-    string(name: 'LIB_VERSION', defaultValue: 'master', description: 'Branch name of pipeline library to use')
+    string(name: 'LIB_VERSION', defaultValue: 'feature/DTSPO-28862-dual-acr-publish', description: 'Branch name of pipeline library to use')
   ])
 ])
 
@@ -29,6 +29,14 @@ def app = "frontend"
 withPipeline(type, product, app) {
   // never skip stages when testing the pipeline
   env.NO_SKIP_IMG_BUILD = 'true'
+  
+  // Dual ACR publish configuration for testing DTSPO-28862
+  // Primary ACR (from Key Vault) = hmctssandbox (sandbox primary)
+  // Secondary ACR = hmctssbox (new ZA-enabled sandbox ACR)
+  env.DUAL_ACR_PUBLISH = 'true'
+  env.SECONDARY_REGISTRY_NAME = 'hmctssbox'
+  env.SECONDARY_REGISTRY_RESOURCE_GROUP = 'cnp-acr-rg'
+  env.SECONDARY_REGISTRY_SUBSCRIPTION = 'DCD-CFT-Sandbox'
   
   before('functionalTest:sandbox') {
     sh """
