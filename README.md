@@ -139,3 +139,5 @@ in [health.ts](src/main/routes/health.ts) file. This health check will check the
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+# Test dual ACR publish - Wed Jan 7 18:06:23 GMT 2026
