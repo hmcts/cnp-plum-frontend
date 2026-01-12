@@ -7,7 +7,7 @@ steps:
     when: ['-']
 
   - id: pull-base-image-amd64
-    cmd: docker pull --platform linux/amd64 hmctspublic.azurecr.io/base/node:20-alpine && docker tag hmctspublic.azurecr.io/base/node:20-alpine hmctspublic.azurecr.io/base/node/linux/amd64:20-alpine
+    cmd: docker pull --platform linux/amd64 hmctsprod.azurecr.io/base/node:20-alpine && docker tag hmctsprod.azurecr.io/base/node:20-alpine hmctsprod.azurecr.io/base/node/linux/amd64:20-alpine
     retries: 10
     retryDelay: 5
     when: ['setup-qemu']
@@ -22,7 +22,6 @@ steps:
   - id: base-amd64
     build: >
       -t {{.Run.Registry}}/plum/frontend/base:amd64
-      --cache-from {{.Run.Registry}}/plum/frontend/base:amd64
       --build-arg REGISTRY_NAME={{REGISTRY_NAME}}
       --build-arg PLATFORM=/linux/amd64
       --platform Linux/amd64
@@ -48,14 +47,14 @@ steps:
       - base-amd64
 
   - id: pull-base-image-arm64
-    cmd: docker pull --platform linux/arm64 hmctspublic.azurecr.io/base/node:20-alpine && docker tag hmctspublic.azurecr.io/base/node:20-alpine hmctspublic.azurecr.io/base/node/linux/arm64:20-alpine
+    cmd: docker pull --platform linux/arm64 hmctsprod.azurecr.io/base/node:20-alpine && docker tag hmctsprod.azurecr.io/base/node:20-alpine hmctsprod.azurecr.io/base/node/linux/arm64:20-alpine
     retries: 10
     retryDelay: 5
     when:
       - setup-qemu
 
   - id: pull-base-arm64
-    cmd: docker pull {{.Run.Registry}}/plum/frontend/base-arm64:latest || true
+    cmd: docker pull {{.Run.Registry}}/plum/frontend/base:arm64 || true
     retries: 10
     retryDelay: 5
     when:
@@ -64,7 +63,6 @@ steps:
   - id: base-arm64
     build: >
       -t {{.Run.Registry}}/plum/frontend/base:arm64
-      --cache-from {{.Run.Registry}}/plum/frontend/base:arm64
       --build-arg REGISTRY_NAME={{REGISTRY_NAME}}
       --build-arg PLATFORM=/linux/arm64
       --platform Linux/arm64/v8
@@ -102,7 +100,7 @@ steps:
       - runtime-arm64
 
   - id: manifest-create
-    cmd: docker manifest create {{.Run.Registry}}/{{CI_IMAGE_TAG}} {{.Run.Registry}}/{{CI_IMAGE_TAG}}-amd64 {{.Run.Registry}}/{{CI_IMAGE_TAG}}-arm64
+    cmd: docker manifest create --amend {{.Run.Registry}}/{{CI_IMAGE_TAG}} {{.Run.Registry}}/{{CI_IMAGE_TAG}}-amd64 {{.Run.Registry}}/{{CI_IMAGE_TAG}}-arm64
     retries: 10
     retryDelay: 5
     when:
