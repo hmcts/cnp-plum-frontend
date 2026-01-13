@@ -8,7 +8,7 @@ parameters([
   ])
 ])
 
-@Library("Infrastructure@DTSPO-29095/update-zap-image")
+@Library("Infrastructure@DTSPO-29095/use-hmctspublic-7")
 
 def type = "nodejs"
 def product = "plum"
