@@ -55,4 +55,15 @@ withPipeline(type, product, component) {
     """
   }
 
+  /*=====================================================
+  Dynatrace and Performance Configuration
+  =======================================================*/
+  enablePerformanceTestStages(timeout: 60)
+  //enableGatlingLoadTests([
+  //   repo: 'https://github.com/hmcts/performance-testing.git',
+  //   branch: 'add-et-tests',
+  //   simulation: 'et.simulations.EtCitizenSimulation',
+  //   timeout: 10
+  // ])
+
 }
