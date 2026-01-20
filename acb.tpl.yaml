@@ -26,7 +26,6 @@ steps:
       --build-arg BASE_IMAGE=base-node-amd64:local
       --platform linux/amd64
       --target base
-      --pull
       .
     retries: 10
     retryDelay: 5
@@ -54,7 +53,7 @@ steps:
       - setup-qemu
 
   - id: pull-base-arm64
-    cmd: docker pull {{.Run.Registry}}/plum/frontend/base-arm64:latest || true
+    cmd: docker pull {{.Run.Registry}}/plum/frontend/base:arm64 || true
     retries: 10
     retryDelay: 5
     when:
