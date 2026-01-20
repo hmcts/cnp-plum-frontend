@@ -26,6 +26,7 @@ steps:
       --build-arg BASE_IMAGE=base-node-amd64:local
       --platform linux/amd64
       --target base
+      --pull
       .
     retries: 10
     retryDelay: 5
