@@ -53,7 +53,7 @@ steps:
       - setup-qemu
 
   - id: pull-base-arm64
-    cmd: docker pull {{.Run.Registry}}/plum/frontend/base-arm64:latest || true
+    cmd: docker pull {{.Run.Registry}}/plum/frontend/base:arm64 || true
     retries: 10
     retryDelay: 5
     when:
