@@ -266,7 +266,7 @@ const RAW_RUNTIME_STATE =
           ["@azure/functions", "npm:4.7.3"],\
           ["cookie", "npm:1.0.2"],\
           ["long", "npm:4.0.0"],\
-          ["undici", "npm:7.14.0"]\
+          ["undici", "npm:7.18.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -9883,7 +9883,7 @@ const RAW_RUNTIME_STATE =
           ["minipass-pipeline", "npm:1.2.4"],\
           ["p-map", "npm:7.0.3"],\
           ["ssri", "npm:12.0.0"],\
-          ["tar", "npm:7.5.2"],\
+          ["tar", "npm:7.5.4"],\
           ["unique-filename", "npm:4.0.0"]\
         ],\
         "linkType": "HARD"\
@@ -10140,7 +10140,7 @@ const RAW_RUNTIME_STATE =
           ["parse5", "npm:7.3.0"],\
           ["parse5-htmlparser2-tree-adapter", "npm:7.1.0"],\
           ["parse5-parser-stream", "npm:7.1.2"],\
-          ["undici", "npm:7.14.0"],\
+          ["undici", "npm:7.18.2"],\
           ["whatwg-mimetype", "npm:4.0.0"]\
         ],\
         "linkType": "HARD"\
@@ -11568,17 +11568,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["diff", [\
-      ["npm:4.0.2", {\
-        "packageLocation": "./.yarn/cache/diff-npm-4.0.2-73133c7102-ec09ec2101.zip/node_modules/diff/",\
+      ["npm:8.0.3", {\
+        "packageLocation": "./.yarn/cache/diff-npm-8.0.3-6f5c127138-52f957e1fa.zip/node_modules/diff/",\
         "packageDependencies": [\
-          ["diff", "npm:4.0.2"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:7.0.0", {\
-        "packageLocation": "./.yarn/cache/diff-npm-7.0.0-dcfd888f89-e9b8e48d05.zip/node_modules/diff/",\
-        "packageDependencies": [\
-          ["diff", "npm:7.0.0"]\
+          ["diff", "npm:8.0.3"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -17233,7 +17226,7 @@ const RAW_RUNTIME_STATE =
           ["browser-stdout", "npm:1.3.1"],\
           ["chokidar", "npm:4.0.3"],\
           ["debug", "virtual:488175d82091d4ca3a3bc6ffe48c48f684a1375da06eeaae9c1710766b61aa655712e77980f3337389da5a19e21912b4a57ffab0bd92cf7769b084c4efa68695#npm:4.4.3"],\
-          ["diff", "npm:7.0.0"],\
+          ["diff", "npm:8.0.3"],\
           ["escape-string-regexp", "npm:4.0.0"],\
           ["find-up", "npm:5.0.0"],\
           ["glob", "npm:10.5.0"],\
@@ -17519,7 +17512,7 @@ const RAW_RUNTIME_STATE =
           ["nopt", "npm:8.1.0"],\
           ["proc-log", "npm:5.0.0"],\
           ["semver", "npm:7.7.2"],\
-          ["tar", "npm:7.5.2"],\
+          ["tar", "npm:7.5.4"],\
           ["tinyglobby", "npm:0.2.14"],\
           ["which", "npm:5.0.0"]\
         ],\
@@ -19954,7 +19947,7 @@ const RAW_RUNTIME_STATE =
           ["@sinonjs/commons", "npm:3.0.1"],\
           ["@sinonjs/fake-timers", "npm:13.0.5"],\
           ["@sinonjs/samsam", "npm:8.0.2"],\
-          ["diff", "npm:7.0.0"],\
+          ["diff", "npm:8.0.3"],\
           ["sinon", "npm:21.0.0"],\
           ["supports-color", "npm:7.2.0"]\
         ],\
@@ -20767,14 +20760,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["tar", [\
-      ["npm:7.5.2", {\
-        "packageLocation": "./.yarn/cache/tar-npm-7.5.2-6d8cfb7a13-dbad9c9a07.zip/node_modules/tar/",\
+      ["npm:7.5.4", {\
+        "packageLocation": "./.yarn/cache/tar-npm-7.5.4-9413ae778a-c6a2b93a14.zip/node_modules/tar/",\
         "packageDependencies": [\
           ["@isaacs/fs-minipass", "npm:4.0.1"],\
           ["chownr", "npm:3.0.0"],\
           ["minipass", "npm:7.1.2"],\
           ["minizlib", "npm:3.1.0"],\
-          ["tar", "npm:7.5.2"],\
+          ["tar", "npm:7.5.4"],\
           ["yallist", "npm:5.0.0"]\
         ],\
         "linkType": "HARD"\
@@ -21246,7 +21239,7 @@ const RAW_RUNTIME_STATE =
           ["acorn-walk", "npm:8.3.4"],\
           ["arg", "npm:4.1.3"],\
           ["create-require", "npm:1.1.1"],\
-          ["diff", "npm:4.0.2"],\
+          ["diff", "npm:8.0.3"],\
           ["make-error", "npm:1.3.6"],\
           ["ts-node", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:10.9.2"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
@@ -21526,10 +21519,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["undici", [\
-      ["npm:7.14.0", {\
-        "packageLocation": "./.yarn/cache/undici-npm-7.14.0-bfc8735d4a-df71e67fcc.zip/node_modules/undici/",\
+      ["npm:7.18.2", {\
+        "packageLocation": "./.yarn/cache/undici-npm-7.18.2-c9dadc9f31-7d8b921717.zip/node_modules/undici/",\
         "packageDependencies": [\
-          ["undici", "npm:7.14.0"]\
+          ["undici", "npm:7.18.2"]\
         ],\
         "linkType": "HARD"\
       }]\
