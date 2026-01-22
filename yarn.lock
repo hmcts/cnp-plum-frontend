@@ -2001,13 +2001,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@grpc/grpc-js@npm:1.14.0":
-  version: 1.14.0
-  resolution: "@grpc/grpc-js@npm:1.14.0"
+"@grpc/grpc-js@npm:1.14.3":
+  version: 1.14.3
+  resolution: "@grpc/grpc-js@npm:1.14.3"
   dependencies:
     "@grpc/proto-loader": "npm:^0.8.0"
     "@js-sdsl/ordered-map": "npm:^4.4.2"
-  checksum: 10/e1f7d15dde365544591da18b4ce19df97b7f88a83292350631f27a316212ed361a42323ba131d56d515f7f676b1b1efb0ab794b1d56e784b936c490e25564269
+  checksum: 10/bb9bfe2f749179ae5ac7774d30486dfa2e0b004518c28de158b248e0f6f65f40138f01635c48266fa540670220f850216726e3724e1eb29d078817581c96e4db
   languageName: node
   linkType: hard
 
