@@ -89,7 +89,7 @@ const RAW_RUNTIME_STATE =
           ["jquery", "npm:3.7.1"],\
           ["js-yaml", "npm:4.1.1"],\
           ["lint-staged", "npm:16.1.6"],\
-          ["lodash", "npm:4.17.21"],\
+          ["lodash", "npm:4.17.23"],\
           ["mini-css-extract-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:2.9.4"],\
           ["nock", "npm:14.0.10"],\
           ["nodemon", "npm:3.1.10"],\
@@ -3832,7 +3832,7 @@ const RAW_RUNTIME_STATE =
           ["@hmcts/nodejs-logging", "npm:4.0.4"],\
           ["@hmcts/properties-volume", "npm:1.2.0"],\
           ["js-yaml", "npm:4.1.1"],\
-          ["lodash", "npm:4.17.21"]\
+          ["lodash", "npm:4.17.23"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -8941,7 +8941,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/async-npm-2.6.4-3155e80151-df8e52817d.zip/node_modules/async/",\
         "packageDependencies": [\
           ["async", "npm:2.6.4"],\
-          ["lodash", "npm:4.17.21"]\
+          ["lodash", "npm:4.17.23"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -10459,7 +10459,7 @@ const RAW_RUNTIME_STATE =
           ["jquery", "npm:3.7.1"],\
           ["js-yaml", "npm:4.1.1"],\
           ["lint-staged", "npm:16.1.6"],\
-          ["lodash", "npm:4.17.21"],\
+          ["lodash", "npm:4.17.23"],\
           ["mini-css-extract-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:2.9.4"],\
           ["nock", "npm:14.0.10"],\
           ["nodemon", "npm:3.1.10"],\
@@ -11485,7 +11485,7 @@ const RAW_RUNTIME_STATE =
           ["jest", null],\
           ["jest-environment-emit", "virtual:9c6cacec4d29012ffb11a84ab58d9d02c6fe6aa9f9938303cbaac954b04dc58b41480fa62ce0ca4d8a6e79cdde991e1e7548c5d385e5f1747bebc6b42b6e5cc6#npm:1.2.0"],\
           ["json-cycle", "npm:1.5.0"],\
-          ["lodash", "npm:4.17.21"],\
+          ["lodash", "npm:4.17.23"],\
           ["multi-sort-stream", "npm:1.0.4"],\
           ["multipipe", "npm:4.0.0"],\
           ["node-ipc", "npm:9.2.1"],\
@@ -13894,7 +13894,7 @@ const RAW_RUNTIME_STATE =
           ["@types/webpack", null],\
           ["html-minifier-terser", "npm:6.1.0"],\
           ["html-webpack-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:5.6.4"],\
-          ["lodash", "npm:4.17.21"],\
+          ["lodash", "npm:4.17.23"],\
           ["pretty-error", "npm:4.0.0"],\
           ["tapable", "npm:2.2.2"],\
           ["webpack", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:5.101.3"]\
@@ -14231,7 +14231,7 @@ const RAW_RUNTIME_STATE =
           ["cli-width", "npm:3.0.0"],\
           ["figures", "npm:3.2.0"],\
           ["inquirer", "npm:8.2.7"],\
-          ["lodash", "npm:4.17.21"],\
+          ["lodash", "npm:4.17.23"],\
           ["mute-stream", "npm:0.0.8"],\
           ["ora", "npm:5.4.1"],\
           ["run-async", "npm:2.4.1"],\
@@ -16242,10 +16242,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["lodash", [\
-      ["npm:4.17.21", {\
-        "packageLocation": "./.yarn/cache/lodash-npm-4.17.21-6382451519-c08619c038.zip/node_modules/lodash/",\
+      ["npm:4.17.23", {\
+        "packageLocation": "./.yarn/cache/lodash-npm-4.17.23-50bdb1c01a-82504c8825.zip/node_modules/lodash/",\
         "packageDependencies": [\
-          ["lodash", "npm:4.17.21"]\
+          ["lodash", "npm:4.17.23"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -18637,7 +18637,7 @@ const RAW_RUNTIME_STATE =
       ["npm:4.0.0", {\
         "packageLocation": "./.yarn/cache/pretty-error-npm-4.0.0-7cca1fe4ad-0212ad8742.zip/node_modules/pretty-error/",\
         "packageDependencies": [\
-          ["lodash", "npm:4.17.21"],\
+          ["lodash", "npm:4.17.23"],\
           ["pretty-error", "npm:4.0.0"],\
           ["renderkid", "npm:3.0.0"]\
         ],\
@@ -19275,7 +19275,7 @@ const RAW_RUNTIME_STATE =
           ["css-select", "npm:4.3.0"],\
           ["dom-converter", "npm:0.2.0"],\
           ["htmlparser2", "npm:6.1.0"],\
-          ["lodash", "npm:4.17.21"],\
+          ["lodash", "npm:4.17.23"],\
           ["renderkid", "npm:3.0.0"],\
           ["strip-ansi", "npm:6.0.1"]\
         ],\
