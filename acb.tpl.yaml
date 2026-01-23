@@ -46,7 +46,10 @@ steps:
       - base-amd64
 
   - id: pull-base-image-arm64
-    cmd: docker pull --platform linux/arm64 {{REGISTRY_NAME}}.azurecr.io/base/node:20-alpine && docker tag {{REGISTRY_NAME}}.azurecr.io/base/node:20-alpine base-node-arm64:local
+    cmd: |
+      ARM64_DIGEST=$(docker manifest inspect {{REGISTRY_NAME}}.azurecr.io/base/node:20-alpine | jq -r '.manifests[] | select(.platform.architecture=="arm64") | .digest')
+      docker pull {{REGISTRY_NAME}}.azurecr.io/base/node:20-alpine@${ARM64_DIGEST}
+      docker tag {{REGISTRY_NAME}}.azurecr.io/base/node:20-alpine@${ARM64_DIGEST} base-node-arm64:local
     retries: 10
     retryDelay: 5
     when:
