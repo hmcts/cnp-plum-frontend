@@ -47,9 +47,13 @@ steps:
 
   - id: pull-base-image-arm64
     cmd: |
-      ARM64_DIGEST=$(docker manifest inspect {{REGISTRY_NAME}}.azurecr.io/base/node:20-alpine | jq -r '.manifests[] | select(.platform.architecture=="arm64") | .digest')
-      docker pull {{REGISTRY_NAME}}.azurecr.io/base/node:20-alpine@${ARM64_DIGEST}
-      docker tag {{REGISTRY_NAME}}.azurecr.io/base/node:20-alpine@${ARM64_DIGEST} base-node-arm64:local
+      docker pull --platform linux/arm64 {{REGISTRY_NAME}}.azurecr.io/base/node:20-alpine
+      docker tag {{REGISTRY_NAME}}.azurecr.io/base/node:20-alpine base-node-arm64:local
+      ARCH=$(docker inspect base-node-arm64:local --format '{{.Architecture}}' 2>/dev/null || echo "unknown")
+      if [ "$ARCH" != "arm64" ]; then
+        echo "ERROR: Expected arm64 but got $ARCH"
+        exit 1
+      fi
     retries: 10
     retryDelay: 5
     when:
