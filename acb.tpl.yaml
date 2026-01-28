@@ -46,7 +46,14 @@ steps:
       - base-amd64
 
   - id: pull-base-image-arm64
-    cmd: docker pull --platform linux/arm64 {{REGISTRY_NAME}}.azurecr.io/base/node:20-alpine && docker tag {{REGISTRY_NAME}}.azurecr.io/base/node:20-alpine base-node-arm64:local
+    cmd: |
+      docker pull --platform linux/arm64 {{REGISTRY_NAME}}.azurecr.io/base/node:20-alpine
+      docker tag {{REGISTRY_NAME}}.azurecr.io/base/node:20-alpine base-node-arm64:local
+      ARCH=$(docker inspect base-node-arm64:local 2>/dev/null | grep -o '"Architecture": "[^"]*"' | head -1 | cut -d'"' -f4 || echo "unknown")
+      if [ "$ARCH" != "arm64" ]; then
+        echo "ERROR: Expected arm64 but got $ARCH"
+        exit 1
+      fi
     retries: 10
     retryDelay: 5
     when:
