@@ -27,6 +27,7 @@ describe('GET /health', function () {
   });
 });
 
+// should this be /health/readiness
 describe('GET /health/liveness', function () {
   this.timeout(httpTimeout);
   it('should return status OK @smoke', function (done) {
