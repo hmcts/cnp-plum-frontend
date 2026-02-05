@@ -59,7 +59,7 @@ const RAW_RUNTIME_STATE =
           ["axios", "npm:1.12.2"],\
           ["axios-debug-log", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.0.0"],\
           ["babel-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:10.0.0"],\
-          ["body-parser", "npm:2.2.1"],\
+          ["body-parser", "npm:2.2.2"],\
           ["chai", "npm:4.5.0"],\
           ["chai-as-promised", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:8.0.2"],\
           ["chokidar", "npm:4.0.3"],\
@@ -9822,10 +9822,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:2.2.1", {\
-        "packageLocation": "./.yarn/cache/body-parser-npm-2.2.1-79691d0c2a-cab162d62d.zip/node_modules/body-parser/",\
+      ["npm:2.2.2", {\
+        "packageLocation": "./.yarn/cache/body-parser-npm-2.2.2-2aa532c1f4-69671f67d4.zip/node_modules/body-parser/",\
         "packageDependencies": [\
-          ["body-parser", "npm:2.2.1"],\
+          ["body-parser", "npm:2.2.2"],\
           ["bytes", "npm:3.1.2"],\
           ["content-type", "npm:1.0.5"],\
           ["debug", "virtual:e426afeacf914b5bf58dae7cf7cd76bf78be254e03b94e4a92e9c2b0226626f65c7431ea500d2321d9c0a431f45ed64b60ab02116d77b5064e6e0918b0a30bca#npm:4.4.3"],\
@@ -10659,7 +10659,7 @@ const RAW_RUNTIME_STATE =
           ["axios", "npm:1.12.2"],\
           ["axios-debug-log", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.0.0"],\
           ["babel-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:10.0.0"],\
-          ["body-parser", "npm:2.2.1"],\
+          ["body-parser", "npm:2.2.2"],\
           ["chai", "npm:4.5.0"],\
           ["chai-as-promised", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:8.0.2"],\
           ["chokidar", "npm:4.0.3"],\
