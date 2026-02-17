@@ -1,6 +1,6 @@
 #!groovy
 
-@Library("Infrastructure")
+@Library("Infrastructure@DTSPO-29801-discovery-limit-jenkins-pipelines")
 
 def type = "nodejs"
 def product = "plum"
