@@ -56,7 +56,7 @@ const RAW_RUNTIME_STATE =
           ["@typescript-eslint/eslint-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:7.18.0"],\
           ["@typescript-eslint/parser", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:7.18.0"],\
           ["applicationinsights", "npm:3.7.0"],\
-          ["axios", "npm:1.12.2"],\
+          ["axios", "npm:1.13.5"],\
           ["axios-debug-log", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.0.0"],\
           ["babel-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:10.0.0"],\
           ["body-parser", "npm:2.2.2"],\
@@ -9231,22 +9231,22 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["axios", [\
-      ["npm:1.12.2", {\
-        "packageLocation": "./.yarn/cache/axios-npm-1.12.2-cdb8ea6c90-886a797705.zip/node_modules/axios/",\
+      ["npm:1.13.2", {\
+        "packageLocation": "./.yarn/cache/axios-npm-1.13.2-90e3ae8f5d-ae4e06dcd1.zip/node_modules/axios/",\
         "packageDependencies": [\
-          ["axios", "npm:1.12.2"],\
-          ["follow-redirects", "virtual:cdb8ea6c90bba762bf2366a1a88869c55a09bf9d9076ce8fcccf1e27011bd6d92acc154b2b250d8981e0c9daf722c96602b003df3b346cc7d59ad22f6b68080f#npm:1.15.11"],\
+          ["axios", "npm:1.13.2"],\
+          ["follow-redirects", "virtual:ed8865f696cebfbc109886bcd430c823f73cb3daaa6597dac1f006748e0fc10ed81734823f049aec03fadda2608be9aa560f98b843c8321891f307f4a175db89#npm:1.15.11"],\
           ["form-data", "npm:4.0.4"],\
           ["proxy-from-env", "npm:1.1.0"]\
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:1.13.2", {\
-        "packageLocation": "./.yarn/cache/axios-npm-1.13.2-90e3ae8f5d-ae4e06dcd1.zip/node_modules/axios/",\
+      ["npm:1.13.5", {\
+        "packageLocation": "./.yarn/cache/axios-npm-1.13.5-ed8865f696-db726d0990.zip/node_modules/axios/",\
         "packageDependencies": [\
-          ["axios", "npm:1.13.2"],\
-          ["follow-redirects", "virtual:cdb8ea6c90bba762bf2366a1a88869c55a09bf9d9076ce8fcccf1e27011bd6d92acc154b2b250d8981e0c9daf722c96602b003df3b346cc7d59ad22f6b68080f#npm:1.15.11"],\
-          ["form-data", "npm:4.0.4"],\
+          ["axios", "npm:1.13.5"],\
+          ["follow-redirects", "virtual:ed8865f696cebfbc109886bcd430c823f73cb3daaa6597dac1f006748e0fc10ed81734823f049aec03fadda2608be9aa560f98b843c8321891f307f4a175db89#npm:1.15.11"],\
+          ["form-data", "npm:4.0.5"],\
           ["proxy-from-env", "npm:1.1.0"]\
         ],\
         "linkType": "HARD"\
@@ -9265,7 +9265,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@types/axios", null],\
           ["@types/debug", "npm:4.1.12"],\
-          ["axios", "npm:1.12.2"],\
+          ["axios", "npm:1.13.5"],\
           ["axios-debug-log", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.0.0"],\
           ["debug", "virtual:85d5d916b6a745b2f8de0d4b1704b7084bdd4f7573c1ef5d1c877f2c866045a9b29fe2bc752d1b73e531c378a0518dd3f9fa187b31427fb9bacbe34b14715dde#npm:4.4.3"]\
         ],\
@@ -10690,7 +10690,7 @@ const RAW_RUNTIME_STATE =
           ["@typescript-eslint/eslint-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:7.18.0"],\
           ["@typescript-eslint/parser", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:7.18.0"],\
           ["applicationinsights", "npm:3.7.0"],\
-          ["axios", "npm:1.12.2"],\
+          ["axios", "npm:1.13.5"],\
           ["axios-debug-log", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.0.0"],\
           ["babel-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:10.0.0"],\
           ["body-parser", "npm:2.2.2"],\
@@ -13361,12 +13361,12 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["virtual:cdb8ea6c90bba762bf2366a1a88869c55a09bf9d9076ce8fcccf1e27011bd6d92acc154b2b250d8981e0c9daf722c96602b003df3b346cc7d59ad22f6b68080f#npm:1.15.11", {\
-        "packageLocation": "./.yarn/__virtual__/follow-redirects-virtual-1c36f0670e/0/cache/follow-redirects-npm-1.15.11-ae7b2db266-07372fd74b.zip/node_modules/follow-redirects/",\
+      ["virtual:ed8865f696cebfbc109886bcd430c823f73cb3daaa6597dac1f006748e0fc10ed81734823f049aec03fadda2608be9aa560f98b843c8321891f307f4a175db89#npm:1.15.11", {\
+        "packageLocation": "./.yarn/__virtual__/follow-redirects-virtual-eba31d82f7/0/cache/follow-redirects-npm-1.15.11-ae7b2db266-07372fd74b.zip/node_modules/follow-redirects/",\
         "packageDependencies": [\
           ["@types/debug", null],\
           ["debug", null],\
-          ["follow-redirects", "virtual:cdb8ea6c90bba762bf2366a1a88869c55a09bf9d9076ce8fcccf1e27011bd6d92acc154b2b250d8981e0c9daf722c96602b003df3b346cc7d59ad22f6b68080f#npm:1.15.11"]\
+          ["follow-redirects", "virtual:ed8865f696cebfbc109886bcd430c823f73cb3daaa6597dac1f006748e0fc10ed81734823f049aec03fadda2608be9aa560f98b843c8321891f307f4a175db89#npm:1.15.11"]\
         ],\
         "packagePeers": [\
           "@types/debug",\
@@ -13435,6 +13435,18 @@ const RAW_RUNTIME_STATE =
           ["combined-stream", "npm:1.0.8"],\
           ["es-set-tostringtag", "npm:2.1.0"],\
           ["form-data", "npm:4.0.4"],\
+          ["hasown", "npm:2.0.2"],\
+          ["mime-types", "npm:2.1.35"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:4.0.5", {\
+        "packageLocation": "./.yarn/cache/form-data-npm-4.0.5-c35fce815a-52ecd6e927.zip/node_modules/form-data/",\
+        "packageDependencies": [\
+          ["asynckit", "npm:0.4.0"],\
+          ["combined-stream", "npm:1.0.8"],\
+          ["es-set-tostringtag", "npm:2.1.0"],\
+          ["form-data", "npm:4.0.5"],\
           ["hasown", "npm:2.0.2"],\
           ["mime-types", "npm:2.1.35"]\
         ],\
