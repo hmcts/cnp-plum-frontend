@@ -36,7 +36,7 @@ const RAW_RUNTIME_STATE =
           ["@hmcts/info-provider", "npm:1.2.3"],\
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/nodejs-logging", "npm:4.0.4"],\
-          ["@hmcts/properties-volume", "npm:1.2.0"],\
+          ["@hmcts/properties-volume", "npm:1.3.1"],\
           ["@types/body-parser", "npm:1.19.6"],\
           ["@types/chai", "npm:5.2.3"],\
           ["@types/chai-as-promised", "npm:8.0.2"],\
@@ -282,6 +282,24 @@ const RAW_RUNTIME_STATE =
           ["@azure/core-tracing", "npm:1.2.0"],\
           ["@azure/core-util", "npm:1.12.0"],\
           ["@azure/identity", "npm:4.10.1"],\
+          ["@azure/logger", "npm:1.2.0"],\
+          ["@azure/msal-browser", "npm:4.13.2"],\
+          ["@azure/msal-node", "npm:3.6.1"],\
+          ["open", "npm:10.1.2"],\
+          ["tslib", "npm:2.8.1"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:4.13.0", {\
+        "packageLocation": "./.yarn/cache/@azure-identity-npm-4.13.0-341784cb11-8b97154ac8.zip/node_modules/@azure/identity/",\
+        "packageDependencies": [\
+          ["@azure/abort-controller", "npm:2.1.2"],\
+          ["@azure/core-auth", "npm:1.9.0"],\
+          ["@azure/core-client", "npm:1.9.4"],\
+          ["@azure/core-rest-pipeline", "npm:1.21.0"],\
+          ["@azure/core-tracing", "npm:1.2.0"],\
+          ["@azure/core-util", "npm:1.12.0"],\
+          ["@azure/identity", "npm:4.13.0"],\
           ["@azure/logger", "npm:1.2.0"],\
           ["@azure/msal-browser", "npm:4.13.2"],\
           ["@azure/msal-node", "npm:3.6.1"],\
@@ -3982,13 +4000,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@hmcts/properties-volume", [\
-      ["npm:1.2.0", {\
-        "packageLocation": "./.yarn/cache/@hmcts-properties-volume-npm-1.2.0-3245eeab8f-d808737225.zip/node_modules/@hmcts/properties-volume/",\
+      ["npm:1.3.1", {\
+        "packageLocation": "./.yarn/cache/@hmcts-properties-volume-npm-1.3.1-8b26153881-ec3a8be601.zip/node_modules/@hmcts/properties-volume/",\
         "packageDependencies": [\
-          ["@azure/identity", "npm:4.10.1"],\
+          ["@azure/identity", "npm:4.13.0"],\
           ["@azure/keyvault-secrets", "npm:4.10.0"],\
           ["@hmcts/nodejs-logging", "npm:4.0.4"],\
-          ["@hmcts/properties-volume", "npm:1.2.0"],\
+          ["@hmcts/properties-volume", "npm:1.3.1"],\
           ["js-yaml", "npm:4.1.1"],\
           ["lodash", "npm:4.17.23"]\
         ],\
@@ -10653,7 +10671,7 @@ const RAW_RUNTIME_STATE =
           ["@hmcts/info-provider", "npm:1.2.3"],\
           ["@hmcts/nodejs-healthcheck", "npm:1.8.6"],\
           ["@hmcts/nodejs-logging", "npm:4.0.4"],\
-          ["@hmcts/properties-volume", "npm:1.2.0"],\
+          ["@hmcts/properties-volume", "npm:1.3.1"],\
           ["@types/body-parser", "npm:1.19.6"],\
           ["@types/chai", "npm:5.2.3"],\
           ["@types/chai-as-promised", "npm:8.0.2"],\
