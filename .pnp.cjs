@@ -264,7 +264,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@azure-functions-npm-4.7.3-2422716995-704faa7385.zip/node_modules/@azure/functions/",\
         "packageDependencies": [\
           ["@azure/functions", "npm:4.7.3"],\
-          ["cookie", "npm:1.0.2"],\
+          ["cookie", "npm:1.1.1"],\
           ["long", "npm:4.0.0"],\
           ["undici", "npm:7.18.2"]\
         ],\
@@ -11114,10 +11114,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["cookie", [\
-      ["npm:1.0.2", {\
-        "packageLocation": "./.yarn/cache/cookie-npm-1.0.2-7a4273d897-f5817cdc84.zip/node_modules/cookie/",\
+      ["npm:1.1.1", {\
+        "packageLocation": "./.yarn/cache/cookie-npm-1.1.1-881103ddeb-8553815305.zip/node_modules/cookie/",\
         "packageDependencies": [\
-          ["cookie", "npm:1.0.2"]\
+          ["cookie", "npm:1.1.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -11126,7 +11126,7 @@ const RAW_RUNTIME_STATE =
       ["npm:1.4.7", {\
         "packageLocation": "./.yarn/cache/cookie-parser-npm-1.4.7-970a70a2fd-243fa13f21.zip/node_modules/cookie-parser/",\
         "packageDependencies": [\
-          ["cookie", "npm:1.0.2"],\
+          ["cookie", "npm:1.1.1"],\
           ["cookie-parser", "npm:1.4.7"],\
           ["cookie-signature", "npm:1.0.6"]\
         ],\
@@ -12941,7 +12941,7 @@ const RAW_RUNTIME_STATE =
           ["body-parser", "npm:1.20.3"],\
           ["content-disposition", "npm:0.5.4"],\
           ["content-type", "npm:1.0.5"],\
-          ["cookie", "npm:1.0.2"],\
+          ["cookie", "npm:1.1.1"],\
           ["cookie-signature", "npm:1.0.6"],\
           ["debug", "virtual:04e17282184d1dd8ebe9be1cf43aab3ec3497566ee201258c65471258a0598bf13554ebaee2c4f89425bfcd02b07008290d1416ead8ec323401963827fce05d6#npm:2.6.9"],\
           ["depd", "npm:2.0.0"],\
