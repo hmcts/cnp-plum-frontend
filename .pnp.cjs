@@ -65,7 +65,7 @@ const RAW_RUNTIME_STATE =
           ["chokidar", "npm:4.0.3"],\
           ["cnp-plum-frontend", "workspace:."],\
           ["codeceptjs", "npm:3.7.6"],\
-          ["config", "npm:4.4.0"],\
+          ["config", "npm:4.4.1"],\
           ["cookie-parser", "npm:1.4.7"],\
           ["copy-webpack-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:9.1.0"],\
           ["css-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:7.1.4"],\
@@ -10714,7 +10714,7 @@ const RAW_RUNTIME_STATE =
           ["chokidar", "npm:4.0.3"],\
           ["cnp-plum-frontend", "workspace:."],\
           ["codeceptjs", "npm:3.7.6"],\
-          ["config", "npm:4.4.0"],\
+          ["config", "npm:4.4.1"],\
           ["cookie-parser", "npm:1.4.7"],\
           ["copy-webpack-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:9.1.0"],\
           ["css-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:7.1.4"],\
@@ -11043,10 +11043,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["config", [\
-      ["npm:4.4.0", {\
-        "packageLocation": "./.yarn/cache/config-npm-4.4.0-d3c3ce1f31-5299649081.zip/node_modules/config/",\
+      ["npm:4.4.1", {\
+        "packageLocation": "./.yarn/cache/config-npm-4.4.1-be9ff513c5-b237298b10.zip/node_modules/config/",\
         "packageDependencies": [\
-          ["config", "npm:4.4.0"],\
+          ["config", "npm:4.4.1"],\
           ["json5", "npm:2.2.3"]\
         ],\
         "linkType": "HARD"\
