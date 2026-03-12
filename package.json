@@ -119,7 +119,7 @@
   "resolutions": {
     "undici": "^7.18.2",
     "tar": "7.5.11",
-    "ajv": "8.18.0",
+    "table/ajv": "8.18.0",
     "@opentelemetry/instrumentation": "0.212.0",
     "semver": "^7.5.3",
     "qs": "^6.9.7",
