@@ -103,7 +103,7 @@ const RAW_RUNTIME_STATE =
           ["sass", "npm:1.97.3"],\
           ["sass-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:16.0.7"],\
           ["serve-favicon", "npm:2.5.1"],\
-          ["sinon", "npm:21.0.1"],\
+          ["sinon", "npm:21.0.2"],\
           ["sinon-chai", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:4.0.1"],\
           ["style-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:4.0.0"],\
           ["stylelint", "npm:16.26.1"],\
@@ -7023,21 +7023,21 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:15.1.0", {\
-        "packageLocation": "./.yarn/cache/@sinonjs-fake-timers-npm-15.1.0-7ffd112c6c-f675a7c8d5.zip/node_modules/@sinonjs/fake-timers/",\
+      ["npm:15.1.1", {\
+        "packageLocation": "./.yarn/cache/@sinonjs-fake-timers-npm-15.1.1-00752b7af6-f262d613ea.zip/node_modules/@sinonjs/fake-timers/",\
         "packageDependencies": [\
           ["@sinonjs/commons", "npm:3.0.1"],\
-          ["@sinonjs/fake-timers", "npm:15.1.0"]\
+          ["@sinonjs/fake-timers", "npm:15.1.1"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@sinonjs/samsam", [\
-      ["npm:8.0.3", {\
-        "packageLocation": "./.yarn/cache/@sinonjs-samsam-npm-8.0.3-01e544055f-af95fba2bc.zip/node_modules/@sinonjs/samsam/",\
+      ["npm:9.0.2", {\
+        "packageLocation": "./.yarn/cache/@sinonjs-samsam-npm-9.0.2-24995f7179-46e1d00eb7.zip/node_modules/@sinonjs/samsam/",\
         "packageDependencies": [\
           ["@sinonjs/commons", "npm:3.0.1"],\
-          ["@sinonjs/samsam", "npm:8.0.3"],\
+          ["@sinonjs/samsam", "npm:9.0.2"],\
           ["type-detect", "npm:4.1.0"]\
         ],\
         "linkType": "HARD"\
@@ -10740,7 +10740,7 @@ const RAW_RUNTIME_STATE =
           ["sass", "npm:1.97.3"],\
           ["sass-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:16.0.7"],\
           ["serve-favicon", "npm:2.5.1"],\
-          ["sinon", "npm:21.0.1"],\
+          ["sinon", "npm:21.0.2"],\
           ["sinon-chai", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:4.0.1"],\
           ["style-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:4.0.0"],\
           ["stylelint", "npm:16.26.1"],\
@@ -20313,14 +20313,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["sinon", [\
-      ["npm:21.0.1", {\
-        "packageLocation": "./.yarn/cache/sinon-npm-21.0.1-f3d8f4ef24-b7cc06de38.zip/node_modules/sinon/",\
+      ["npm:21.0.2", {\
+        "packageLocation": "./.yarn/cache/sinon-npm-21.0.2-5aadf1714f-198de4f323.zip/node_modules/sinon/",\
         "packageDependencies": [\
           ["@sinonjs/commons", "npm:3.0.1"],\
-          ["@sinonjs/fake-timers", "npm:15.1.0"],\
-          ["@sinonjs/samsam", "npm:8.0.3"],\
+          ["@sinonjs/fake-timers", "npm:15.1.1"],\
+          ["@sinonjs/samsam", "npm:9.0.2"],\
           ["diff", "npm:8.0.3"],\
-          ["sinon", "npm:21.0.1"],\
+          ["sinon", "npm:21.0.2"],\
           ["supports-color", "npm:7.2.0"]\
         ],\
         "linkType": "HARD"\
@@ -20340,7 +20340,7 @@ const RAW_RUNTIME_STATE =
           ["@types/chai", "npm:5.2.3"],\
           ["@types/sinon", null],\
           ["chai", "npm:4.5.0"],\
-          ["sinon", "npm:21.0.1"],\
+          ["sinon", "npm:21.0.2"],\
           ["sinon-chai", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:4.0.1"]\
         ],\
         "packagePeers": [\
