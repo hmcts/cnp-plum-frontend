@@ -58,7 +58,7 @@ const RAW_RUNTIME_STATE =
           ["applicationinsights", "npm:3.7.0"],\
           ["axios", "npm:1.13.6"],\
           ["axios-debug-log", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.0.0"],\
-          ["babel-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:10.0.0"],\
+          ["babel-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:10.1.1"],\
           ["body-parser", "npm:2.2.2"],\
           ["chai", "npm:4.5.0"],\
           ["chai-as-promised", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:8.0.2"],\
@@ -9326,26 +9326,30 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["babel-loader", [\
-      ["npm:10.0.0", {\
-        "packageLocation": "./.yarn/cache/babel-loader-npm-10.0.0-0ac52159c5-f22dc803e3.zip/node_modules/babel-loader/",\
+      ["npm:10.1.1", {\
+        "packageLocation": "./.yarn/cache/babel-loader-npm-10.1.1-20e52285c9-4169d55704.zip/node_modules/babel-loader/",\
         "packageDependencies": [\
-          ["babel-loader", "npm:10.0.0"]\
+          ["babel-loader", "npm:10.1.1"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:10.0.0", {\
-        "packageLocation": "./.yarn/__virtual__/babel-loader-virtual-50f817c919/0/cache/babel-loader-npm-10.0.0-0ac52159c5-f22dc803e3.zip/node_modules/babel-loader/",\
+      ["virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:10.1.1", {\
+        "packageLocation": "./.yarn/__virtual__/babel-loader-virtual-c29a6e0ef1/0/cache/babel-loader-npm-10.1.1-20e52285c9-4169d55704.zip/node_modules/babel-loader/",\
         "packageDependencies": [\
           ["@babel/core", "npm:7.29.0"],\
+          ["@rspack/core", null],\
           ["@types/babel__core", null],\
+          ["@types/rspack__core", null],\
           ["@types/webpack", null],\
-          ["babel-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:10.0.0"],\
+          ["babel-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:10.1.1"],\
           ["find-up", "npm:5.0.0"],\
           ["webpack", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:5.105.4"]\
         ],\
         "packagePeers": [\
           "@babel/core",\
+          "@rspack/core",\
           "@types/babel__core",\
+          "@types/rspack__core",\
           "@types/webpack",\
           "webpack"\
         ],\
@@ -10695,7 +10699,7 @@ const RAW_RUNTIME_STATE =
           ["applicationinsights", "npm:3.7.0"],\
           ["axios", "npm:1.13.6"],\
           ["axios-debug-log", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:1.0.0"],\
-          ["babel-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:10.0.0"],\
+          ["babel-loader", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:10.1.1"],\
           ["body-parser", "npm:2.2.2"],\
           ["chai", "npm:4.5.0"],\
           ["chai-as-promised", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:8.0.2"],\
