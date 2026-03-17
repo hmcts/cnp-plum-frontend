@@ -1,5 +1,5 @@
 # ---- Base image ----
-ARG BASE_IMAGE=hmctspublic.azurecr.io/base/node:20-alpine
+ARG BASE_IMAGE=hmctssbox.azurecr.io/base/node:20-alpine
 FROM ${BASE_IMAGE} as base
 
 USER root
