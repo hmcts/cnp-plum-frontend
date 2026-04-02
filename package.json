@@ -126,7 +126,7 @@
     "qs": "^6.9.7",
     "json5": "^2.0.0",
     "http-cache-semantics": "^4.1.1",
-    "path-to-regexp": "0.1.12",
+    "path-to-regexp": "0.1.13",
     "cookiejar": "^2.1.4",
     "ip": "^2.0.1",
     "@grpc/grpc-js": "1.14.3",
