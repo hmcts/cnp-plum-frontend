@@ -11842,10 +11842,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["diff", [\
-      ["npm:8.0.3", {\
-        "packageLocation": "./.yarn/cache/diff-npm-8.0.3-6f5c127138-52f957e1fa.zip/node_modules/diff/",\
+      ["npm:8.0.4", {\
+        "packageLocation": "./.yarn/cache/diff-npm-8.0.4-88b039fd53-b4036ceda0.zip/node_modules/diff/",\
         "packageDependencies": [\
-          ["diff", "npm:8.0.3"]\
+          ["diff", "npm:8.0.4"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -17527,7 +17527,7 @@ const RAW_RUNTIME_STATE =
           ["browser-stdout", "npm:1.3.1"],\
           ["chokidar", "npm:4.0.3"],\
           ["debug", "virtual:1968420b2d6933ddb33951f1bab491453fa5b45949cbeb10f639eba83f29960e830a6b34392fd1182a22037f822f26308ecf33f29c31b066e1dcff029c74acca#npm:4.4.3"],\
-          ["diff", "npm:8.0.3"],\
+          ["diff", "npm:8.0.4"],\
           ["escape-string-regexp", "npm:4.0.0"],\
           ["find-up", "npm:5.0.0"],\
           ["glob", "npm:10.5.0"],\
@@ -20355,7 +20355,7 @@ const RAW_RUNTIME_STATE =
           ["@sinonjs/commons", "npm:3.0.1"],\
           ["@sinonjs/fake-timers", "npm:15.1.1"],\
           ["@sinonjs/samsam", "npm:9.0.2"],\
-          ["diff", "npm:8.0.3"],\
+          ["diff", "npm:8.0.4"],\
           ["sinon", "npm:21.0.2"],\
           ["supports-color", "npm:7.2.0"]\
         ],\
@@ -21654,7 +21654,7 @@ const RAW_RUNTIME_STATE =
           ["acorn-walk", "npm:8.3.4"],\
           ["arg", "npm:4.1.3"],\
           ["create-require", "npm:1.1.1"],\
-          ["diff", "npm:8.0.3"],\
+          ["diff", "npm:8.0.4"],\
           ["make-error", "npm:1.3.6"],\
           ["ts-node", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:10.9.2"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
