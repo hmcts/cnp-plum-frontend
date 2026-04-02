@@ -118,7 +118,7 @@
   },
   "resolutions": {
     "undici": "^7.18.2",
-    "tar": "7.5.11",
+    "tar": "7.5.13",
     "table/ajv": "8.18.0",
     "glob/minimatch": "10.2.4",
     "@opentelemetry/instrumentation": "0.213.0",
