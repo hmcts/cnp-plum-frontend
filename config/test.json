@@ -1,1 +1,7 @@
-{}
+{
+  "secrets": {
+    "plumsi": {
+      "redis-connection-string": "redis://localhost:6379"
+    }
+  }
+}
