@@ -9,6 +9,7 @@ export class PropertiesVolume {
       propertiesVolume.addTo(config);
 
       this.setSecret('secrets.plumsi.AppInsightsInstrumentationKey', 'appInsights.instrumentationKey');
+      this.setSecret('secrets.plumsi.redis-connection-string', 'session.redisConnectionString');
     }
   }
 

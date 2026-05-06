@@ -1,7 +1,5 @@
 {
-  "secrets": {
-    "plumsi": {
-      "redis-connection-string": "redis://localhost:6379"
-    }
+  "session": {
+    "redisConnectionString": "redis://localhost:6379"
   }
 }

@@ -98,7 +98,7 @@ describe('Session module', () => {
     jest.spyOn(config, 'get').mockImplementation((...args: unknown[]) => {
       const key = args[0] as string;
       const values: Record<string, unknown> = {
-        'secrets.plumsi.redis-connection-string': 'redis://localhost:6379',
+        'session.redisConnectionString': 'redis://localhost:6379',
         'session.prefix': 'plum-session',
         'session.redis.ttlInSeconds': 5400,
         'node-env': 'production',

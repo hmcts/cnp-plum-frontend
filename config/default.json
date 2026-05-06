@@ -7,6 +7,7 @@
   "node-env": "development",
   "session": {
     "secret": "plum-session-secret-value",
+    "redisConnectionString": "redis://localhost:6379",
     "prefix": "plum-session",
     "cookieName": "plum_session",
     "redis": {

@@ -10,7 +10,7 @@ export class Session {
   logger = Logger.getLogger('session');
 
   enableFor(app: Express): void {
-    const redisConnectionString = config.get<string>('secrets.plumsi.redis-connection-string');
+    const redisConnectionString = config.get<string>('session.redisConnectionString');
     this.logger.info('Connecting to Azure Cache for Redis');
 
     const redis = new Redis(redisConnectionString, {
