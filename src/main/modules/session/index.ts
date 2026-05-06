@@ -13,7 +13,15 @@ export class Session {
     const redisConnectionString = config.get<string>('secrets.plumsi.redis-connection-string');
     this.logger.info('Connecting to Azure Cache for Redis');
 
-    const redis = new Redis(redisConnectionString);
+    const redis = new Redis(redisConnectionString, {
+      retryStrategy: (times: number) => {
+        if (times > 3) {
+          this.logger.error('Redis connection failed after 3 retries, giving up');
+          return null;
+        }
+        return Math.min(times * 200, 2000);
+      },
+    });
 
     redis.on('connect', () => {
       this.logger.info('Successfully connected to Azure Cache for Redis');
