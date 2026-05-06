@@ -54,14 +54,18 @@ describe('Session module', () => {
   test('should invoke connect callback without error', () => {
     const { Session } = require('../../../main/modules/session');
     new Session().enableFor(app);
-    const connectCb = mockOn.mock.calls.find((call: [string, ...unknown[]]) => call[0] === 'connect')?.[1] as () => void;
+    const connectCb = mockOn.mock.calls.find(
+      (call: [string, ...unknown[]]) => call[0] === 'connect'
+    )?.[1] as () => void;
     expect(() => connectCb()).not.toThrow();
   });
 
   test('should invoke error callback without throwing', () => {
     const { Session } = require('../../../main/modules/session');
     new Session().enableFor(app);
-    const errorCb = mockOn.mock.calls.find((call: [string, ...unknown[]]) => call[0] === 'error')?.[1] as (err: Error) => void;
+    const errorCb = mockOn.mock.calls.find((call: [string, ...unknown[]]) => call[0] === 'error')?.[1] as (
+      err: Error
+    ) => void;
     expect(() => errorCb(new Error('connection refused'))).not.toThrow();
   });
 
@@ -112,4 +116,3 @@ describe('Session module', () => {
     delete process.env.NODE_ENV;
   });
 });
-
