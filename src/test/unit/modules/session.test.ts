@@ -30,6 +30,30 @@ describe('Session module', () => {
     expect(() => new Session().enableFor(app)).not.toThrow();
   });
 
+  test('should default to port 6380 when no port in connection string', () => {
+    const config = require('config');
+    jest.spyOn(config, 'get').mockImplementation((...args: unknown[]) => {
+      const key = args[0] as string;
+      const values: Record<string, unknown> = {
+        'session.redisConnectionString': 'rediss://:MYPASSWORD@myredis.redis.cache.windows.net',
+        'session.prefix': 'plum-session',
+        'session.redis.ttlInSeconds': 5400,
+        'node-env': 'development',
+        'session.timeout.sessionTimeoutMinutes': 60,
+        'session.timeout.sessionWarningMinutes': 10,
+        'session.timeout.checkIntervalSeconds': 10,
+        'session.secret': 'test-secret',
+        'session.cookieName': 'plum_session',
+      };
+      return values[key];
+    });
+    const { Session } = require('../../../main/modules/session');
+    expect(() => new Session().enableFor(app)).not.toThrow();
+    const redisOptions = mockRedisConstructor.mock.calls[0][0];
+    expect(redisOptions.port).toBe(6380);
+    jest.restoreAllMocks();
+  });
+
   test('should attach redisClient to app.locals', () => {
     const { Session } = require('../../../main/modules/session');
     new Session().enableFor(app);
@@ -79,7 +103,7 @@ describe('Session module', () => {
   test('retryStrategy should return backoff delay for attempts <= 3', () => {
     const { Session } = require('../../../main/modules/session');
     new Session().enableFor(app);
-    const { retryStrategy } = mockRedisConstructor.mock.calls[0][1];
+    const { retryStrategy } = mockRedisConstructor.mock.calls[0][0];
     expect(retryStrategy(1)).toBe(200);
     expect(retryStrategy(2)).toBe(400);
     expect(retryStrategy(3)).toBe(600);
@@ -88,8 +112,33 @@ describe('Session module', () => {
   test('retryStrategy should return null after 3 retries to stop reconnecting', () => {
     const { Session } = require('../../../main/modules/session');
     new Session().enableFor(app);
-    const { retryStrategy } = mockRedisConstructor.mock.calls[0][1];
+    const { retryStrategy } = mockRedisConstructor.mock.calls[0][0];
     expect(retryStrategy(4)).toBeNull();
+  });
+
+  test('should use TLS and extract password from username when rediss:// url with username', () => {
+    const config = require('config');
+    jest.spyOn(config, 'get').mockImplementation((...args: unknown[]) => {
+      const key = args[0] as string;
+      const values: Record<string, unknown> = {
+        'session.redisConnectionString': 'rediss://ignore:MYPASSWORD@myredis.redis.cache.windows.net:6380',
+        'session.prefix': 'plum-session',
+        'session.redis.ttlInSeconds': 5400,
+        'node-env': 'development',
+        'session.timeout.sessionTimeoutMinutes': 60,
+        'session.timeout.sessionWarningMinutes': 10,
+        'session.timeout.checkIntervalSeconds': 10,
+        'session.secret': 'test-secret',
+        'session.cookieName': 'plum_session',
+      };
+      return values[key];
+    });
+    const { Session } = require('../../../main/modules/session');
+    expect(() => new Session().enableFor(app)).not.toThrow();
+    const redisOptions = mockRedisConstructor.mock.calls[0][0];
+    expect(redisOptions.tls).toBeDefined();
+    expect(redisOptions.password).toBe('MYPASSWORD');
+    jest.restoreAllMocks();
   });
 
   test('should use secure cookies in production', () => {

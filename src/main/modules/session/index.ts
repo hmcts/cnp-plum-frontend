@@ -13,7 +13,15 @@ export class Session {
     const redisConnectionString = config.get<string>('session.redisConnectionString');
     this.logger.info('Connecting to Azure Cache for Redis');
 
-    const redis = new Redis(redisConnectionString, {
+    // Azure Cache for Redis does not support username-based AUTH.
+    // Parse the connection string and pass credentials as explicit options
+    // so ioredis sends single-arg AUTH (password only) instead of AUTH user password.
+    const redisUrl = new URL(redisConnectionString);
+    const redis = new Redis({
+      host: redisUrl.hostname,
+      port: parseInt(redisUrl.port, 10) || 6380,
+      password: redisUrl.password || redisUrl.username || undefined,
+      tls: redisUrl.protocol === 'rediss:' ? {} : undefined,
       retryStrategy: (times: number) => {
         if (times > 3) {
           this.logger.error('Redis connection failed after 3 retries, giving up');
