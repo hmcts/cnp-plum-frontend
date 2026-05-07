@@ -62,7 +62,7 @@ export class Session {
     const sessionMiddleware: session.SessionOptions = {
       secret: config.get<string>('session.secret'),
       resave: false,
-      saveUninitialized: true,
+      saveUninitialized: false,
       rolling: true,
       cookie: {
         sameSite: secure ? 'strict' : 'lax',

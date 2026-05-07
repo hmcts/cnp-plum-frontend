@@ -1,5 +1,5 @@
 import config from 'config';
-import { Application } from 'express';
+import { Application, Request } from 'express';
 
 const { Logger } = require('@hmcts/nodejs-logging');
 
@@ -7,10 +7,15 @@ const logger = Logger.getLogger('home.ts');
 
 const recipesUrl = config.get('backendUrl');
 
+interface SessionWithVisit extends Request {
+  session: Request['session'] & { visitCount?: number };
+}
+
 export default function (app: Application): void {
-  app.get('/', async (req, res) => {
+  app.get('/', async (req: SessionWithVisit, res) => {
     const url = `${recipesUrl}/recipes`;
     try {
+      req.session.visitCount = (req.session.visitCount ?? 0) + 1;
       const { recipes } = await fetch(url).then(fetchRes => fetchRes.json());
       return res.render('home', { recipes });
     } catch (err) {
