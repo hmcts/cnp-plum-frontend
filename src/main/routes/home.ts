@@ -38,13 +38,11 @@ export default function (app: Application): void {
         }
 
         if (redisClient.status !== 'ready') {
-          res
-            .status(503)
-            .json({
-              redis: 'unavailable',
-              reason: `Redis not ready (status: ${redisClient.status})`,
-              status: redisClient.status,
-            });
+          res.status(503).json({
+            redis: 'unavailable',
+            reason: `Redis not ready (status: ${redisClient.status})`,
+            status: redisClient.status,
+          });
           return;
         }
         const key = `plum-session-test:${Date.now()}`;
