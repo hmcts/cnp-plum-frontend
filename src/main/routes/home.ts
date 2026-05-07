@@ -18,22 +18,25 @@ interface RedisProbeClient {
 }
 
 export default function (app: Application): void {
-  app.get('/', async (req: SessionWithVisit, res) => {
+  app.get('/', async (req: SessionWithVisit, res): Promise<void> => {
     const url = `${recipesUrl}/recipes`;
     try {
       if (req.query.sessionTest === 'true') {
         const redisClient = req.app.locals.redisClient as RedisProbeClient | undefined;
         if (!redisClient || redisClient.status !== 'ready') {
-          return res.status(503).json({ redis: 'unavailable' });
+          res.status(503).json({ redis: 'unavailable' });
+          return;
         }
 
         const key = `plum-session-test:${Date.now()}`;
         await redisClient.set(key, '1', 'EX', 120);
         const value = await redisClient.get(key);
-        return res.status(200).json({ redis: value === '1' ? 'ok' : 'failed', key });
+        res.status(200).json({ redis: value === '1' ? 'ok' : 'failed', key });
+        return;
       }
       const { recipes } = await fetch(url).then(fetchRes => fetchRes.json());
-      return res.render('home', { recipes });
+      res.render('home', { recipes });
+      return;
     } catch (err) {
       logger.error(err.stack);
       res.status(500).end();
