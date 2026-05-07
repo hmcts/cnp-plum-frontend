@@ -100,20 +100,14 @@ describe('Session module', () => {
     expect(() => readyCb()).not.toThrow();
   });
 
-  test('retryStrategy should return backoff delay for attempts <= 3', () => {
+  test('retryStrategy should return capped backoff delay', () => {
     const { Session } = require('../../../main/modules/session');
     new Session().enableFor(app);
     const { retryStrategy } = mockRedisConstructor.mock.calls[0][0];
     expect(retryStrategy(1)).toBe(200);
     expect(retryStrategy(2)).toBe(400);
-    expect(retryStrategy(3)).toBe(600);
-  });
-
-  test('retryStrategy should return null after 3 retries to stop reconnecting', () => {
-    const { Session } = require('../../../main/modules/session');
-    new Session().enableFor(app);
-    const { retryStrategy } = mockRedisConstructor.mock.calls[0][0];
-    expect(retryStrategy(4)).toBeNull();
+    expect(retryStrategy(25)).toBe(5000);
+    expect(retryStrategy(100)).toBe(5000);
   });
 
   test('should use TLS and extract password from username when rediss:// url with username', () => {
