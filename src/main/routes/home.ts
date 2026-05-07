@@ -39,8 +39,8 @@ export default function (app: Application): void {
 
         const key = `plum-session-test:${Date.now()}`;
         try {
-          await withTimeout(redisClient.set(key, '1', 'EX', 120), 2000);
-          const value = await withTimeout(redisClient.get(key), 2000);
+          await withTimeout(redisClient.set(key, '1', 'EX', 120), 5000);
+          const value = await withTimeout(redisClient.get(key), 5000);
           res.status(200).json({ redis: value === '1' ? 'ok' : 'failed', key, status: redisClient.status });
           return;
         } catch (error) {
