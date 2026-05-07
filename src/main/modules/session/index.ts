@@ -23,6 +23,7 @@ export class Session {
       password: redisUrl.password || redisUrl.username || undefined,
       tls: redisUrl.protocol === 'rediss:' ? {} : undefined,
       keepAlive: 10000,
+      enableReadyCheck: false,
       commandTimeout: 5000,
       retryStrategy: (times: number) => {
         return Math.min(times * 200, 5000);

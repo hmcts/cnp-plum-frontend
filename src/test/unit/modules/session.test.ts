@@ -103,7 +103,8 @@ describe('Session module', () => {
   test('retryStrategy should return capped backoff delay', () => {
     const { Session } = require('../../../main/modules/session');
     new Session().enableFor(app);
-    const { retryStrategy } = mockRedisConstructor.mock.calls[0][0];
+    const { retryStrategy, enableReadyCheck } = mockRedisConstructor.mock.calls[0][0];
+    expect(enableReadyCheck).toBe(false);
     expect(retryStrategy(1)).toBe(200);
     expect(retryStrategy(2)).toBe(400);
     expect(retryStrategy(25)).toBe(5000);
