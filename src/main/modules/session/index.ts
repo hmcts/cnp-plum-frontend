@@ -23,6 +23,7 @@ export class Session {
       password: redisUrl.password || redisUrl.username || undefined,
       tls: redisUrl.protocol === 'rediss:' ? {} : undefined,
       keepAlive: 10000,
+      enableOfflineQueue: false,
       retryStrategy: (times: number) => {
         if (times > 3) {
           this.logger.error('Redis connection failed after 3 retries, giving up');
