@@ -66,21 +66,6 @@ describe('Session module', () => {
     expect(app.get('trust proxy')).toBe(true);
   });
 
-  test('should skip session middleware for health endpoints', () => {
-    const { Session } = require('../../../main/modules/session');
-    new Session().enableFor(app);
-    const mockReq = { path: '/health/readiness' } as unknown as express.Request;
-    const mockRes = {} as express.Response;
-    const mockNext = jest.fn();
-    const stack = app._router.stack;
-    const sessionLayer = stack.find(
-      (layer: { handle: (...args: unknown[]) => unknown }) =>
-        layer.handle.length === 3 && layer.handle.toString().includes('health')
-    );
-    sessionLayer.handle(mockReq, mockRes, mockNext);
-    expect(mockNext).toHaveBeenCalled();
-  });
-
   test('should register connect, error and ready event listeners on redis client', () => {
     const { Session } = require('../../../main/modules/session');
     new Session().enableFor(app);
@@ -115,14 +100,20 @@ describe('Session module', () => {
     expect(() => readyCb()).not.toThrow();
   });
 
-  test('retryStrategy should return capped backoff delay', () => {
+  test('retryStrategy should return backoff delay for attempts <= 3', () => {
     const { Session } = require('../../../main/modules/session');
     new Session().enableFor(app);
     const { retryStrategy } = mockRedisConstructor.mock.calls[0][0];
     expect(retryStrategy(1)).toBe(200);
     expect(retryStrategy(2)).toBe(400);
-    expect(retryStrategy(25)).toBe(5000);
-    expect(retryStrategy(100)).toBe(5000);
+    expect(retryStrategy(3)).toBe(600);
+  });
+
+  test('retryStrategy should return null after 3 retries to stop reconnecting', () => {
+    const { Session } = require('../../../main/modules/session');
+    new Session().enableFor(app);
+    const { retryStrategy } = mockRedisConstructor.mock.calls[0][0];
+    expect(retryStrategy(4)).toBeNull();
   });
 
   test('should use TLS and extract password from username when rediss:// url with username', () => {

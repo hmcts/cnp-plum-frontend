@@ -22,9 +22,12 @@ export class Session {
       port: parseInt(redisUrl.port, 10) || 6380,
       password: redisUrl.password || redisUrl.username || undefined,
       tls: redisUrl.protocol === 'rediss:' ? {} : undefined,
-      keepAlive: 10000,
       retryStrategy: (times: number) => {
-        return Math.min(times * 200, 5000);
+        if (times > 3) {
+          this.logger.error('Redis connection failed after 3 retries, giving up');
+          return null;
+        }
+        return Math.min(times * 200, 2000);
       },
     });
 
@@ -70,13 +73,7 @@ export class Session {
     };
 
     app.set('trust proxy', true);
-    const sessionHandler = session(sessionMiddleware);
-    app.use((req, res, next) => {
-      if (req.path.startsWith('/health')) {
-        return next();
-      }
-      return sessionHandler(req, res, next);
-    });
+    app.use(session(sessionMiddleware));
 
     // Make timeout config available to templates
     app.locals.nunjucksEnv?.addGlobal('sessionTimeout', {
