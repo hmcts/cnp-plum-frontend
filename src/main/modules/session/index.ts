@@ -74,7 +74,13 @@ export class Session {
     };
 
     app.set('trust proxy', true);
-    app.use(session(sessionMiddleware));
+    const sessionHandler = session(sessionMiddleware);
+    app.use((req, res, next) => {
+      if (req.path.startsWith('/health')) {
+        return next();
+      }
+      return sessionHandler(req, res, next);
+    });
 
     // Make timeout config available to templates
     app.locals.nunjucksEnv?.addGlobal('sessionTimeout', {
