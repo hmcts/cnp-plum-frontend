@@ -15,7 +15,9 @@ export default function (app: Application): void {
   app.get('/', async (req: SessionWithVisit, res) => {
     const url = `${recipesUrl}/recipes`;
     try {
-      req.session.visitCount = (req.session.visitCount ?? 0) + 1;
+      if (req.query.sessionTest === 'true') {
+        req.session.visitCount = (req.session.visitCount ?? 0) + 1;
+      }
       const { recipes } = await fetch(url).then(fetchRes => fetchRes.json());
       return res.render('home', { recipes });
     } catch (err) {
