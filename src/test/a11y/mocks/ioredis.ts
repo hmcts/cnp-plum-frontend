@@ -3,7 +3,7 @@ import { EventEmitter } from 'events';
 class Redis extends EventEmitter {
   private store: Map<string, string> = new Map();
 
-  constructor(..._args: unknown[]) {
+  constructor() {
     super();
     process.nextTick(() => {
       this.emit('connect');
@@ -25,7 +25,7 @@ class Redis extends EventEmitter {
     return keys.length;
   }
 
-  async expire(_key: string, _seconds: number): Promise<number> {
+  async expire(): Promise<number> {
     return 1;
   }
 }
