@@ -24,11 +24,11 @@ export class Session {
       tls: redisUrl.protocol === 'rediss:' ? {} : undefined,
       keepAlive: 10000,
       retryStrategy: (times: number) => {
-        if (times > 20) {
-          this.logger.error('Redis connection failed after 20 retries, giving up');
+        if (times > 3) {
+          this.logger.error('Redis connection failed after 3 retries, giving up');
           return null;
         }
-        return Math.min(times * 200, 5000);
+        return Math.min(times * 200, 2000);
       },
     });
 
