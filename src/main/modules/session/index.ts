@@ -23,6 +23,7 @@ export class Session {
       password: redisUrl.password || redisUrl.username || undefined,
       tls: redisUrl.protocol === 'rediss:' ? {} : undefined,
       keepAlive: 10000,
+      commandTimeout: 5000,
       retryStrategy: (times: number) => {
         return Math.min(times * 200, 5000);
       },
@@ -38,6 +39,10 @@ export class Session {
 
     redis.on('ready', () => {
       this.logger.info('Redis client is ready');
+    });
+
+    redis.on('reconnecting', () => {
+      this.logger.info(`Redis reconnecting (status: ${redis.status})`);
     });
 
     app.locals.redisClient = redis;

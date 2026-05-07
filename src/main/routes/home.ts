@@ -37,6 +37,10 @@ export default function (app: Application): void {
           return;
         }
 
+        if (redisClient.status !== 'ready') {
+          res.status(503).json({ redis: 'unavailable', reason: `Redis not ready (status: ${redisClient.status})`, status: redisClient.status });
+          return;
+        }
         const key = `plum-session-test:${Date.now()}`;
         try {
           await withTimeout(redisClient.set(key, '1', 'EX', 120), 5000);
