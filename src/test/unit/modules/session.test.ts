@@ -79,6 +79,12 @@ describe('Session module', () => {
     jest.restoreAllMocks();
   });
 
+  test('should attach redisClient to app.locals', () => {
+    const { Session } = require('../../../main/modules/session');
+    new Session().enableFor(app);
+    expect(app.locals.redisClient).toBeDefined();
+  });
+
   test('should set trust proxy on app', () => {
     const { Session } = require('../../../main/modules/session');
     new Session().enableFor(app);

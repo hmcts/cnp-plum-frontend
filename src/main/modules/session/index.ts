@@ -61,6 +61,8 @@ export class Session {
       this.logger.info('Redis client is ready');
     });
 
+    app.locals.redisClient = redis;
+
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const redisStore = new (RedisStore as any)({
       client: redis,
