@@ -23,7 +23,8 @@ export class Session {
     if (atIndex > 0) {
       const authPart = redisConnectionString.substring(redisConnectionString.indexOf('://') + 3, atIndex);
       const colonIndex = authPart.indexOf(':');
-      rawPassword = colonIndex >= 0 ? authPart.substring(colonIndex + 1) : authPart;
+      const encoded = colonIndex >= 0 ? authPart.substring(colonIndex + 1) : authPart;
+      rawPassword = decodeURIComponent(encoded);
       hostPort = redisConnectionString.substring(atIndex + 1);
     } else {
       hostPort = redisConnectionString.substring(redisConnectionString.indexOf('://') + 3);

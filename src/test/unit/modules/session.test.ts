@@ -138,12 +138,12 @@ describe('Session module', () => {
     expect(retryStrategy(100)).toBe(5000);
   });
 
-  test('should use TLS with servername and extract raw password from connection string', () => {
+  test('should use TLS with servername and decode URL-encoded password', () => {
     const config = require('config');
     jest.spyOn(config, 'get').mockImplementation((...args: unknown[]) => {
       const key = args[0] as string;
       const values: Record<string, unknown> = {
-        'session.redisConnectionString': 'rediss://ignore:MY+PASS/WORD=@myredis.redis.cache.windows.net:6380',
+        'session.redisConnectionString': 'rediss://ignore:MY%2BPASS%2FWORD%3D@myredis.redis.cache.windows.net:6380',
         'session.prefix': 'plum-session',
         'session.redis.ttlInSeconds': 5400,
         'node-env': 'development',
