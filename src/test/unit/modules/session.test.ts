@@ -54,6 +54,31 @@ describe('Session module', () => {
     jest.restoreAllMocks();
   });
 
+  test('should enable TLS when port is 6380 even with redis:// scheme', () => {
+    const config = require('config');
+    jest.spyOn(config, 'get').mockImplementation((...args: unknown[]) => {
+      const key = args[0] as string;
+      const values: Record<string, unknown> = {
+        'session.redisConnectionString': 'redis://:MYPASSWORD@myredis.redis.cache.windows.net:6380',
+        'session.prefix': 'plum-session',
+        'session.redis.ttlInSeconds': 5400,
+        'node-env': 'development',
+        'session.timeout.sessionTimeoutMinutes': 60,
+        'session.timeout.sessionWarningMinutes': 10,
+        'session.timeout.checkIntervalSeconds': 10,
+        'session.secret': 'test-secret',
+        'session.cookieName': 'plum_session',
+      };
+      return values[key];
+    });
+    const { Session } = require('../../../main/modules/session');
+    expect(() => new Session().enableFor(app)).not.toThrow();
+    const redisOptions = mockRedisConstructor.mock.calls[0][0];
+    expect(redisOptions.tls).toEqual({ servername: 'myredis.redis.cache.windows.net' });
+    expect(redisOptions.port).toBe(6380);
+    jest.restoreAllMocks();
+  });
+
   test('should attach redisClient to app.locals', () => {
     const { Session } = require('../../../main/modules/session');
     new Session().enableFor(app);

@@ -16,7 +16,6 @@ export class Session {
     // Parse connection string manually to avoid URL-decoding issues.
     // Azure access keys contain characters like +, /, = that new URL() mangles.
     // Format: redis[s]://[user:password@]host[:port]
-    const useTls = redisConnectionString.startsWith('rediss://');
     const atIndex = redisConnectionString.lastIndexOf('@');
     let rawPassword: string | undefined;
     let hostPort: string;
@@ -32,6 +31,9 @@ export class Session {
 
     const [host, portStr] = hostPort.split(':');
     const port = parseInt(portStr, 10) || 6380;
+
+    // Enable TLS if scheme is rediss:// OR port is 6380 (Azure Redis TLS port)
+    const useTls = redisConnectionString.startsWith('rediss://') || port === 6380;
 
     this.logger.info(
       `Redis config: host=${host}, port=${port}, tls=${useTls}, passwordLength=${rawPassword?.length || 0}`
