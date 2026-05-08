@@ -24,7 +24,7 @@ export class Session {
       tls: redisUrl.protocol === 'rediss:' ? {} : undefined,
       keepAlive: 10000,
       enableReadyCheck: false,
-      commandTimeout: 5000,
+      connectTimeout: 30000,
       retryStrategy: (times: number) => {
         return Math.min(times * 200, 5000);
       },
