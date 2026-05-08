@@ -66,13 +66,14 @@ describe('Session module', () => {
     expect(app.get('trust proxy')).toBe(true);
   });
 
-  test('should register connect, error and ready event listeners on redis client', () => {
+  test('should register connect, error, ready and close event listeners on redis client', () => {
     const { Session } = require('../../../main/modules/session');
     new Session().enableFor(app);
     const registeredEvents = mockOn.mock.calls.map((call: [string, ...unknown[]]) => call[0]);
     expect(registeredEvents).toContain('connect');
     expect(registeredEvents).toContain('error');
     expect(registeredEvents).toContain('ready');
+    expect(registeredEvents).toContain('close');
   });
 
   test('should invoke connect callback without error', () => {
@@ -112,12 +113,12 @@ describe('Session module', () => {
     expect(retryStrategy(100)).toBe(5000);
   });
 
-  test('should use TLS and extract password from username when rediss:// url with username', () => {
+  test('should use TLS with servername and extract raw password from connection string', () => {
     const config = require('config');
     jest.spyOn(config, 'get').mockImplementation((...args: unknown[]) => {
       const key = args[0] as string;
       const values: Record<string, unknown> = {
-        'session.redisConnectionString': 'rediss://ignore:MYPASSWORD@myredis.redis.cache.windows.net:6380',
+        'session.redisConnectionString': 'rediss://ignore:MY+PASS/WORD=@myredis.redis.cache.windows.net:6380',
         'session.prefix': 'plum-session',
         'session.redis.ttlInSeconds': 5400,
         'node-env': 'development',
@@ -132,8 +133,8 @@ describe('Session module', () => {
     const { Session } = require('../../../main/modules/session');
     expect(() => new Session().enableFor(app)).not.toThrow();
     const redisOptions = mockRedisConstructor.mock.calls[0][0];
-    expect(redisOptions.tls).toBeDefined();
-    expect(redisOptions.password).toBe('MYPASSWORD');
+    expect(redisOptions.tls).toEqual({ servername: 'myredis.redis.cache.windows.net' });
+    expect(redisOptions.password).toBe('MY+PASS/WORD=');
     jest.restoreAllMocks();
   });
 

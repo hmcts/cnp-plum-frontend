@@ -13,15 +13,35 @@ export class Session {
     const redisConnectionString = config.get<string>('session.redisConnectionString');
     this.logger.info('Connecting to Azure Cache for Redis');
 
-    // Azure Cache for Redis does not support username-based AUTH.
-    // Parse the connection string and pass credentials as explicit options
-    // so ioredis sends single-arg AUTH (password only) instead of AUTH user password.
-    const redisUrl = new URL(redisConnectionString);
+    // Parse connection string manually to avoid URL-decoding issues.
+    // Azure access keys contain characters like +, /, = that new URL() mangles.
+    // Format: redis[s]://[user:password@]host[:port]
+    const useTls = redisConnectionString.startsWith('rediss://');
+    const atIndex = redisConnectionString.lastIndexOf('@');
+    let rawPassword: string | undefined;
+    let hostPort: string;
+
+    if (atIndex > 0) {
+      const authPart = redisConnectionString.substring(redisConnectionString.indexOf('://') + 3, atIndex);
+      const colonIndex = authPart.indexOf(':');
+      rawPassword = colonIndex >= 0 ? authPart.substring(colonIndex + 1) : authPart;
+      hostPort = redisConnectionString.substring(atIndex + 1);
+    } else {
+      hostPort = redisConnectionString.substring(redisConnectionString.indexOf('://') + 3);
+    }
+
+    const [host, portStr] = hostPort.split(':');
+    const port = parseInt(portStr, 10) || 6380;
+
+    this.logger.info(
+      `Redis config: host=${host}, port=${port}, tls=${useTls}, passwordLength=${rawPassword?.length || 0}`
+    );
+
     const redis = new Redis({
-      host: redisUrl.hostname,
-      port: parseInt(redisUrl.port, 10) || 6380,
-      password: redisUrl.password || redisUrl.username || undefined,
-      tls: redisUrl.protocol === 'rediss:' ? {} : undefined,
+      host,
+      port,
+      password: rawPassword || undefined,
+      tls: useTls ? { servername: host } : undefined,
       keepAlive: 10000,
       enableReadyCheck: false,
       connectTimeout: 30000,
@@ -40,6 +60,10 @@ export class Session {
 
     redis.on('ready', () => {
       this.logger.info('Redis client is ready');
+    });
+
+    redis.on('close', () => {
+      this.logger.info('Redis connection closed');
     });
 
     redis.on('reconnecting', () => {
