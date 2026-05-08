@@ -79,26 +79,19 @@ describe('Session module', () => {
     jest.restoreAllMocks();
   });
 
-  test('should attach redisClient to app.locals', () => {
-    const { Session } = require('../../../main/modules/session');
-    new Session().enableFor(app);
-    expect(app.locals.redisClient).toBeDefined();
-  });
-
   test('should set trust proxy on app', () => {
     const { Session } = require('../../../main/modules/session');
     new Session().enableFor(app);
     expect(app.get('trust proxy')).toBe(true);
   });
 
-  test('should register connect, error, ready and close event listeners on redis client', () => {
+  test('should register connect, error and ready event listeners on redis client', () => {
     const { Session } = require('../../../main/modules/session');
     new Session().enableFor(app);
     const registeredEvents = mockOn.mock.calls.map((call: [string, ...unknown[]]) => call[0]);
     expect(registeredEvents).toContain('connect');
     expect(registeredEvents).toContain('error');
     expect(registeredEvents).toContain('ready');
-    expect(registeredEvents).toContain('close');
   });
 
   test('should invoke connect callback without error', () => {

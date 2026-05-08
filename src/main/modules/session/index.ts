@@ -36,10 +36,6 @@ export class Session {
     // Enable TLS if scheme is rediss:// OR port is 6380 (Azure Redis TLS port)
     const useTls = redisConnectionString.startsWith('rediss://') || port === 6380;
 
-    this.logger.info(
-      `Redis config: host=${host}, port=${port}, tls=${useTls}, passwordLength=${rawPassword?.length || 0}`
-    );
-
     const redis = new Redis({
       host,
       port,
@@ -64,16 +60,6 @@ export class Session {
     redis.on('ready', () => {
       this.logger.info('Redis client is ready');
     });
-
-    redis.on('close', () => {
-      this.logger.info('Redis connection closed');
-    });
-
-    redis.on('reconnecting', () => {
-      this.logger.info(`Redis reconnecting (status: ${redis.status})`);
-    });
-
-    app.locals.redisClient = redis;
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const redisStore = new (RedisStore as any)({
