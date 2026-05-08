@@ -13,6 +13,7 @@ interface SessionWithVisit extends Request {
 
 interface RedisProbeClient {
   status: string;
+  ping: () => Promise<string>;
   set: (key: string, value: string, mode: 'EX', seconds: number) => Promise<unknown>;
   get: (key: string) => Promise<string | null>;
 }
@@ -37,23 +38,38 @@ export default function (app: Application): void {
           return;
         }
 
-        if (redisClient.status !== 'ready') {
-          res.status(503).json({
-            redis: 'unavailable',
-            reason: `Redis not ready (status: ${redisClient.status})`,
-            status: redisClient.status,
-          });
-          return;
-        }
-        const key = `plum-session-test:${Date.now()}`;
         try {
-          await withTimeout(redisClient.set(key, '1', 'EX', 120), 5000);
+          // Test connectivity with PING
+          await withTimeout(redisClient.ping(), 5000);
+
+          // Create a test key with predictable name for manual verification in Azure portal
+          const key = 'plum-redis-test';
+          const testValue = `test-${new Date().toISOString()}`;
+          await withTimeout(redisClient.set(key, testValue, 'EX', 300), 5000);
+
+          // Verify by reading it back
           const value = await withTimeout(redisClient.get(key), 5000);
-          res.status(200).json({ redis: value === '1' ? 'ok' : 'failed', key, status: redisClient.status });
+          if (value === testValue) {
+            res.status(200).json({
+              redis: 'ok',
+              message: 'Redis connection working',
+              key,
+              verified: true,
+            });
+            return;
+          }
+          res.status(503).json({
+            redis: 'failed',
+            reason: 'Key verification failed',
+            key,
+          });
           return;
         } catch (error) {
           logger.error(error.stack || error);
-          res.status(503).json({ redis: 'unavailable', reason: error.message, status: redisClient.status });
+          res.status(503).json({
+            redis: 'unavailable',
+            reason: error.message,
+          });
           return;
         }
       }
