@@ -8,6 +8,8 @@ USER hmcts
 
 COPY --chown=hmcts:hmcts . .
 
+RUN yarn install --immutable
+
 # ---- Build image ----
 FROM base as build
 
