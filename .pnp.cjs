@@ -91,7 +91,7 @@ const RAW_RUNTIME_STATE =
           ["lint-staged", "npm:16.2.7"],\
           ["lodash", "npm:4.18.1"],\
           ["mini-css-extract-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:2.9.4"],\
-          ["nock", "npm:14.0.13"],\
+          ["nock", "npm:14.0.15"],\
           ["nodemon", "npm:3.1.14"],\
           ["nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.2.4"],\
           ["pa11y", "npm:9.0.1"],\
@@ -10789,7 +10789,7 @@ const RAW_RUNTIME_STATE =
           ["lint-staged", "npm:16.2.7"],\
           ["lodash", "npm:4.18.1"],\
           ["mini-css-extract-plugin", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:2.9.4"],\
-          ["nock", "npm:14.0.13"],\
+          ["nock", "npm:14.0.15"],\
           ["nodemon", "npm:3.1.14"],\
           ["nunjucks", "virtual:8ddb9ae111987cc7eb1015abebd4477432a19cb2d44600083d31bb2a75e889c37238dc2576e40813725bca86bee2b9b65f12c8dfefba8e3074982e04a7ae5cbd#npm:3.2.4"],\
           ["pa11y", "npm:9.0.1"],\
@@ -17844,12 +17844,12 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["nock", [\
-      ["npm:14.0.13", {\
-        "packageLocation": "./.yarn/cache/nock-npm-14.0.13-64b0f35711-302d65e740.zip/node_modules/nock/",\
+      ["npm:14.0.15", {\
+        "packageLocation": "./.yarn/cache/nock-npm-14.0.15-4a2d1acd38-e51737b43e.zip/node_modules/nock/",\
         "packageDependencies": [\
           ["@mswjs/interceptors", "npm:0.41.3"],\
           ["json-stringify-safe", "npm:5.0.1"],\
-          ["nock", "npm:14.0.13"],\
+          ["nock", "npm:14.0.15"],\
           ["propagate", "npm:2.0.1"]\
         ],\
         "linkType": "HARD"\
