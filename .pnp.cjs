@@ -22320,7 +22320,7 @@ const RAW_RUNTIME_STATE =
     ]],\
     ["unrs-resolver", [\
       ["npm:1.11.1", {\
-        "packageLocation": "./.yarn/unplugged/unrs-resolver-npm-1.11.1-9828edd1f1/node_modules/unrs-resolver/",\
+        "packageLocation": "./.yarn/cache/unrs-resolver-npm-1.11.1-9828edd1f1-4de653508c.zip/node_modules/unrs-resolver/",\
         "packageDependencies": [\
           ["@unrs/resolver-binding-android-arm-eabi", "npm:1.11.1"],\
           ["@unrs/resolver-binding-android-arm64", "npm:1.11.1"],\

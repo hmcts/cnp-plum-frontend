@@ -143,6 +143,11 @@
     "jws": "^3.2.3",
     "diff": "^8.0.3"
   },
+  "dependenciesMeta": {
+    "unrs-resolver": {
+      "built": false
+    }
+  },
   "lint-staged": {
     "*.{js,ts}": "eslint --cache --fix",
     "*.{js,ts,css,md,html,json}": "prettier --write"

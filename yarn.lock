@@ -7403,6 +7403,9 @@ __metadata:
     webpack-cli: "npm:^6.0.0"
     webpack-dev-middleware: "npm:^7.0.0"
     webpack-node-externals: "npm:^3.0.0"
+  dependenciesMeta:
+    unrs-resolver:
+      built: false
   languageName: unknown
   linkType: soft
 
