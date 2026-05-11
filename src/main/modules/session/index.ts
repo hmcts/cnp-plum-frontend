@@ -12,7 +12,8 @@ export class Session {
   enableFor(app: Express): void {
     const redisConnectionString = config.get<string>('session.redisConnectionString');
     const nodeEnv = config.get<string>('node-env').toLowerCase();
-    const isTestEnv = nodeEnv === 'test';
+    const runtimeNodeEnv = (process.env.NODE_ENV || '').toLowerCase();
+    const isTestEnv = nodeEnv === 'test' || runtimeNodeEnv === 'test';
     this.logger.info('Connecting to Azure Cache for Redis');
 
     // Parse connection string manually to avoid URL-decoding issues.

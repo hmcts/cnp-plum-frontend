@@ -126,6 +126,8 @@ describe('Session module', () => {
   });
 
   test('retryStrategy should return capped backoff delay', () => {
+    const originalNodeEnv = process.env.NODE_ENV;
+    process.env.NODE_ENV = 'development';
     const config = require('config');
     jest.spyOn(config, 'get').mockImplementation((...args: unknown[]) => {
       const key = args[0] as string;
@@ -152,6 +154,7 @@ describe('Session module', () => {
     expect(retryStrategy(25)).toBe(5000);
     expect(retryStrategy(100)).toBe(5000);
     jest.restoreAllMocks();
+    process.env.NODE_ENV = originalNodeEnv;
   });
 
   test('should use TLS with servername and decode URL-encoded password', () => {
