@@ -32,6 +32,10 @@ withPipeline(type, product, app) {
   
   before('functionalTest:sandbox') {
     sh """
+      if [ -z "$TEST_URL" ] && [ -n "$SERVICE_FQDN" ]; then
+        export TEST_URL="https://$SERVICE_FQDN"
+      fi
+      echo "Using TEST_URL=${TEST_URL:-http://localhost:1337}"
       yarn install
       yarn playwright install
     """
