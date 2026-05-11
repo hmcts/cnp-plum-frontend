@@ -1,5 +1,5 @@
 # ---- Base image ----
-ARG BASE_IMAGE=hmctssbox.azurecr.io/base/node:20-alpine
+ARG BASE_IMAGE=hmctssbox.azurecr.io/base/node:22-alpine
 FROM ${BASE_IMAGE} as base
 
 USER root
@@ -7,6 +7,8 @@ RUN corepack enable
 USER hmcts
 
 COPY --chown=hmcts:hmcts . .
+
+RUN yarn install --immutable
 
 # ---- Build image ----
 FROM base as build
