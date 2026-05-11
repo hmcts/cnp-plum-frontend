@@ -11,6 +11,8 @@ export class Session {
 
   enableFor(app: Express): void {
     const redisConnectionString = config.get<string>('session.redisConnectionString');
+    const nodeEnv = config.get<string>('node-env').toLowerCase();
+    const isTestEnv = nodeEnv === 'test';
     this.logger.info('Connecting to Azure Cache for Redis');
 
     // Parse connection string manually to avoid URL-decoding issues.
@@ -44,7 +46,11 @@ export class Session {
       keepAlive: 10000,
       enableReadyCheck: false,
       connectTimeout: 30000,
+      lazyConnect: isTestEnv,
       retryStrategy: (times: number) => {
+        if (isTestEnv) {
+          return null;
+        }
         return Math.min(times * 200, 5000);
       },
     });
@@ -70,7 +76,7 @@ export class Session {
       ttl: config.get('session.redis.ttlInSeconds'),
     });
 
-    const secure = config.get<string>('node-env').toLowerCase() === 'production';
+    const secure = nodeEnv === 'production';
 
     const sessionTimeoutMinutes = config.get<number>('session.timeout.sessionTimeoutMinutes');
     const sessionWarningMinutes = config.get<number>('session.timeout.sessionWarningMinutes');

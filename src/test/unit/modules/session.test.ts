@@ -126,6 +126,22 @@ describe('Session module', () => {
   });
 
   test('retryStrategy should return capped backoff delay', () => {
+    const config = require('config');
+    jest.spyOn(config, 'get').mockImplementation((...args: unknown[]) => {
+      const key = args[0] as string;
+      const values: Record<string, unknown> = {
+        'session.redisConnectionString': 'rediss://:MYPASSWORD@myredis.redis.cache.windows.net:6380',
+        'session.prefix': 'plum-session',
+        'session.redis.ttlInSeconds': 5400,
+        'node-env': 'development',
+        'session.timeout.sessionTimeoutMinutes': 60,
+        'session.timeout.sessionWarningMinutes': 10,
+        'session.timeout.checkIntervalSeconds': 10,
+        'session.secret': 'test-secret',
+        'session.cookieName': 'plum_session',
+      };
+      return values[key];
+    });
     const { Session } = require('../../../main/modules/session');
     new Session().enableFor(app);
     const { retryStrategy, enableReadyCheck, connectTimeout } = mockRedisConstructor.mock.calls[0][0];
@@ -135,6 +151,7 @@ describe('Session module', () => {
     expect(retryStrategy(2)).toBe(400);
     expect(retryStrategy(25)).toBe(5000);
     expect(retryStrategy(100)).toBe(5000);
+    jest.restoreAllMocks();
   });
 
   test('should use TLS with servername and decode URL-encoded password', () => {
