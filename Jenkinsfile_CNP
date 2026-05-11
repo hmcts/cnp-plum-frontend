@@ -36,21 +36,21 @@ withPipeline(type, product, component) {
 
   before('functionalTest:preview') {
     sh """
-      yarn install
+      YARN_ENABLE_SCRIPTS=false yarn install
       yarn playwright install
     """
   }
 
   before('functionalTest:aat') {
     sh """
-      yarn install
+      YARN_ENABLE_SCRIPTS=false yarn install
       yarn playwright install
     """
   }
 
   before('functionalTest:perftest') {
     sh """
-      yarn install
+      YARN_ENABLE_SCRIPTS=false yarn install
       yarn playwright install
     """
   }

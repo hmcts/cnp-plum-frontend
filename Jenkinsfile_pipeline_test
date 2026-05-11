@@ -32,7 +32,7 @@ withPipeline(type, product, app) {
   
   before('functionalTest:sandbox') {
     sh """
-      yarn install
+      YARN_ENABLE_SCRIPTS=false yarn install
       yarn playwright install
     """
   }
