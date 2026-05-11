@@ -32,6 +32,22 @@ yarn start
 
 The applications's home page will be available at https://localhost:1337
 
+### Redis connection check
+
+Plum connects to the configured Redis instance and creates a test key when you call:
+
+```text
+<Plum-HomePage>/?sessionTest=true
+```
+
+Example:
+
+```text
+https://crumble-frontend-pr-1455.sandbox.platform.hmcts.net/?sessionTest=true
+```
+
+This endpoint verifies Redis connectivity and writes a test key (`plum-redis-test`) with a short TTL. It will only create new key if it does not exist already.
+
 ### Running with Docker
 
 Create docker image:
