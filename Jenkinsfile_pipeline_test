@@ -32,8 +32,8 @@ withPipeline(type, product, app) {
   
   before('functionalTest:sandbox') {
     sh """
-      YARN_NODE_LINKER=node-modules YARN_ENABLE_SCRIPTS=false yarn install
-      YARN_NODE_LINKER=node-modules yarn playwright install
+      yarn install
+      yarn playwright install
     """
   }
   disableLegacyDeployment()

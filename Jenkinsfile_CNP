@@ -36,22 +36,22 @@ withPipeline(type, product, component) {
 
   before('functionalTest:preview') {
     sh """
-      YARN_NODE_LINKER=node-modules YARN_ENABLE_SCRIPTS=false yarn install
-      YARN_NODE_LINKER=node-modules yarn playwright install
+      yarn install
+      yarn playwright install
     """
   }
 
   before('functionalTest:aat') {
     sh """
-      YARN_NODE_LINKER=node-modules YARN_ENABLE_SCRIPTS=false yarn install
-      YARN_NODE_LINKER=node-modules yarn playwright install
+      yarn install
+      yarn playwright install
     """
   }
 
   before('functionalTest:perftest') {
     sh """
-      YARN_NODE_LINKER=node-modules YARN_ENABLE_SCRIPTS=false yarn install
-      YARN_NODE_LINKER=node-modules yarn playwright install
+      yarn install
+      yarn playwright install
     """
   }
 
