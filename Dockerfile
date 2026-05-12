@@ -7,6 +7,7 @@ RUN corepack enable
 USER hmcts
 
 COPY --chown=hmcts:hmcts . .
+RUN yarn install
 
 # ---- Build image ----
 FROM base as build
