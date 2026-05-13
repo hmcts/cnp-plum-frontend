@@ -3,5 +3,20 @@
   "backendUrl": "http://localhost:4550",
   "appInsights": {
     "instrumentationKey": false
+  },
+  "node-env": "development",
+  "session": {
+    "secret": "plum-session-secret-value",
+    "redisConnectionString": "redis://localhost:6379",
+    "prefix": "plum-session",
+    "cookieName": "plum_session",
+    "redis": {
+      "ttlInSeconds": 5400
+    },
+    "timeout": {
+      "sessionWarningMinutes": 10,
+      "sessionTimeoutMinutes": 60,
+      "checkIntervalSeconds": 10
+    }
   }
 }

@@ -8,7 +8,6 @@
 !yarn.lock
 !.yarn/**
 !.yarnrc.yml
-!.pnp.cjs
 
 !tsconfig.json
 !webpack/**

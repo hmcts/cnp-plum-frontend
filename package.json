@@ -44,13 +44,16 @@
     "axios": "^1.0.0",
     "body-parser": "^2.0.0",
     "config": "^4.0.0",
+    "connect-redis": "^7.1.0",
     "cookie-parser": "^1.4.7",
     "express": "^4.21.2",
     "express-nunjucks": "^3.0.0",
+    "express-session": "^1.17.3",
     "follow-redirects": "^1.15.6",
     "glob": "^13.0.6",
     "govuk-frontend": "4.9.0",
     "helmet": "^8.0.0",
+    "ioredis": "^5.3.2",
     "jquery": "^3.6.1",
     "js-yaml": "^4.1.0",
     "lodash": "^4.17.21",
@@ -71,6 +74,7 @@
     "@codeceptjs/configure": "^1.0.0",
     "@types/chai": "^5.0.0",
     "@types/chai-as-promised": "^8.0.0",
+    "@types/express-session": "^1.17.4",
     "@types/jest": "^30.0.0",
     "@types/supertest": "^6.0.0",
     "@typescript-eslint/eslint-plugin": "^7.0.0",
@@ -117,6 +121,7 @@
     "webpack-node-externals": "^3.0.0"
   },
   "resolutions": {
+    "picomatch": "4.0.4",
     "undici": "^7.18.2",
     "tar": "7.5.15",
     "table/ajv": "8.20.0",
@@ -137,6 +142,11 @@
     "cookie": "1.1.1",
     "jws": "^3.2.3",
     "diff": "^8.0.3"
+  },
+  "dependenciesMeta": {
+    "unrs-resolver": {
+      "built": false
+    }
   },
   "lint-staged": {
     "*.{js,ts}": "eslint --cache --fix",

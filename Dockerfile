@@ -7,6 +7,8 @@ RUN corepack enable
 USER hmcts
 
 COPY --chown=hmcts:hmcts . .
+ENV YARN_NODE_LINKER=pnp
+RUN yarn install
 
 # ---- Build image ----
 FROM base as build

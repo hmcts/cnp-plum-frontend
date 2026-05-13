@@ -1,1 +1,5 @@
-{}
+{
+  "session": {
+    "redisConnectionString": "redis://localhost:6379"
+  }
+}
