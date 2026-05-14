@@ -29,11 +29,41 @@ properties([
 ])
 
 def expiresAfter = "3000-01-01"
+def appPipelineConfig = new uk.gov.hmcts.contino.AppPipelineConfig()
+def callbacks = new uk.gov.hmcts.contino.PipelineCallbacksConfig()
+def callbacksRunner = new uk.gov.hmcts.contino.PipelineCallbacksRunner(callbacks)
+def aksSubscriptions = new uk.gov.hmcts.pipeline.AKSSubscriptions(this)
+def latestDockerImage
+def acr
 
 
 withParameterizedPipeline(params.TYPE, params.PRODUCT_NAME, params.APP, params.ENVIRONMENT, params.SUBSCRIPTION) {
   //enableApiGatewayTest()
   disableLegacyDeployment()
+  afterSuccess('build') {
+    withAcrClient(params.SUBSCRIPTION) {
+      def imageRegistry = env.TEAM_CONTAINER_REGISTRY ?: env.REGISTRY_NAME
+      acr = new uk.gov.hmcts.contino.azure.Acr(this, params.SUBSCRIPTION, imageRegistry, env.REGISTRY_RESOURCE_GROUP, env.REGISTRY_SUBSCRIPTION)
+      latestDockerImage = new uk.gov.hmcts.contino.DockerImage(params.PRODUCT_NAME, params.APP, acr, 'latest', env.GIT_COMMIT, env.LAST_COMMIT_TIMESTAMP)
+      acr.build(latestDockerImage)
+    }
+  }
+  afterSuccess("buildinfra:${params.ENVIRONMENT}") {
+    if (params.ENVIRONMENT == 'sandbox') {
+      lock(resource: "${params.PRODUCT_NAME}-${params.APP}-${params.ENVIRONMENT}-deploy", inversePrecedence: true) {
+        withAksClient(params.SUBSCRIPTION, params.ENVIRONMENT, params.PRODUCT_NAME) {
+          helmInstall(latestDockerImage, [
+            subscription: params.SUBSCRIPTION,
+            environment: params.ENVIRONMENT,
+            product: params.PRODUCT_NAME,
+            component: params.APP,
+            aksSubscription: aksSubscriptions.sandbox,
+            appPipelineConfig: appPipelineConfig
+          ])
+        }
+      }
+    }
+  }
   onNonPR() {
     //loadVaultSecrets(apiTestSecrets)
   }
