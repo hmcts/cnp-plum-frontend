@@ -1,6 +1,6 @@
 #!groovy
 
-@Library("Infrastructure@DTSPO-30146-add-deploment-controls")
+@Library("Infrastructure")
 
 def type = "nodejs"
 def product = "plum"
