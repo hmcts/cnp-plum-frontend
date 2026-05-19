@@ -147,7 +147,7 @@ describe('Session module', () => {
     const { Session } = require('../../../main/modules/session');
     new Session().enableFor(app);
     const { retryStrategy, enableReadyCheck, connectTimeout } = mockRedisConstructor.mock.calls[0][0];
-    expect(enableReadyCheck).toBe(false);
+    expect(enableReadyCheck).toBe(true);
     expect(connectTimeout).toBe(30000);
     expect(retryStrategy(1)).toBe(200);
     expect(retryStrategy(2)).toBe(400);
