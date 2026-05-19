@@ -45,7 +45,7 @@ export class Session {
       password: rawPassword || undefined,
       tls: useTls ? { servername: host } : undefined,
       keepAlive: 10000,
-      enableReadyCheck: false,
+      enableReadyCheck: true,
       connectTimeout: 30000,
       lazyConnect: isTestEnv,
       retryStrategy: (times: number) => {
