@@ -1,0 +1,62 @@
+import { defineConfig, globalIgnores } from "eslint/config";
+import mocha from "eslint-plugin-mocha";
+import globals from "globals";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import js from "@eslint/js";
+import { FlatCompat } from "@eslint/eslintrc";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const compat = new FlatCompat({
+    baseDirectory: __dirname,
+    recommendedConfig: js.configs.recommended,
+    allConfig: js.configs.all
+});
+
+export default defineConfig([globalIgnores([
+    "dist/*",
+    "coverage/*",
+    "**/*.d.ts",
+    "src/main/public/",
+    "src/main/types/",
+    "**/jest.*config.js",
+    "**/.eslintrc.js",
+    "src/test/*/codecept.conf.js",
+    "src/test/config.ts",
+    "**/*.js",
+    "**/.pnp.*",
+]), {
+    extends: compat.extends("eslint:recommended"),
+
+    plugins: {
+        mocha,
+    },
+
+    languageOptions: {
+        globals: {
+            ...globals.browser,
+            ...globals.node,
+            ...globals.jquery,
+            ...globals.mocha,
+            actor: true,
+            Feature: true,
+            Scenario: true,
+            codecept_helper: true,
+        },
+
+        ecmaVersion: 8,
+        sourceType: "module",
+    },
+
+    rules: {
+        "no-console": 0,
+        "linebreak-style": ["error", "unix"],
+        quotes: ["error", "single"],
+        semi: ["error", "always"],
+        "comma-dangle": ["error", "never"],
+        eqeqeq: "error",
+        "require-yield": "off",
+        "mocha/no-exclusive-tests": "error",
+    },
+}]);
