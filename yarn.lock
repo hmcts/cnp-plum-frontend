@@ -283,6 +283,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@azure/logger@npm:1.3.0, @azure/logger@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "@azure/logger@npm:1.3.0"
+  dependencies:
+    "@typespec/ts-http-runtime": "npm:^0.3.0"
+    tslib: "npm:^2.6.2"
+  checksum: 10/7df11bf3b4952207d7355fde3cee223df2e4a64eaafff05a1fcbcb5c870350f1ef726866b771a7520b0e2bb33bfa9c96415b823c4b74e04ad4b755e961634528
+  languageName: node
+  linkType: hard
+
 "@azure/logger@npm:^1.0.0, @azure/logger@npm:^1.1.4":
   version: 1.2.0
   resolution: "@azure/logger@npm:1.2.0"
@@ -290,16 +300,6 @@ __metadata:
     "@typespec/ts-http-runtime": "npm:^0.2.2"
     tslib: "npm:^2.6.2"
   checksum: 10/21347e019c7c66be0707968f824210845ea9aa21c96ae8b1075f7a53b6a23c230e631db53ba63696b0ede577f1ca5665e4fc4a346b61896b376d15f0a01717ee
-  languageName: node
-  linkType: hard
-
-"@azure/logger@npm:^1.3.0":
-  version: 1.3.0
-  resolution: "@azure/logger@npm:1.3.0"
-  dependencies:
-    "@typespec/ts-http-runtime": "npm:^0.3.0"
-    tslib: "npm:^2.6.2"
-  checksum: 10/7df11bf3b4952207d7355fde3cee223df2e4a64eaafff05a1fcbcb5c870350f1ef726866b771a7520b0e2bb33bfa9c96415b823c4b74e04ad4b755e961634528
   languageName: node
   linkType: hard
 
@@ -7574,6 +7574,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "cnp-plum-frontend@workspace:."
   dependencies:
+    "@azure/logger": "npm:1.3.0"
     "@babel/core": "npm:^7.29.7"
     "@babel/eslint-parser": "npm:^7.18.9"
     "@babel/preset-env": "npm:^7.19.0"
