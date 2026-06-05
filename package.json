@@ -126,7 +126,7 @@
   "resolutions": {
     "picomatch": "4.0.4",
     "undici": "^7.18.2",
-    "tar": "7.5.15",
+    "tar": "7.5.16",
     "table/ajv": "8.20.0",
     "glob/minimatch": "10.2.5",
     "globals": "17.6.0",
