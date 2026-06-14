@@ -74,6 +74,9 @@ functional-output/
 
 .eslintcache
 
+.gradle/
+Fortify Scan/
+
 .yarn/*
 !.yarn/cache/*
 !.yarn/patches

@@ -1,6 +1,6 @@
 #!groovy
 
-@Library("Infrastructure")
+ @Library("Infrastructure@dev/DTSPO-29266-2")
 
 def type = "nodejs"
 def product = "plum"
@@ -23,11 +23,13 @@ static LinkedHashMap<String, Object> secret(String secretName, String envVar) {
 }
 
 def yarnBuilder = new uk.gov.hmcts.contino.YarnBuilder(this)
+def envName = new uk.gov.hmcts.contino.Environment(env).nonProdName
 
 withPipeline(type, product, component) {
   loadVaultSecrets(secrets)
   disableLegacyDeployment()
   expires(expiresAfter)
+  enableFortifyScan("${product}si-${envName}")
 
   afterAlways('build') {
     yarnBuilder.yarn('rebuild puppeteer')
