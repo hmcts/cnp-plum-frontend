@@ -8,7 +8,7 @@ USER hmcts
 
 COPY --chown=hmcts:hmcts . .
 ENV YARN_NODE_LINKER=pnp
-RUN yarn install
+RUN PUPPETEER_SKIP_DOWNLOAD=true yarn install
 
 # ---- Build image ----
 FROM base as build
