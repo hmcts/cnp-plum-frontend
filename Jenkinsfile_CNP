@@ -36,31 +36,31 @@ withPipeline(type, product, component) {
 
   before('functionalTest:preview') {
     sh """
-      yarn install
+      PUPPETEER_SKIP_DOWNLOAD=true yarn install
       yarn playwright install
     """
   }
 
   before('functionalTest:aat') {
     sh """
-      yarn install
+      PUPPETEER_SKIP_DOWNLOAD=true yarn install
       yarn playwright install
     """
   }
 
   before('functionalTest:perftest') {
     sh """
-      yarn install
+      PUPPETEER_SKIP_DOWNLOAD=true yarn install
       yarn playwright install
     """
   }
 
   before('smoketest:preview') {
-    sh 'yarn install'
+    sh 'PUPPETEER_SKIP_DOWNLOAD=true yarn install'
   }
 
   before('smoketest:aat') {
-    sh 'yarn install'
+    sh 'PUPPETEER_SKIP_DOWNLOAD=true yarn install'
   }
 
 }
