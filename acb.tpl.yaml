@@ -74,6 +74,7 @@ steps:
       --platform linux/arm64
       --target base
       .
+    timeout: 1800
     retries: 10
     retryDelay: 5
     when:
@@ -87,6 +88,7 @@ steps:
       --platform linux/arm64
       --target runtime
       .
+    timeout: 1800
     retries: 10
     retryDelay: 5
     when:
