@@ -141,7 +141,7 @@
     "mocha/js-yaml": "4.3.0",
     "glob/minimatch": "10.2.6",
     "brace-expansion": "5.0.8",
-    "postcss": "8.5.18",
+    "postcss": "8.5.25",
     "globals": "17.6.0",
     "@opentelemetry/instrumentation": "0.218.0",
     "semver": "^7.5.3",
