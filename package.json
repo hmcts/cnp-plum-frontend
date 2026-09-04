@@ -124,7 +124,7 @@
     "webpack-node-externals": "^3.0.0"
   },
   "resolutions": {
-    "picomatch": "4.0.5",
+    "picomatch": "4.0.7",
     "undici": "^7.18.2",
     "tar": "7.5.21",
     "table/ajv": "8.20.0",
