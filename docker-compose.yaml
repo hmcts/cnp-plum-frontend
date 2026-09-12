@@ -27,7 +27,7 @@ services:
     depends_on:
       - database
   database:
-    image: postgres:17-alpine
+    image: postgres:18-alpine
     environment:
       POSTGRES_USER: plum
       POSTGRES_PASSWORD: plum
