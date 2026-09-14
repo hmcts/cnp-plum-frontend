@@ -132,7 +132,7 @@
     "@grpc/proto-loader/protobufjs": "7.6.6",
     "@opentelemetry/otlp-transformer/protobufjs": "8.6.6",
     "express/body-parser": "1.20.8",
-    "@opentelemetry/propagator-jaeger": "2.9.0",
+    "@opentelemetry/propagator-jaeger": "2.11.0",
     "@eslint/eslintrc/js-yaml": "4.3.2",
     "@hmcts/info-provider/js-yaml": "4.3.2",
     "@hmcts/nodejs-healthcheck/js-yaml": "4.3.2",
@@ -143,7 +143,7 @@
     "brace-expansion": "5.0.9",
     "postcss": "8.5.28",
     "globals": "17.12.0",
-    "@opentelemetry/instrumentation": "0.218.0",
+    "@opentelemetry/instrumentation": "0.222.0",
     "semver": "^7.5.3",
     "qs": "^6.9.7",
     "json5": "^2.0.0",
@@ -160,7 +160,7 @@
     "jws": "^3.2.3",
     "diff": "^8.0.3",
     "form-data": "2.5.6",
-    "@opentelemetry/core": "2.8.0",
+    "@opentelemetry/core": "2.11.0",
     "ip-address": "10.7.0"
   },
   "dependenciesMeta": {
