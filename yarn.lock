@@ -9908,10 +9908,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-uri@npm:3.1.8":
-  version: 3.1.8
-  resolution: "fast-uri@npm:3.1.8"
-  checksum: 10/d3dfa29fd2e5fa2371833699f3f78c975b79f65e52e0ce37604db10dffb85b5b448b5075e93453272cb95fb1c6a759495164e60649ffd69e59ec43f20d44f791
+"fast-uri@npm:4.1.5":
+  version: 4.1.5
+  resolution: "fast-uri@npm:4.1.5"
+  checksum: 10/09d8c122450fc1de72c5f9f2b09075b626a2d5e56de841c1654e8f3241d284d445aa04ad177a2b5d04de0a1e372e92206a8a0459532dab7a280e825ac2a6eac9
   languageName: node
   linkType: hard
 
