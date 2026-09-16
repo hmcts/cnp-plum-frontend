@@ -111,7 +111,7 @@
     "react-native": "^0.87.0",
     "request": "^2.88.2",
     "sass": "^1.54.9",
-    "sass-loader": "^16.0.0",
+    "sass-loader": "^17.0.0",
     "sinon": "^21.0.0",
     "sinon-chai": "^4.0.0",
     "style-loader": "^4.0.0",
