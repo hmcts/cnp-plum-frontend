@@ -1,6 +1,6 @@
 #!groovy
 
-@Library("Infrastructure")
+@Library("Infrastructure@dtspo-35207-library-deprecation-warn-and-fail")
 
 def type = "nodejs"
 def product = "plum"
