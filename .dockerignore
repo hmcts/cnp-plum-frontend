@@ -6,12 +6,17 @@
 
 !package.json
 !yarn.lock
+!.yarn
 !.yarn/**
 !.yarnrc.yml
 
 !tsconfig.json
+!webpack
 !webpack/**
+!src
+!src/main
 !src/main/**
+!config
 !config/**
 !webpack.config.js
 !acb.yaml
