@@ -1,5 +1,8 @@
 #!groovy
 
+@Library("Infrastructure@fix/library-branch-validation-rate-limit")
+import uk.gov.hmcts.contino.GithubAPI
+
 // ______        _   _       _     _____
 // |  _  \      | \ | |     | |   /  __ \
 // | | | |___   |  \| | ___ | |_  | /  \/ ___  _ __  _   _
@@ -10,6 +13,15 @@
 //                                            |_|    |___/
 //
 // THIS PIPELINE IS FOR TESTING SHARED PIPELINE CODE ONLY
+
+// Temporary PR smoke test: sandbox skips branch allowlisting, but exercises the authenticated tag request.
+if (env.CHANGE_ID) {
+  def github = new GithubAPI(this)
+  assert github.tagExists('hmcts/cnp-jenkins-library', '2.11.1')
+  assert !github.tagExists('hmcts/cnp-jenkins-library', '999.999.999')
+  echo 'Authenticated tag lookup smoke test passed before checkout.'
+  return
+}
 
 properties([
   parameters([
