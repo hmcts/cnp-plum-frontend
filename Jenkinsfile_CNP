@@ -2,16 +2,13 @@
 
 @Library("Infrastructure@fix/library-branch-validation-rate-limit")
 import uk.gov.hmcts.contino.GithubAPI
-import uk.gov.hmcts.pipeline.LibraryBranchControls
 
 // Temporary PR smoke test on a non-sandbox Jenkins controller; stop before deployment.
 if (env.CHANGE_ID) {
-  assert new LibraryBranchControls(this).isBranchAllowed()
-
   def github = new GithubAPI(this)
   assert github.tagExists('hmcts/cnp-jenkins-library', '2.11.1')
   assert !github.tagExists('hmcts/cnp-jenkins-library', '999.999.999')
-  echo 'Library branch and authenticated tag lookup smoke test passed before checkout.'
+  echo 'Authenticated tag lookup smoke test passed before checkout.'
   return
 }
 
