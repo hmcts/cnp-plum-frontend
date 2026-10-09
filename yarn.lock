@@ -12868,7 +12868,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"js-yaml@npm:5.4.3":
+"js-yaml@npm:5.4.3, js-yaml@npm:^5.0.0":
   version: 5.4.3
   resolution: "js-yaml@npm:5.4.3"
   dependencies:
@@ -12888,17 +12888,6 @@ __metadata:
   bin:
     js-yaml: bin/js-yaml.js
   checksum: 10/320b5471c1b7309a15d9c0068ba273e2da7382a369038a9746c92ef649087c3d6d2a5c676810154efb4eb2ca9584179c8ae14e2fc2e4bd558d964e6bf4fafd3d
-  languageName: node
-  linkType: hard
-
-"js-yaml@npm:^5.0.0":
-  version: 5.4.2
-  resolution: "js-yaml@npm:5.4.2"
-  dependencies:
-    argparse: "npm:^2.0.1"
-  bin:
-    js-yaml: bin/js-yaml.mjs
-  checksum: 10/f2461abd1d6268fb226733f0a0e0aa48004bb824116e3dfa75f1a1279001936343b672066dfecdb852ac3ca883452706c383a760aa90430cb68ba395aa2cbc84
   languageName: node
   linkType: hard
 
