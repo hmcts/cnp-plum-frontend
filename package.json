@@ -173,5 +173,5 @@
     "*.{js,ts}": "eslint --cache --fix",
     "*.{js,ts,css,md,html,json}": "prettier --write"
   },
-  "packageManager": "yarn@4.9.4"
+  "packageManager": "yarn@4.18.1"
 }
