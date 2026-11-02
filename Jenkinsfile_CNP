@@ -29,6 +29,18 @@ withPipeline(type, product, component) {
   disableLegacyDeployment()
   expires(expiresAfter)
 
+  // TEMPORARY TEST ONLY - remove once interpolation-guard behaviour is confirmed.
+  // Requires a throwaway "Secret text" credential with ID 'dummy-interp-test' to exist first.
+  before('build') {
+    withCredentials([string(credentialsId: 'dummy-interp-test', variable: 'TOKEN')]) {
+      sh 'echo "safe: $TOKEN"'        // control: single-quoted, shell expands + Jenkins masks
+    }
+    withCredentials([string(credentialsId: 'dummy-interp-test', variable: 'TOKEN')]) {
+      sh "echo unsafe: ${TOKEN}"      // deliberate: Groovy interpolates before sh runs
+    }
+    echo 'TEST HOOK: reached end of before(build) without abort'
+  }
+
   afterAlways('build') {
     yarnBuilder.yarn('rebuild puppeteer')
     yarnBuilder.yarn('build')
