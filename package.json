@@ -141,7 +141,7 @@
     "@hmcts/properties-volume/js-yaml": "5.5.0",
     "cosmiconfig/js-yaml": "5.5.0",
     "mocha/js-yaml": "5.5.0",
-    "glob/minimatch": "10.2.6",
+    "glob/minimatch": "11.0.1",
     "glob@npm:14.0.2/minimatch": "11.0.3",
     "brace-expansion": "5.0.12",
     "postcss": "8.5.32",
