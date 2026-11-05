@@ -165,7 +165,7 @@
     "path-to-regexp": "0.1.13",
     "cookiejar": "^2.1.4",
     "ip": "^2.0.1",
-    "@grpc/grpc-js": "1.14.6",
+    "@grpc/grpc-js": "1.14.7",
     "cross-spawn": "7.0.6",
     "nanoid": "3.3.20",
     "superagent": "10.4.1",
