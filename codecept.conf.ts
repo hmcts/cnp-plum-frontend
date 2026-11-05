@@ -20,9 +20,6 @@ export const config: CodeceptJS.MainConfig = {
     retryFailedStep: {
       enabled: true,
     },
-    tryTo: {
-      enabled: true,
-    },
     screenshotOnFail: {
       enabled: true,
       fullPageScreenshots: true,
