@@ -35,7 +35,6 @@ withPipeline(type, product, app) {
   before('build') {
     sh '''
       echo "Running as: $(whoami) (uid=$(id -u))"
-      ls -la /home/jenkins/.ssh/id_rsa
       ls -la /opt/jenkinsssh_id_rsa
     '''
     // withCredentials([string(credentialsId: 'dummy-interp-test', variable: 'TOKEN')]) {
