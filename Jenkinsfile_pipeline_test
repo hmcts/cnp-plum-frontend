@@ -29,7 +29,29 @@ def app = "frontend"
 withPipeline(type, product, app) {
   // never skip stages when testing the pipeline
   env.NO_SKIP_IMG_BUILD = 'true'
-  
+
+  // TEMPORARY TEST ONLY - remove once interpolation-guard behaviour is confirmed.
+  // Requires a throwaway "Secret text" credential with ID 'dummy-interp-test' to exist first.
+  before('build') {
+    sh '''
+      echo "Running as: $(whoami) (uid=$(id -u))"
+      ls -la /opt/jenkinsssh_id_rsa
+    '''
+    // withCredentials([string(credentialsId: 'dummy-interp-test', variable: 'TOKEN')]) {
+    //   sh 'echo "safe: $TOKEN"'        // control: single-quoted, shell expands + Jenkins masks
+    // }
+    // withCredentials([string(credentialsId: 'dummy-interp-test', variable: 'TOKEN')]) {
+    //   sh '''
+    //     set +x
+    //     echo "safe (no trace): $TOKEN"
+    //   '''                             // isolates whether masking fails independent of xtrace
+    // }
+    // withCredentials([string(credentialsId: 'dummy-interp-test', variable: 'TOKEN')]) {
+    //   sh "echo unsafe: ${TOKEN}"      // deliberate: Groovy interpolates before sh runs
+    // }
+    // echo 'TEST HOOK: reached end of before(build) without abort'
+  }
+
   before('functionalTest:sandbox') {
     sh """
       yarn install
