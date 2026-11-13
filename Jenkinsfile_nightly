@@ -8,7 +8,7 @@ parameters([
   ])
 ])
 
-@Library("Infrastructure@DTSPO-29095/use-hmctspublic-7")
+@Library("Infrastructure@DTSPO-36410")
 
 def type = "nodejs"
 def product = "plum"
@@ -17,5 +17,6 @@ def component = "frontend"
 withNightlyPipeline(type, product, component) {
     env.TEST_URL = "https://plum.aat.platform.hmcts.net"
     enableSecurityScan()
+    enableParallelFortifyScan()
     env.Rules = params.SecurityRules
 }

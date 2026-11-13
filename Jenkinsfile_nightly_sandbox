@@ -5,12 +5,15 @@ properties([
 pipelineTriggers([cron('H 07 * * 1-5')])
 ])
 
-@Library("Infrastructure")
+@Library("Infrastructure@DTSPO-36410")
 
 def type = "nodejs"
 def product = "plum"
 def component = "frontend"
 
 withNightlyPipeline(type, product, component) {
-
+    env.TEST_URL = "https://plum.aat.platform.hmcts.net"
+    env.Rules = "http://raw.githubusercontent.com/hmcts/security-test-rules/master/conf/security-rules.conf"
+    enableSecurityScan()
+    enableParallelFortifyScan('plumsi-sandbox')
 }
